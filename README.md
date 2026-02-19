@@ -6,10 +6,9 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Node.js Version](https://img.shields.io/node/v/mixaroo-lite.svg)](https://nodejs.org/)
 
----
+> ⚠️ **Currently macOS only.** Linux and Windows support coming soon.
 
-<!-- Demo GIF will go here -->
-<!-- ![Demo](./assets/demo.gif) -->
+---
 
 ```
 $ mx-lite "90s rock road trip anthems"
@@ -40,6 +39,10 @@ $ mx-lite "90s rock road trip anthems"
 # Install globally
 npm install -g mixaroo-lite
 
+# Or via Homebrew (macOS)
+brew tap schoolofai/tap
+brew install mixaroo-lite
+
 # Set up your AI provider (one-time)
 mx-lite setup
 
@@ -59,7 +62,14 @@ That's it. Click the link, start listening.
 
 ## Installation
 
-### npm (recommended)
+### Homebrew (macOS)
+
+```bash
+brew tap schoolofai/tap
+brew install mixaroo-lite
+```
+
+### npm
 
 ```bash
 npm install -g mixaroo-lite
@@ -73,6 +83,7 @@ npx mixaroo-lite "your prompt here"
 
 ### Requirements
 
+- **macOS** (Linux/Windows coming soon)
 - Node.js 18 or higher
 - An API key from OpenAI, Google, or Anthropic
 
@@ -184,6 +195,14 @@ You'll need an API key from one of these providers:
 | Anthropic | claude-3-haiku | [console.anthropic.com](https://console.anthropic.com/) |
 
 All three use their cheapest/fastest models to keep costs minimal.
+
+## Platform Support
+
+| Platform | Status |
+|----------|--------|
+| macOS | ✅ Supported |
+| Linux | 🔜 Coming soon |
+| Windows | 🔜 Coming soon |
 
 ## Contributing
 
