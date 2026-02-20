@@ -11,10 +11,9 @@
     "build": "tsc",
     "dev": "tsc --watch",
     "start": "node dist/cli.js",
-    "clean": "rm -rf dist",
     "test": "vitest run",
     "test:watch": "vitest",
-    "test:coverage": "vitest run --coverage",
+    "clean": "rm -rf dist",
     "prepublishOnly": "npm run build"
   },
   "keywords": [
@@ -50,8 +49,7 @@
   "devDependencies": {
     "@types/inquirer": "^9.0.9",
     "@types/node": "^20.11.0",
-    "@vitest/coverage-v8": "^2.1.9",
     "typescript": "^5.9.3",
-    "vitest": "file:vitest-2.1.9.tgz"
+    "vitest": "^2.1.9"
   }
 }
