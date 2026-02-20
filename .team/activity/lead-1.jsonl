@@ -3,3 +3,4 @@
 {"id":"evt-1771608683751-fs7b","timestamp":"2026-02-20T17:31:23.751Z","event_type":"agent_registered","agent_id":"lead-1","details":{"role":"lead","product":"mixaroo-lite"}}
 {"id":"evt-1771608712746-e3k5","timestamp":"2026-02-20T17:31:52.746Z","event_type":"directive_acknowledged","agent_id":"lead-1","details":{"directive_id":"evt-1771608490735-r80u","action":"context_update","urgency":"interrupt"}}
 {"id":"evt-1771608712784-thdy","timestamp":"2026-02-20T17:31:52.784Z","event_type":"directive_acknowledged","agent_id":"lead-1","details":{"directive_id":"evt-1771608694749-naqm","action":"context_update","urgency":"interrupt"}}
+{"id":"evt-1771608834675-6m0o","timestamp":"2026-02-20T17:33:54.675Z","event_type":"message_sent","agent_id":"lead-1","details":{"from":"lead-1","to":"human","body_preview":"type=proposal_ready\ncycle_id=adopt:mixaroo-lite:2026-02-20T17:31:34.646Z:6b47d09"}}
