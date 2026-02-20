@@ -1,9 +1,11 @@
 {
-  "current": "setup",
-  "previous": null,
+  "current": "discovery",
+  "previous": "setup",
   "started_at": "2026-02-20T17:21:42.415Z",
-  "transitioned_at": "2026-02-20T17:21:42.415Z",
-  "gate_criteria_met": [],
+  "transitioned_at": "2026-02-20T17:22:37.000Z",
+  "gate_criteria_met": ["repo-adopted", "codebase-analyzed"],
   "sub_cycle": null,
-  "history": []
+  "history": [
+    { "phase": "setup", "entered_at": "2026-02-20T17:21:42.415Z", "exited_at": "2026-02-20T17:22:37.000Z", "duration_minutes": 1 }
+  ]
 }
