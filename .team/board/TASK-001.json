@@ -3,11 +3,12 @@
   "type": "task",
   "title": "Set up Vitest testing infrastructure",
   "description": "Add vitest as dev dependency, configure vitest.config.ts for ESM/TypeScript, create test directory structure, add test scripts to package.json. This unblocks all QA work.",
-  "status": "ready",
+  "status": "claimed",
   "priority": "high",
   "depends_on": [],
   "required_role": "developer",
-  "claimed_by": null,
+  "claimed_by": "developer-1",
   "created_at": "2026-02-20T17:53:35.416Z",
-  "created_by": "lead-1"
+  "created_by": "lead-1",
+  "claimed_at": "2026-02-20T17:54:07.164Z"
 }
