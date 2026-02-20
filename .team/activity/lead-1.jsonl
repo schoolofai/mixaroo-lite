@@ -25,3 +25,4 @@
 {"id":"evt-1771610031604-5crf","timestamp":"2026-02-20T17:53:51.604Z","event_type":"message_sent","agent_id":"lead-1","details":{"from":"lead-1","to":"qa-1","body_preview":"Welcome to mixaroo-lite! Board is live. Your high-priority tasks: TASK-004 (unit"}}
 {"id":"evt-1771610031658-hlsd","timestamp":"2026-02-20T17:53:51.658Z","event_type":"message_sent","agent_id":"lead-1","details":{"from":"lead-1","to":"content-writer-1","body_preview":"Welcome to mixaroo-lite! Board is live. Your tasks: TASK-008 (polish HN Show HN "}}
 {"id":"evt-1771610031714-e9lw","timestamp":"2026-02-20T17:53:51.714Z","event_type":"message_sent","agent_id":"lead-1","details":{"from":"lead-1","to":"data-analyst-1","body_preview":"Welcome to mixaroo-lite! Board is live. Your first task: TASK-013 (set up metric"}}
+{"id":"evt-1771612064240-n8p9","timestamp":"2026-02-20T18:27:44.240Z","event_type":"agent_registered","agent_id":"lead-1","details":{"role":"lead","product":"mixaroo-lite"}}
