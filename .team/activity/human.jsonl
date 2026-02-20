@@ -1,1 +1,2 @@
 {"id":"evt-1771608490735-mn5b","timestamp":"2026-02-20T17:28:10.735Z","event_type":"message_sent","agent_id":"human","details":{"agent":"lead-1","message_preview":"=== SYSTEM DIRECTIVE: ADOPT EXISTING REPOSITORY ===\nCommand: octeams adopt https","urgent":true}}
+{"id":"evt-1771608490965-5k5m","timestamp":"2026-02-20T17:28:10.965Z","event_type":"wake_attempted","agent_id":"human","details":{"target":"lead-1","ok":true,"retries":1,"attempts":[{"ok":true,"status":200,"statusText":"OK"}]}}
