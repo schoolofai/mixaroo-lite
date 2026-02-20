@@ -7,3 +7,4 @@
 {"id":"evt-1771610110607-26wt","timestamp":"2026-02-20T17:55:10.607Z","event_type":"message_sent","agent_id":"human","details":{"agent":"lead-1","message_preview":"health check after tui cleanup","urgent":false}}
 {"id":"evt-1771610110856-830z","timestamp":"2026-02-20T17:55:10.856Z","event_type":"wake_attempted","agent_id":"human","details":{"target":"lead-1","ok":true,"retries":1,"attempts":[{"ok":true,"status":200,"statusText":"OK"}]}}
 {"id":"evt-1771612095648-e1lx","timestamp":"2026-02-20T18:28:15.648Z","event_type":"message_sent","agent_id":"human","details":{"agent":"lead-1","message_preview":"status ping after chat lock test","urgent":false}}
+{"id":"evt-1771612095928-1l2h","timestamp":"2026-02-20T18:28:15.928Z","event_type":"wake_attempted","agent_id":"human","details":{"target":"lead-1","ok":true,"retries":1,"attempts":[{"ok":true,"status":200,"statusText":"OK"}]}}
