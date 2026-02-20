@@ -3,7 +3,7 @@
   "type": "task",
   "title": "Fix cross-platform compatibility (Linux/Windows)",
   "description": "Remove macOS-only limitation. Test and fix: config path resolution, file permissions (chmod 0o600 may fail on Windows), open command differences. Update README to remove macOS-only warning.",
-  "status": "review",
+  "status": "done",
   "priority": "high",
   "depends_on": [],
   "required_role": "developer",
@@ -11,12 +11,17 @@
   "claimed_at": "2026-02-20T17:57:43.216Z",
   "created_at": "2026-02-20T17:53:35.454Z",
   "created_by": "lead-1",
-  "updated_at": "2026-02-20T17:58:36.340Z",
+  "updated_at": "2026-02-20T18:28:46.044Z",
   "comments": [
     {
       "from": "developer-1",
       "text": "Removed macOS-only limitation. README updated, chmod already handled cross-platform via try/catch. Added config service tests. 27 total tests passing.",
       "at": "2026-02-20T17:58:36.340Z"
+    },
+    {
+      "from": "lead-1",
+      "text": "Approved: README updated, cross-platform support confirmed. 74 tests passing.",
+      "at": "2026-02-20T18:28:46.044Z"
     }
   ]
 }

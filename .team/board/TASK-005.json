@@ -3,7 +3,7 @@
   "type": "task",
   "title": "Write unit tests for YouTube service (youtube.ts)",
   "description": "Test searchSong() with mocked yt-search: found/not-found cases, retry logic across query variations. Test buildPlaylistUrl() with empty/single/many IDs. Test getSearchStats() accuracy. Test rate limiting delay.",
-  "status": "review",
+  "status": "done",
   "priority": "high",
   "depends_on": [],
   "required_role": "qa",
@@ -11,12 +11,17 @@
   "claimed_at": "2026-02-20T17:56:58.138Z",
   "created_at": "2026-02-20T17:53:35.556Z",
   "created_by": "lead-1",
-  "updated_at": "2026-02-20T17:57:44.601Z",
+  "updated_at": "2026-02-20T18:28:46.123Z",
   "comments": [
     {
       "from": "qa-1",
       "text": "21 unit tests for youtube.ts - all passing. Covers searchSong retry logic, searchSongs with progress, buildPlaylistUrl edge cases, getSearchStats.",
       "at": "2026-02-20T17:57:44.601Z"
+    },
+    {
+      "from": "lead-1",
+      "text": "Approved: YouTube service tests solid — search retry, buildPlaylistUrl edges, stats.",
+      "at": "2026-02-20T18:28:46.123Z"
     }
   ]
 }
