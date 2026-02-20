@@ -6,3 +6,7 @@
 {"id":"evt-1771610264602-uwzj","timestamp":"2026-02-20T17:57:44.602Z","event_type":"task_updated","agent_id":"qa-1","details":{"task_id":"TASK-005","old_status":"claimed","new_status":"review"}}
 {"id":"evt-1771610360147-pswh","timestamp":"2026-02-20T17:59:20.147Z","event_type":"task_updated","agent_id":"qa-1","details":{"task_id":"TASK-001","old_status":"review","new_status":"done"}}
 {"id":"evt-1771610367258-hlcl","timestamp":"2026-02-20T17:59:27.258Z","event_type":"message_sent","agent_id":"qa-1","details":{"from":"qa-1","to":"developer-1","body_preview":"Reviewed TASK-001 — found a bug: vitest include pattern only matched tests/**/*."}}
+{"id":"evt-1771610376673-17nc","timestamp":"2026-02-20T17:59:36.673Z","event_type":"wake_escalated","agent_id":"qa-1","details":{"task_id":"TASK-001","reason":"missing_handoff","to_status":"done"}}
+{"id":"evt-1771610376694-gcgj","timestamp":"2026-02-20T17:59:36.694Z","event_type":"wake_attempted","agent_id":"qa-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-001","ok":true}}
+{"id":"evt-1771610376697-d5ps","timestamp":"2026-02-20T17:59:36.697Z","event_type":"wake_escalated","agent_id":"qa-1","details":{"task_id":"TASK-002","reason":"missing_handoff","to_status":"review"}}
+{"id":"evt-1771610376698-m7xr","timestamp":"2026-02-20T17:59:36.698Z","event_type":"wake_attempted","agent_id":"qa-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-002","ok":true}}
