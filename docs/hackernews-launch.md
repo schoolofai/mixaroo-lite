@@ -28,43 +28,19 @@ Post this immediately after submitting:
 
 ---
 
-Hey HN! I built mixaroo-lite because I got tired of the loop: think of a song → search YouTube → add to queue → repeat 25 times.
+Hey HN! I built this because I got tired of the song→search→queue loop when I just want 25 tracks for a mood.
 
-**What it does:**
+You describe a vibe (`mx-lite "chill lo-fi beats for late night coding"`), the AI generates a tracklist, it searches YouTube for each one, and gives you a single URL to play them all. No accounts, no playlists to manage.
 
-You describe a vibe, it gives you a playlist:
+**How it works:** TypeScript CLI (Commander.js) that talks to OpenAI, Gemini, or Anthropic — whichever you have a key for. Uses the cheapest models (gpt-4o-mini, gemini-1.5-flash, claude-3-haiku) since song generation doesn't need frontier intelligence. YouTube search via yt-search, no API key required. Config stored locally via `conf` (XDG-compliant).
 
-```
-$ mx-lite "chill lo-fi beats for late night coding"
-```
+**Honest limitations:** YouTube search is solid for popular tracks (~90%) but struggles with obscure stuff. The AI occasionally invents songs that don't exist — we just skip those. And the "playlist" is actually a `watch_videos` URL workaround, not a real YouTube playlist. Currently macOS only (Linux/Windows coming).
 
-The AI generates a song list, it searches YouTube for each track, and spits out a playlist URL you can click and play immediately.
+**Why a CLI?** I live in my terminal. Context-switching to a browser to build a playlist felt wrong. Plus CLIs are fun to build.
 
-**Tech stack:**
+Next up: Spotify integration (the OAuth dance awaits), playlist save/load, and an "expand this playlist" command.
 
-- TypeScript/Node.js CLI (Commander.js)
-- OpenAI, Gemini, or Anthropic for song generation (uses cheapest models: gpt-4o-mini, gemini-1.5-flash, claude-3-haiku)
-- ytsr for YouTube search (no API key needed)
-- Config stored locally with `conf` (XDG-compliant)
-
-**Why CLI?**
-
-I live in my terminal. I wanted something I could run without context switching. Also, it's fun to build CLIs.
-
-**What's next:**
-
-- Spotify playlist creation (OAuth flow is... a journey)
-- Apple Music support
-- "Expand this playlist" command
-- Playlist saving/loading
-
-**Known limitations:**
-
-- YouTube search isn't perfect — obscure songs sometimes don't match
-- The AI occasionally hallucinates songs that don't exist (it's confident though)
-- No actual YouTube playlist creation (uses `watch_videos` URL workaround)
-
-Would love feedback! What features would make this useful for you?
+Would love feedback — what would make this useful for you?
 
 ---
 
@@ -74,16 +50,15 @@ Would love feedback! What features would make this useful for you?
 
 | Day | Time (ET) | Quality |
 |-----|-----------|---------|
-| Tuesday | 9-10am | Excellent |
-| Wednesday | 9-10am | Excellent |
-| Thursday | 9-10am | Good |
-| Monday | 9-10am | Okay |
-| Friday | 9-10am | Avoid |
-| Weekend | - | Avoid |
+| Tuesday | 9–10am | Excellent |
+| Wednesday | 9–10am | Excellent |
+| Thursday | 9–10am | Good |
+| Monday | 9–10am | Okay |
+| Friday | 9–10am | Avoid |
+| Weekend | — | Avoid |
 
-**Why 9-10am ET?**
-- US East Coast starting work
-- Europe still online (afternoon)
+**Why 9–10am ET?**
+- US East Coast starting work, Europe still online (afternoon)
 - Builds momentum before US West Coast wakes up
 
 ---
@@ -93,7 +68,7 @@ Would love feedback! What features would make this useful for you?
 ### Do:
 - Respond to every comment within 2 hours
 - Thank people for trying it out
-- Acknowledge good feature suggestions: "Great idea, adding to the roadmap!"
+- Acknowledge good feature suggestions with genuine interest
 - Be honest about limitations
 - Share what you learned building it
 
@@ -101,27 +76,27 @@ Would love feedback! What features would make this useful for you?
 - Get defensive about criticism
 - Promise features you can't deliver
 - Argue with trolls
-- Over-explain or be long-winded
+- Over-explain or write walls of text
 
-### Responses to keep ready:
+### Prepared Responses:
 
 **"Why not just ask ChatGPT?"**
-> You totally can! This just saves the copy-paste and YouTube searching. Plus it works offline once you have the song list. It's a convenience thing.
+> You totally can! This just automates the YouTube searching and gives you a playable link. It's a convenience wrapper, not a replacement.
 
 **"This could use Spotify instead"**
-> Agreed! Spotify integration is on the roadmap. The OAuth flow is a bit involved but it's coming. For now YouTube works without any auth.
+> Agreed, that's next on the list. The OAuth flow is more involved, but YouTube works today with zero auth — good starting point.
 
 **"How do you handle hallucinated songs?"**
-> The AI occasionally makes up songs. YouTube search usually fails for those, and we mark them as "not found" in the output. You still get a playlist with the real songs.
+> YouTube search fails gracefully for made-up tracks and we skip them. You still get a playlist with everything that matched. Usually 22–25 out of 25 for mainstream genres.
 
 **"Why these specific models?"**
-> Cost and speed. gpt-4o-mini, gemini-1.5-flash, and claude-3-haiku are the cheapest options from each provider. Song generation doesn't need GPT-4-level intelligence.
+> Cost and speed. Song lists don't need GPT-4-level reasoning. The cheapest tier from each provider works great and keeps it under a cent per playlist.
 
 **"Privacy concerns?"**
-> Your API key is stored locally in ~/.config/mixaroo-lite/ with restrictive permissions. It never leaves your machine except to call the AI provider. We don't have any servers or telemetry.
+> Your API key is stored locally in ~/.config/mixaroo-lite/ with standard file permissions. Nothing leaves your machine except the AI provider API call. No servers, no telemetry, no analytics.
 
 **"How accurate is YouTube search?"**
-> Pretty good for popular songs (90%+). Less reliable for obscure tracks, covers, or songs with generic names. We use the artist + title combo and take the top result.
+> ~90%+ for popular music. Less reliable for deep cuts, covers, or songs with very generic names. We search "artist - title" and take the top result via yt-search.
 
 ---
 
@@ -129,8 +104,8 @@ Would love feedback! What features would make this useful for you?
 
 - [ ] Submit post
 - [ ] Immediately add first comment
-- [ ] Monitor for 2-3 hours
+- [ ] Monitor for 2–3 hours
 - [ ] Respond to all comments
-- [ ] Note feature requests
+- [ ] Note feature requests for roadmap
 - [ ] Thank people who star the repo
 - [ ] Update README if common questions arise

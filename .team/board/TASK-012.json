@@ -3,11 +3,20 @@
   "type": "task",
   "title": "Create CHANGELOG.md",
   "description": "Create CHANGELOG.md documenting v1.0.0 features: AI-powered playlist generation (3 providers), YouTube search + playlist URL, interactive setup, config management. Follow Keep a Changelog format.",
-  "status": "ready",
+  "status": "review",
   "priority": "medium",
   "depends_on": [],
   "required_role": "content-writer",
-  "claimed_by": null,
+  "claimed_by": "content-writer-1",
+  "claimed_at": "2026-02-20T17:55:19.082Z",
   "created_at": "2026-02-20T17:53:35.806Z",
-  "created_by": "lead-1"
+  "created_by": "lead-1",
+  "updated_at": "2026-02-20T17:55:34.989Z",
+  "comments": [
+    {
+      "from": "content-writer-1",
+      "text": "Created CHANGELOG.md for v1.0.0 following Keep a Changelog format. Covers all features, known issues, and links.",
+      "at": "2026-02-20T17:55:34.989Z"
+    }
+  ]
 }

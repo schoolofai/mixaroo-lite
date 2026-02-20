@@ -3,11 +3,20 @@
   "type": "task",
   "title": "Polish and finalize Twitter launch thread",
   "description": "Review and polish docs/twitter-launch-thread.md. Ensure tweets are within character limits, hooks are compelling, CTAs are clear. Add placeholder for demo GIF reference.",
-  "status": "ready",
+  "status": "review",
   "priority": "high",
   "depends_on": [],
   "required_role": "content-writer",
-  "claimed_by": null,
+  "claimed_by": "content-writer-1",
+  "claimed_at": "2026-02-20T17:54:55.960Z",
   "created_at": "2026-02-20T17:53:35.697Z",
-  "created_by": "lead-1"
+  "created_by": "lead-1",
+  "updated_at": "2026-02-20T17:55:15.082Z",
+  "comments": [
+    {
+      "from": "content-writer-1",
+      "text": "Polished Twitter thread: fixed ytsr→yt-search, added cost angle (under 1¢), macOS-only note, added fun prompt example, tightened copy throughout",
+      "at": "2026-02-20T17:55:15.082Z"
+    }
+  ]
 }
