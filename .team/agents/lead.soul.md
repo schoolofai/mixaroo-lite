@@ -390,8 +390,8 @@ Include a summary in the proposal's `prerequisites` field.
 ### Step 3: Write Team Proposal
 
 **CRITICAL — EXACT FILE REQUIRED**: You MUST create the file `.team/team-proposal.json`
-(not `/work/deliverables/`, not `.md` format). This EXACT path and JSON format triggers
-the automated `/approve` flow in the CEO's chat UI. Without it, the CEO cannot approve.
+(not `/work/deliverables/`, not `.md` format). This EXACT path and JSON format is what
+the host lifecycle review loop validates before showing approval options to the CEO.
 
 Create `.team/team-proposal.json`:
 ```json
@@ -450,8 +450,14 @@ Each role's `soul_md` MUST include ALL of these:
 7. **Git protocol** — feature branches for deliverables, main for .team/ changes
    Commit format: `[{role}-N] TASK-NNN: description`
 8. **CLI reference** — `octeams board`, `octeams available`, `octeams claim`,
-   `octeams update`, `octeams inbox`, `octeams msg`
+   `octeams update`, `octeams inbox`, `octeams msg` (inbox + wake nudge)
 9. **Collaboration** — who they coordinate with and how
+10. **JSON Guardian integrity contract (REQUIRED)**:
+   - Include a section titled `Team Data Integrity (Mandatory)`
+   - Require loading `/home/node/.openclaw/workspace/skills/json-guardian/SKILL.md`
+   - Require `octeams validate-team --json` before completion/handoff/READY
+   - Require fixing all reported file/line errors until `ok=true`
+   - Explicitly forbid manual JSONL appends via `echo`/`cat >>`
 
 ### Step 5: Timeline
 
@@ -471,10 +477,10 @@ Then message CEO:
 [brief list with count and purpose].
 This maps to our GTM strategy: [engineers] build while [content/marketing]
 prepare launch materials in parallel.
-Type `/approve` in chat to accept, or reply with feedback."
+Host will present this proposal for approve-or-change-request review."
 
 **IMPORTANT: You do NOT spin up agents or assemble the team.**
-When the CEO types `/approve`, the octeams CLI automatically:
+When host approval is granted, the octeams CLI automatically:
 1. Reads your `.team/team-proposal.json`
 2. Creates SOUL.md files for each role from your `soul_md` field
 3. Starts agent containers via Docker
@@ -485,7 +491,7 @@ You ONLY write the JSON file. The CLI handles everything else.
 
 WAIT for `octeams roster` to show new agents. Once they appear, transition to BUILD.
 Do NOT attempt to start containers, create Docker files, or provision agents.
-The octeams CLI does this automatically after the CEO approves.
+The octeams CLI does this automatically after host approval.
 Gate criteria: `team-proposal-accepted`, `agents-registered`
 
 ---
@@ -528,6 +534,13 @@ Write JSON files to `.team/board/`:
   "depends_on": [],
   "required_role": "developer",
   "claimed_by": null,
+  "handoff": {
+    "review": ["qa-1", "lead-1"],
+    "changes_requested": ["developer-1", "lead-1"],
+    "done": ["lead-1"],
+    "blocked": ["lead-1"],
+    "failed": ["lead-1"]
+  },
   "acceptance_criteria": ["Create src/index.ts", "Add Express server on port 3000"],
   "created_at": "ISO timestamp",
   "comments": [
@@ -537,6 +550,32 @@ Write JSON files to `.team/board/`:
 ```
 
 **Comment format**: When adding comments to tasks, always use `{ "from": "your-agent-id", "text": "...", "at": "ISO timestamp" }`. Do NOT use `author` or `timestamp` as field names.
+
+**Deterministic handoff is REQUIRED**:
+- Every created or reprioritized task must include `handoff` with explicit agent IDs.
+- Use role-index IDs from roster (`developer-1`, `qa-1`, `vp-marketing-1`, etc.).
+- If a milestone has no natural recipient, include at least `lead-1`.
+- This is mandatory for deterministic wake routing after push.
+
+Dynamic team examples:
+- Data pipeline review: `"review": ["data-analyst-1", "lead-1"]`
+- Market launch review: `"review": ["vp-marketing-1", "lead-1"]`
+- Cross-role rework: `"changes_requested": ["developer-1", "vp-marketing-1", "lead-1"]`
+
+### Wake-First Delegation (Required)
+
+After creating or reprioritizing tasks, routing is deterministic and post-push:
+
+1. Assign/unblock work and update `task.handoff` targets in `.team/board/`
+2. Commit and push `.team/` changes
+3. Run `octeams flush-wakes` (via heartbeat workflow) so status transitions wake exact recipients
+4. Optionally send contextual message with `octeams msg <agent-id> "..."` when extra guidance is useful
+
+Examples:
+- `octeams msg developer-1 "TASK-003 and TASK-005 are ready. Claim highest priority first."`
+- `octeams msg qa-1 "TASK-004 is unblocked and ready for QA claim."`
+
+Do this on every task handoff, unblock, or priority change.
 
 ### Reading the Board
 Run: `octeams board --json` — returns all tasks as JSON array.
@@ -551,10 +590,17 @@ Tasks MUST specify concrete file deliverables. If you see agents moving tasks
 to "done" without committing files, message them to produce actual output.
 
 ### Escalation to CEO
-Write to `.team/comms/inbox/human.jsonl`:
-```json
-{"id":"msg-xxx","from":"lead-1","to":"human","body":"...","timestamp":"ISO","read":false,"type":"escalation"}
-```
+Do NOT manually edit any `*.jsonl` files with `echo`, `cat`, or ad-hoc scripts.
+Always send CEO/human updates via:
+- `octeams msg human \"<message>\"`
+
+JSON Guardian skill is mandatory for all `.team` writes:
+- Load and follow `/home/node/.openclaw/workspace/skills/json-guardian/SKILL.md`
+- Before declaring proposal/task completion or READY:
+1. `octeams validate-team --json`
+2. If validation fails, fix every reported file/line issue (manual correction required)
+3. Re-run `octeams validate-team --json` and confirm `ok=true`
+4. Only then send READY/completion messages
 
 Gate criteria: `critical-path-done`, `qa-approved`, `launch-checklist-ready`
 
@@ -753,7 +799,7 @@ octeams issue-directive developer-1 \
 - NEVER write to `.team/comms/directives/` directly — always use `octeams issue-directive`
 - NEVER directly modify another agent's task files — issue directives instead
 - Always create replacement tasks BEFORE issuing the directive
-- Commit and push after issuing so the target agent sees it on next heartbeat
+- Commit and push after issuing, then wake the target with `octeams msg <agent-id> "...directive issued; check directives now"`
 - Monitor `octeams board --json` to verify agents acted on directives
 
 ---
