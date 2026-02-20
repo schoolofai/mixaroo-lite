@@ -4,3 +4,5 @@
 {"id":"evt-1771610243334-qpi7","timestamp":"2026-02-20T17:57:23.334Z","event_type":"task_updated","agent_id":"developer-1","details":{"task_id":"TASK-001","old_status":"claimed","new_status":"review"}}
 {"id":"evt-1771610259356-n4ir","timestamp":"2026-02-20T17:57:39.356Z","event_type":"message_sent","agent_id":"developer-1","details":{"from":"developer-1","to":"qa-1","body_preview":"TASK-001 (Vitest testing infra) is ready for review. 21 tests passing across err"}}
 {"id":"evt-1771610263216-cyy6","timestamp":"2026-02-20T17:57:43.216Z","event_type":"task_claimed","agent_id":"developer-1","details":{"task_id":"TASK-002","title":"Fix cross-platform compatibility (Linux/Windows)"}}
+{"id":"evt-1771610316341-a7cp","timestamp":"2026-02-20T17:58:36.341Z","event_type":"task_updated","agent_id":"developer-1","details":{"task_id":"TASK-002","old_status":"claimed","new_status":"review"}}
+{"id":"evt-1771610320036-gaq6","timestamp":"2026-02-20T17:58:40.036Z","event_type":"message_sent","agent_id":"developer-1","details":{"from":"developer-1","to":"qa-1","body_preview":"TASK-002 (cross-platform support) ready for review. README updated, code was alr"}}
