@@ -6,3 +6,9 @@
 {"id":"evt-1771610263216-cyy6","timestamp":"2026-02-20T17:57:43.216Z","event_type":"task_claimed","agent_id":"developer-1","details":{"task_id":"TASK-002","title":"Fix cross-platform compatibility (Linux/Windows)"}}
 {"id":"evt-1771610316341-a7cp","timestamp":"2026-02-20T17:58:36.341Z","event_type":"task_updated","agent_id":"developer-1","details":{"task_id":"TASK-002","old_status":"claimed","new_status":"review"}}
 {"id":"evt-1771610320036-gaq6","timestamp":"2026-02-20T17:58:40.036Z","event_type":"message_sent","agent_id":"developer-1","details":{"from":"developer-1","to":"qa-1","body_preview":"TASK-002 (cross-platform support) ready for review. README updated, code was alr"}}
+{"id":"evt-1771610324291-cvgl","timestamp":"2026-02-20T17:58:44.291Z","event_type":"wake_escalated","agent_id":"developer-1","details":{"task_id":"TASK-002","reason":"missing_handoff","to_status":"review"}}
+{"id":"evt-1771610324312-ve88","timestamp":"2026-02-20T17:58:44.312Z","event_type":"wake_attempted","agent_id":"developer-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-002","ok":true}}
+{"id":"evt-1771610324314-gf68","timestamp":"2026-02-20T17:58:44.314Z","event_type":"wake_escalated","agent_id":"developer-1","details":{"task_id":"TASK-004","reason":"missing_handoff","to_status":"review"}}
+{"id":"evt-1771610324316-l0re","timestamp":"2026-02-20T17:58:44.316Z","event_type":"wake_attempted","agent_id":"developer-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-004","ok":true}}
+{"id":"evt-1771610324317-9ka4","timestamp":"2026-02-20T17:58:44.317Z","event_type":"wake_escalated","agent_id":"developer-1","details":{"task_id":"TASK-005","reason":"missing_handoff","to_status":"review"}}
+{"id":"evt-1771610324319-owsq","timestamp":"2026-02-20T17:58:44.319Z","event_type":"wake_attempted","agent_id":"developer-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-005","ok":true}}
