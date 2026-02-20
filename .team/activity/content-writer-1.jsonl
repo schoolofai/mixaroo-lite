@@ -6,3 +6,4 @@
 {"id":"evt-1771610115083-c732","timestamp":"2026-02-20T17:55:15.083Z","event_type":"task_updated","agent_id":"content-writer-1","details":{"task_id":"TASK-009","old_status":"claimed","new_status":"review"}}
 {"id":"evt-1771610119083-tx1i","timestamp":"2026-02-20T17:55:19.083Z","event_type":"task_claimed","agent_id":"content-writer-1","details":{"task_id":"TASK-012","title":"Create CHANGELOG.md"}}
 {"id":"evt-1771610134990-ul0i","timestamp":"2026-02-20T17:55:34.990Z","event_type":"task_updated","agent_id":"content-writer-1","details":{"task_id":"TASK-012","old_status":"claimed","new_status":"review"}}
+{"id":"evt-1771612059056-1v1x","timestamp":"2026-02-20T18:27:39.056Z","event_type":"agent_registered","agent_id":"content-writer-1","details":{"role":"content-writer","product":"mixaroo-lite"}}
