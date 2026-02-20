@@ -1,2 +1,6 @@
 {"id":"evt-1771608880163-6v1a","timestamp":"2026-02-20T17:34:40.163Z","event_type":"agent_registered","agent_id":"qa-1","details":{"role":"qa","product":"mixaroo-lite"}}
 {"id":"evt-1771609120772-tcw7","timestamp":"2026-02-20T17:38:40.772Z","event_type":"agent_registered","agent_id":"qa-1","details":{"role":"qa","product":"mixaroo-lite"}}
+{"id":"evt-1771610059976-00iy","timestamp":"2026-02-20T17:54:19.976Z","event_type":"task_claimed","agent_id":"qa-1","details":{"task_id":"TASK-004","title":"Write unit tests for AI service (ai.ts)"}}
+{"id":"evt-1771610218090-186m","timestamp":"2026-02-20T17:56:58.090Z","event_type":"task_updated","agent_id":"qa-1","details":{"task_id":"TASK-004","old_status":"claimed","new_status":"review"}}
+{"id":"evt-1771610218138-baog","timestamp":"2026-02-20T17:56:58.138Z","event_type":"task_claimed","agent_id":"qa-1","details":{"task_id":"TASK-005","title":"Write unit tests for YouTube service (youtube.ts)"}}
+{"id":"evt-1771610264602-uwzj","timestamp":"2026-02-20T17:57:44.602Z","event_type":"task_updated","agent_id":"qa-1","details":{"task_id":"TASK-005","old_status":"claimed","new_status":"review"}}
