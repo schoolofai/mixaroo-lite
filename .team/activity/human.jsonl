@@ -3,3 +3,4 @@
 {"id":"evt-1771608694748-3upd","timestamp":"2026-02-20T17:31:34.748Z","event_type":"message_sent","agent_id":"human","details":{"agent":"lead-1","message_preview":"=== SYSTEM DIRECTIVE: ADOPT EXISTING REPOSITORY ===\nCommand: octeams adopt https","urgent":true}}
 {"id":"evt-1771608694974-6e8s","timestamp":"2026-02-20T17:31:34.974Z","event_type":"wake_attempted","agent_id":"human","details":{"target":"lead-1","ok":true,"retries":1,"attempts":[{"ok":true,"status":200,"statusText":"OK"}]}}
 {"id":"evt-1771609965115-7rsf","timestamp":"2026-02-20T17:52:45.115Z","event_type":"message_sent","agent_id":"human","details":{"agent":"lead-1","message_preview":"Status check after lock cleanup: reply with current phase and active blockers.","urgent":false}}
+{"id":"evt-1771609965359-4lgf","timestamp":"2026-02-20T17:52:45.359Z","event_type":"wake_attempted","agent_id":"human","details":{"target":"lead-1","ok":true,"retries":1,"attempts":[{"ok":true,"status":200,"statusText":"OK"}]}}
