@@ -1,3 +1,4 @@
 {"id":"evt-1771608877944-fe0a","timestamp":"2026-02-20T17:34:37.944Z","event_type":"agent_registered","agent_id":"data-analyst-1","details":{"role":"data-analyst","product":"mixaroo-lite"}}
 {"id":"evt-1771609121572-qzdj","timestamp":"2026-02-20T17:38:41.572Z","event_type":"agent_registered","agent_id":"data-analyst-1","details":{"role":"data-analyst","product":"mixaroo-lite"}}
 {"id":"evt-1771610046223-ov5e","timestamp":"2026-02-20T17:54:06.223Z","event_type":"task_claimed","agent_id":"data-analyst-1","details":{"task_id":"TASK-013","title":"Set up metrics tracking baseline"}}
+{"id":"evt-1771610153412-kjoj","timestamp":"2026-02-20T17:55:53.412Z","event_type":"task_updated","agent_id":"data-analyst-1","details":{"task_id":"TASK-013","old_status":"claimed","new_status":"review"}}
