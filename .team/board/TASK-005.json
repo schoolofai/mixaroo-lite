@@ -1,0 +1,13 @@
+{
+  "id": "TASK-005",
+  "type": "task",
+  "title": "Write unit tests for YouTube service (youtube.ts)",
+  "description": "Test searchSong() with mocked yt-search: found/not-found cases, retry logic across query variations. Test buildPlaylistUrl() with empty/single/many IDs. Test getSearchStats() accuracy. Test rate limiting delay.",
+  "status": "ready",
+  "priority": "high",
+  "depends_on": [],
+  "required_role": "qa",
+  "claimed_by": null,
+  "created_at": "2026-02-20T17:53:35.556Z",
+  "created_by": "lead-1"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "TASK-004",
+  "type": "task",
+  "title": "Write unit tests for AI service (ai.ts)",
+  "description": "Test parseAIResponse() with: valid JSON, markdown-wrapped JSON, malformed JSON, missing fields, empty arrays. Test each provider class with mocked API responses. Test error handling for 401/429/network errors.",
+  "status": "ready",
+  "priority": "high",
+  "depends_on": [],
+  "required_role": "qa",
+  "claimed_by": null,
+  "created_at": "2026-02-20T17:53:35.523Z",
+  "created_by": "lead-1"
+}

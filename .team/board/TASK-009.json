@@ -1,0 +1,13 @@
+{
+  "id": "TASK-009",
+  "type": "task",
+  "title": "Polish and finalize Twitter launch thread",
+  "description": "Review and polish docs/twitter-launch-thread.md. Ensure tweets are within character limits, hooks are compelling, CTAs are clear. Add placeholder for demo GIF reference.",
+  "status": "ready",
+  "priority": "high",
+  "depends_on": [],
+  "required_role": "content-writer",
+  "claimed_by": null,
+  "created_at": "2026-02-20T17:53:35.697Z",
+  "created_by": "lead-1"
+}

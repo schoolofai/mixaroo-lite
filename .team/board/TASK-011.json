@@ -1,0 +1,13 @@
+{
+  "id": "TASK-011",
+  "type": "task",
+  "title": "Write Reddit launch posts",
+  "description": "Draft posts for r/commandline, r/node, r/programming. Match each subreddit's tone and rules. Save to docs/reddit-posts.md.",
+  "status": "backlog",
+  "priority": "medium",
+  "depends_on": [],
+  "required_role": "content-writer",
+  "claimed_by": null,
+  "created_at": "2026-02-20T17:53:35.769Z",
+  "created_by": "lead-1"
+}

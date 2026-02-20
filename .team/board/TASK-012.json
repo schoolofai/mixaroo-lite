@@ -1,0 +1,13 @@
+{
+  "id": "TASK-012",
+  "type": "task",
+  "title": "Create CHANGELOG.md",
+  "description": "Create CHANGELOG.md documenting v1.0.0 features: AI-powered playlist generation (3 providers), YouTube search + playlist URL, interactive setup, config management. Follow Keep a Changelog format.",
+  "status": "ready",
+  "priority": "medium",
+  "depends_on": [],
+  "required_role": "content-writer",
+  "claimed_by": null,
+  "created_at": "2026-02-20T17:53:35.806Z",
+  "created_by": "lead-1"
+}

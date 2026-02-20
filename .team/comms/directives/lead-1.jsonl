@@ -3,3 +3,4 @@
 {"ack":"evt-1771608490735-r80u","at":"2026-02-20T17:31:52.745Z"}
 {"ack":"evt-1771608694749-naqm","at":"2026-02-20T17:31:52.784Z"}
 {"id":"evt-1771608846830-uy68","from":"human","to":"lead-1","urgency":"interrupt","action":"context_update","affected_tasks":[],"replacement_tasks":[],"reason":"Team proposal approved and containers assembled. Transition to planning/build now, create tasks on .team/board, and dispatch work to the team.","timestamp":"2026-02-20T17:34:06.830Z","acknowledged":false}
+{"ack":"evt-1771608846830-uy68","at":"2026-02-20T17:52:57.520Z"}

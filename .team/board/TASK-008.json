@@ -1,0 +1,13 @@
+{
+  "id": "TASK-008",
+  "type": "task",
+  "title": "Polish and finalize HN Show HN post",
+  "description": "Review and polish docs/hackernews-launch.md. Tighten the first comment, verify all claims match current code, ensure tone matches HN culture. Output: final launch-ready copy.",
+  "status": "ready",
+  "priority": "high",
+  "depends_on": [],
+  "required_role": "content-writer",
+  "claimed_by": null,
+  "created_at": "2026-02-20T17:53:35.663Z",
+  "created_by": "lead-1"
+}
