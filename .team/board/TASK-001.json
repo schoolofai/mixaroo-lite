@@ -3,12 +3,20 @@
   "type": "task",
   "title": "Set up Vitest testing infrastructure",
   "description": "Add vitest as dev dependency, configure vitest.config.ts for ESM/TypeScript, create test directory structure, add test scripts to package.json. This unblocks all QA work.",
-  "status": "claimed",
+  "status": "review",
   "priority": "high",
   "depends_on": [],
   "required_role": "developer",
   "claimed_by": "developer-1",
+  "claimed_at": "2026-02-20T17:54:07.164Z",
   "created_at": "2026-02-20T17:53:35.416Z",
   "created_by": "lead-1",
-  "claimed_at": "2026-02-20T17:54:07.164Z"
+  "updated_at": "2026-02-20T17:57:23.333Z",
+  "comments": [
+    {
+      "from": "developer-1",
+      "text": "Vitest infrastructure ready: config, scripts, 21 passing tests (errors + youtube). Note: npm has omit=dev globally — use --include=dev for installs.",
+      "at": "2026-02-20T17:57:23.333Z"
+    }
+  ]
 }

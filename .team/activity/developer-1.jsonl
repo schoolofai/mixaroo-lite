@@ -1,3 +1,4 @@
 {"id":"evt-1771608874734-sjrx","timestamp":"2026-02-20T17:34:34.734Z","event_type":"agent_registered","agent_id":"developer-1","details":{"role":"developer","product":"mixaroo-lite"}}
 {"id":"evt-1771609118766-ty3j","timestamp":"2026-02-20T17:38:38.766Z","event_type":"agent_registered","agent_id":"developer-1","details":{"role":"developer","product":"mixaroo-lite"}}
 {"id":"evt-1771610047164-m9a2","timestamp":"2026-02-20T17:54:07.164Z","event_type":"task_claimed","agent_id":"developer-1","details":{"task_id":"TASK-001","title":"Set up Vitest testing infrastructure"}}
+{"id":"evt-1771610243334-qpi7","timestamp":"2026-02-20T17:57:23.334Z","event_type":"task_updated","agent_id":"developer-1","details":{"task_id":"TASK-001","old_status":"claimed","new_status":"review"}}
