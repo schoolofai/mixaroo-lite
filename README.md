@@ -6,8 +6,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Node.js Version](https://img.shields.io/node/v/mixaroo-lite.svg)](https://nodejs.org/)
 
-> ⚠️ **Currently macOS only.** Linux and Windows support coming soon.
-
 ---
 
 ```
@@ -83,7 +81,7 @@ npx mixaroo-lite "your prompt here"
 
 ### Requirements
 
-- **macOS** (Linux/Windows coming soon)
+- **macOS, Linux, or Windows**
 - Node.js 18 or higher
 - An API key from OpenAI, Google, or Anthropic
 
@@ -201,8 +199,8 @@ All three use their cheapest/fastest models to keep costs minimal.
 | Platform | Status |
 |----------|--------|
 | macOS | ✅ Supported |
-| Linux | 🔜 Coming soon |
-| Windows | 🔜 Coming soon |
+| Linux | ✅ Supported |
+| Windows | ✅ Supported |
 
 ## Contributing
 
