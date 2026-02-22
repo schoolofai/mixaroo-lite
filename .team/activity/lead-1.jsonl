@@ -112,3 +112,4 @@
 {"id":"evt-1771788135433-l6q2","timestamp":"2026-02-22T19:22:15.433Z","event_type":"wake_escalated","agent_id":"lead-1","details":{"task_id":"TASK-015","from_status":"review","to_status":"done","reason":"missing_handoff_self_handled"}}
 {"id":"evt-1771788135435-ligs","timestamp":"2026-02-22T19:22:15.435Z","event_type":"wake_escalated","agent_id":"lead-1","details":{"task_id":"TASK-017","from_status":"backlog","to_status":"ready","reason":"missing_handoff_self_handled"}}
 {"id":"evt-1771788135436-4j1d","timestamp":"2026-02-22T19:22:15.436Z","event_type":"wake_escalated","agent_id":"lead-1","details":{"task_id":"TASK-021","from_status":"review","to_status":"done","reason":"missing_handoff_self_handled"}}
+{"id":"evt-1771788222471-bl5r","timestamp":"2026-02-22T19:23:42.471Z","event_type":"message_sent","agent_id":"lead-1","details":{"from":"lead-1","to":"qa-1","body_preview":"Two tasks ready for QA: TASK-022 (error handling review) and TASK-023 (history c"}}

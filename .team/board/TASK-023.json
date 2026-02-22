@@ -1,0 +1,19 @@
+{
+  "id": "TASK-023",
+  "title": "QA review: playlist history command",
+  "description": "Review and test TASK-017 implementation. Verify history auto-logging, mx-lite history command, --limit flag, edge cases (empty history, corrupted file).",
+  "status": "ready",
+  "priority": "medium",
+  "role": "qa",
+  "claimed_by": null,
+  "created_at": "2026-02-22T19:23:00.000Z",
+  "updated_at": "2026-02-22T19:23:00.000Z",
+  "acceptance_criteria": [
+    "All existing tests pass",
+    "History tests pass",
+    "Edge cases verified",
+    "No regressions"
+  ],
+  "depends_on": ["TASK-017"],
+  "comments": []
+}
