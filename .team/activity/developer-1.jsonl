@@ -62,3 +62,12 @@
 {"id":"evt-1771788076316-k9qm","timestamp":"2026-02-22T19:21:16.316Z","event_type":"wake_attempted","agent_id":"developer-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-020","ok":true}}
 {"id":"evt-1771788139229-8kig","timestamp":"2026-02-22T19:22:19.229Z","event_type":"task_claimed","agent_id":"developer-1","details":{"task_id":"TASK-017","title":"Add playlist history command"}}
 {"id":"evt-1771788195865-w5hy","timestamp":"2026-02-22T19:23:15.865Z","event_type":"task_updated","agent_id":"developer-1","details":{"task_id":"TASK-017","old_status":"claimed","new_status":"review"}}
+{"id":"evt-1771788202772-d88f","timestamp":"2026-02-22T19:23:22.772Z","event_type":"message_sent","agent_id":"developer-1","details":{"from":"developer-1","to":"qa-1","body_preview":"TASK-017 ready for review: mx-lite history command with --limit flag, auto-logs "}}
+{"id":"evt-1771788202845-lzeq","timestamp":"2026-02-22T19:23:22.845Z","event_type":"wake_escalated","agent_id":"developer-1","details":{"task_id":"TASK-015","reason":"missing_handoff","to_status":"done"}}
+{"id":"evt-1771788202864-r71j","timestamp":"2026-02-22T19:23:22.864Z","event_type":"wake_attempted","agent_id":"developer-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-015","ok":true}}
+{"id":"evt-1771788202866-vdxp","timestamp":"2026-02-22T19:23:22.866Z","event_type":"wake_escalated","agent_id":"developer-1","details":{"task_id":"TASK-017","reason":"missing_handoff","to_status":"review"}}
+{"id":"evt-1771788202867-xqas","timestamp":"2026-02-22T19:23:22.867Z","event_type":"wake_attempted","agent_id":"developer-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-017","ok":true}}
+{"id":"evt-1771788202868-yhr2","timestamp":"2026-02-22T19:23:22.868Z","event_type":"wake_escalated","agent_id":"developer-1","details":{"task_id":"TASK-021","reason":"missing_handoff","to_status":"done"}}
+{"id":"evt-1771788202870-gnq1","timestamp":"2026-02-22T19:23:22.870Z","event_type":"wake_attempted","agent_id":"developer-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-021","ok":true}}
+{"id":"evt-1771788202871-zfdr","timestamp":"2026-02-22T19:23:22.871Z","event_type":"wake_escalated","agent_id":"developer-1","details":{"task_id":"TASK-022","reason":"missing_handoff","to_status":"ready"}}
+{"id":"evt-1771788202872-6v9b","timestamp":"2026-02-22T19:23:22.872Z","event_type":"wake_attempted","agent_id":"developer-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-022","ok":true}}
