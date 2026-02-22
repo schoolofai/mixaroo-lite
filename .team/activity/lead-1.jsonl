@@ -73,3 +73,5 @@
 {"id":"evt-1771779929524-n52a","timestamp":"2026-02-22T17:05:29.524Z","event_type":"task_updated","agent_id":"lead-1","details":{"task_id":"TASK-007","old_status":"review","new_status":"in_progress"}}
 {"id":"evt-1771779929564-3ap9","timestamp":"2026-02-22T17:05:29.564Z","event_type":"task_updated","agent_id":"lead-1","details":{"task_id":"TASK-006","old_status":"review","new_status":"done"}}
 {"id":"evt-1771779929599-opqq","timestamp":"2026-02-22T17:05:29.599Z","event_type":"message_sent","agent_id":"lead-1","details":{"from":"lead-1","to":"qa-1","body_preview":"TASK-006 approved and done. TASK-007 has 11 failing CLI tests — empty stdout sug"}}
+{"id":"evt-1771779932648-u81x","timestamp":"2026-02-22T17:05:32.648Z","event_type":"wake_escalated","agent_id":"lead-1","details":{"task_id":"TASK-006","from_status":"ready","to_status":"done","reason":"missing_handoff_self_handled"}}
+{"id":"evt-1771779932651-ve5i","timestamp":"2026-02-22T17:05:32.651Z","event_type":"wake_escalated","agent_id":"lead-1","details":{"task_id":"TASK-007","from_status":"ready","to_status":"in_progress","reason":"missing_handoff_self_handled"}}
