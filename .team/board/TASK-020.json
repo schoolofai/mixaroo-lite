@@ -1,0 +1,18 @@
+{
+  "id": "TASK-020",
+  "title": "Final review and polish of all launch content",
+  "description": "Review and finalize all content in /docs/: hackernews-launch.md, blog-how-i-built.md, reddit-posts.md, twitter-launch-thread.md, demo-script.md. Ensure consistency, accuracy, and that all TODO placeholders are resolved or clearly marked. Verify tone matches developer audience.",
+  "status": "ready",
+  "priority": "high",
+  "role": "content-writer",
+  "claimed_by": null,
+  "created_at": "2026-02-22T19:15:00.000Z",
+  "updated_at": "2026-02-22T19:15:00.000Z",
+  "acceptance_criteria": [
+    "All 5 docs reviewed and polished",
+    "TODO placeholders resolved or clearly flagged",
+    "Consistent voice and tone across all pieces",
+    "Technical accuracy verified"
+  ],
+  "comments": []
+}

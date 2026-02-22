@@ -1,0 +1,19 @@
+{
+  "id": "TASK-021",
+  "title": "QA review: --save flag and playlist persistence",
+  "description": "Review and test TASK-015 implementation. Verify save/list/play commands work correctly, edge cases handled (empty playlists, disk full, corrupted JSON), and all tests pass.",
+  "status": "backlog",
+  "priority": "high",
+  "role": "qa",
+  "claimed_by": null,
+  "created_at": "2026-02-22T19:15:00.000Z",
+  "updated_at": "2026-02-22T19:15:00.000Z",
+  "acceptance_criteria": [
+    "All existing tests pass",
+    "New save/list/play tests pass",
+    "Edge cases tested",
+    "No regressions"
+  ],
+  "depends_on": ["TASK-015"],
+  "comments": []
+}

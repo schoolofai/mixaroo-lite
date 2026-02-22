@@ -1,0 +1,19 @@
+{
+  "id": "TASK-015",
+  "title": "Add --save flag to persist playlists locally",
+  "description": "Implement a --save flag that stores generated playlists to ~/.config/mixaroo-lite/playlists/ as JSON files. Each playlist should include: prompt, songs, YouTube URL, timestamp. Also add 'mx-lite list' command to show saved playlists and 'mx-lite play <id>' to reopen a saved playlist URL.",
+  "status": "ready",
+  "priority": "high",
+  "role": "developer",
+  "claimed_by": null,
+  "created_at": "2026-02-22T19:15:00.000Z",
+  "updated_at": "2026-02-22T19:15:00.000Z",
+  "acceptance_criteria": [
+    "--save flag persists playlist as JSON to config directory",
+    "mx-lite list shows saved playlists with dates and prompts",
+    "mx-lite play <id> opens the saved YouTube URL",
+    "All new code has tests",
+    "Existing tests still pass"
+  ],
+  "comments": []
+}

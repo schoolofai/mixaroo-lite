@@ -1,0 +1,19 @@
+{
+  "id": "TASK-022",
+  "title": "QA review: error handling improvements",
+  "description": "Review and test TASK-016 implementation. Verify all error paths produce friendly messages, --verbose works, and no regressions.",
+  "status": "backlog",
+  "priority": "high",
+  "role": "qa",
+  "claimed_by": null,
+  "created_at": "2026-02-22T19:15:00.000Z",
+  "updated_at": "2026-02-22T19:15:00.000Z",
+  "acceptance_criteria": [
+    "All existing tests pass",
+    "Error path tests pass",
+    "Friendly error messages verified",
+    "--verbose flag works"
+  ],
+  "depends_on": ["TASK-016"],
+  "comments": []
+}
