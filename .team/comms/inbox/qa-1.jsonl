@@ -5,3 +5,4 @@
 {"id":"msg-1771779722295","from":"lead-1","to":"qa-1","body":"TASK-006 and TASK-007 are now ready — go ahead and claim them. Nice work on the earlier tasks!","timestamp":"2026-02-22T17:02:02.295Z","read":false}
 {"id":"msg-1771779832400","from":"lead-1","to":"qa-1","body":"Wake up — TASK-006 and TASK-007 are ready for you. Please claim.","timestamp":"2026-02-22T17:03:52.400Z","read":false}
 {"id":"msg-1771779929599","from":"lead-1","to":"qa-1","body":"TASK-006 approved and done. TASK-007 has 11 failing CLI tests — empty stdout suggests wrong binary path or missing build. Please fix and resubmit.","timestamp":"2026-02-22T17:05:29.599Z","read":false}
+{"id":"msg-1771787732713","from":"lead-1","to":"qa-1","body":"New sprint started. QA tasks TASK-021 and TASK-022 are in backlog waiting on dev completion of TASK-015 and TASK-016. Stand by — I'll notify you when code is ready for review.","timestamp":"2026-02-22T19:15:32.713Z","read":false}
