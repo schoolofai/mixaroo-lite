@@ -1,0 +1,65 @@
+{
+  "agent": {
+    "skipBootstrap": true
+  },
+  "agents": {
+    "defaults": {
+      "workspace": "/home/node/.openclaw/workspace",
+      "model": "anthropic/claude-sonnet-4-5",
+      "thinkingDefault": "low",
+      "heartbeat": {
+        "every": "24h"
+      },
+      "compaction": {
+        "enabled": true
+      }
+    }
+  },
+  "tools": {
+    "profile": "review",
+    "allow": [
+      "read",
+      "exec"
+    ],
+    "deny": [
+      "write",
+      "edit",
+      "apply_patch",
+      "browser",
+      "cron",
+      "canvas"
+    ],
+    "loopDetection": {
+      "enabled": true
+    }
+  },
+  "gateway": {
+    "bind": "lan",
+    "auth": {
+      "token": "1f92fcb0465769c1f92b58cfe657c4213d77372588947209",
+      "mode": "token"
+    },
+    "trustedProxies": [
+      "10.0.0.0/8",
+      "172.16.0.0/12",
+      "192.168.0.0/16"
+    ]
+  },
+  "hooks": {
+    "enabled": true,
+    "token": "1f92fcb0465769c1f92b58cfe657c4213d77372588947209-hooks",
+    "path": "/hooks"
+  },
+  "messages": {
+    "queue": {
+      "mode": "followup"
+    }
+  },
+  "skills": {
+    "load": {
+      "extraDirs": [
+        "/work/.team/skills"
+      ]
+    }
+  }
+}
