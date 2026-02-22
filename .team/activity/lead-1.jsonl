@@ -130,3 +130,5 @@
 {"id":"evt-1771788436014-xfv0","timestamp":"2026-02-22T19:27:16.014Z","event_type":"message_sent","agent_id":"lead-1","details":{"from":"lead-1","to":"qa-1","body_preview":"TASK-024 ready: QA review for shell completions (TASK-018). Last task in the spr"}}
 {"id":"evt-1771788436287-ngaq","timestamp":"2026-02-22T19:27:16.287Z","event_type":"wake_escalated","agent_id":"lead-1","details":{"task_id":"TASK-018","from_status":"ready","to_status":"review","reason":"missing_handoff_self_handled"}}
 {"id":"evt-1771788436289-ukku","timestamp":"2026-02-22T19:27:16.289Z","event_type":"wake_escalated","agent_id":"lead-1","details":{"task_id":"TASK-024","from_status":"unknown","to_status":"ready","reason":"missing_handoff_self_handled"}}
+{"id":"evt-1771788510840-hw2w","timestamp":"2026-02-22T19:28:30.840Z","event_type":"task_updated","agent_id":"lead-1","details":{"task_id":"TASK-024","old_status":"ready","new_status":"done"}}
+{"id":"evt-1771788510882-qgn0","timestamp":"2026-02-22T19:28:30.882Z","event_type":"task_updated","agent_id":"lead-1","details":{"task_id":"TASK-018","old_status":"review","new_status":"done"}}

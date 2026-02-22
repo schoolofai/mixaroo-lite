@@ -3,7 +3,7 @@
   "type": "task",
   "title": "Add shell completions (bash, zsh, fish)",
   "description": "Generate shell completion scripts for bash, zsh, and fish. Add 'mx-lite completions <shell>' command that outputs the completion script. Document installation in README.",
-  "status": "review",
+  "status": "done",
   "priority": "low",
   "depends_on": [],
   "required_role": "developer",
@@ -15,7 +15,7 @@
     "README documents installation"
   ],
   "created_at": "2026-02-22T19:15:00.000Z",
-  "updated_at": "2026-02-22T19:26:54.411Z",
+  "updated_at": "2026-02-22T19:28:30.881Z",
   "comments": [
     {
       "from": "lead-1",
@@ -26,6 +26,11 @@
       "from": "developer-1",
       "text": "Shell completions for bash/zsh/fish. 8 new tests, 203 total passing. README updated.",
       "at": "2026-02-22T19:26:54.411Z"
+    },
+    {
+      "from": "lead-1",
+      "text": "QA approved via TASK-024",
+      "at": "2026-02-22T19:28:30.882Z"
     }
   ]
 }
