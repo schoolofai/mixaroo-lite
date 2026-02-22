@@ -1,19 +1,27 @@
 {
   "id": "TASK-023",
+  "type": "task",
   "title": "QA review: playlist history command",
   "description": "Review and test TASK-017 implementation. Verify history auto-logging, mx-lite history command, --limit flag, edge cases (empty history, corrupted file).",
-  "status": "ready",
+  "status": "review",
   "priority": "medium",
-  "role": "qa",
-  "claimed_by": null,
-  "created_at": "2026-02-22T19:23:00.000Z",
-  "updated_at": "2026-02-22T19:23:00.000Z",
+  "depends_on": [],
+  "required_role": "qa",
+  "claimed_by": "qa-1",
+  "claimed_at": "2026-02-22T19:24:13.075Z",
   "acceptance_criteria": [
     "All existing tests pass",
     "History tests pass",
     "Edge cases verified",
     "No regressions"
   ],
-  "depends_on": ["TASK-017"],
-  "comments": []
+  "created_at": "2026-02-22T19:23:00.000Z",
+  "updated_at": "2026-02-22T19:25:04.990Z",
+  "comments": [
+    {
+      "from": "qa-1",
+      "text": "QA PASSED: 13 edge-case tests added — corrupted files (empty/null/non-objects), unicode/empty/long prompts, getRecentHistory boundary values (0, -1, exceeds count), MAX_HISTORY cap keeps newest, timestamp ISO format, file integrity after multiple writes. All 195 tests pass.",
+      "at": "2026-02-22T19:25:04.990Z"
+    }
+  ]
 }

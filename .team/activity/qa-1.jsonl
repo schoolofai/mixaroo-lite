@@ -66,3 +66,5 @@
 {"id":"evt-1771788217850-n5q9","timestamp":"2026-02-22T19:23:37.850Z","event_type":"wake_attempted","agent_id":"qa-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-021","ok":true}}
 {"id":"evt-1771788217851-qyvf","timestamp":"2026-02-22T19:23:37.851Z","event_type":"wake_escalated","agent_id":"qa-1","details":{"task_id":"TASK-022","reason":"missing_handoff","to_status":"ready"}}
 {"id":"evt-1771788217852-3per","timestamp":"2026-02-22T19:23:37.852Z","event_type":"wake_attempted","agent_id":"qa-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-022","ok":true}}
+{"id":"evt-1771788253075-fq9p","timestamp":"2026-02-22T19:24:13.075Z","event_type":"task_claimed","agent_id":"qa-1","details":{"task_id":"TASK-023","title":"QA review: playlist history command"}}
+{"id":"evt-1771788304991-wa8q","timestamp":"2026-02-22T19:25:04.991Z","event_type":"task_updated","agent_id":"qa-1","details":{"task_id":"TASK-023","old_status":"claimed","new_status":"review"}}
