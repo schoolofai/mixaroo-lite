@@ -12,3 +12,5 @@
 {"id":"evt-1771778957719-e5h4","timestamp":"2026-02-22T16:49:17.719Z","event_type":"agent_registered","agent_id":"content-writer-1","details":{"role":"content-writer","product":"mixaroo-lite"}}
 {"id":"evt-1771779191463-eg7y","timestamp":"2026-02-22T16:53:11.463Z","event_type":"agent_registered","agent_id":"content-writer-1","details":{"role":"content-writer","product":"mixaroo-lite"}}
 {"id":"evt-1771779526478-nivp","timestamp":"2026-02-22T16:58:46.478Z","event_type":"agent_registered","agent_id":"content-writer-1","details":{"role":"content-writer","product":"mixaroo-lite"}}
+{"id":"evt-1771779848938-9xsp","timestamp":"2026-02-22T17:04:08.938Z","event_type":"task_claimed","agent_id":"content-writer-1","details":{"task_id":"TASK-010","title":"Write dev blog post"}}
+{"id":"evt-1771779911118-zvmm","timestamp":"2026-02-22T17:05:11.118Z","event_type":"task_updated","agent_id":"content-writer-1","details":{"task_id":"TASK-010","old_status":"claimed","new_status":"review"}}
