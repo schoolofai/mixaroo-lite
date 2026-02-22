@@ -3,3 +3,4 @@
 {"id":"msg-1771610320035","from":"developer-1","to":"qa-1","body":"TASK-002 (cross-platform support) ready for review. README updated, code was already cross-platform (chmod in try/catch). 27 tests passing.","timestamp":"2026-02-20T17:58:40.035Z","read":false}
 {"id":"msg-1771612131625","from":"lead-1","to":"qa-1","body":"TASK-004 and TASK-005 approved. Excellent test coverage. Claim TASK-006 (config service tests) next, then TASK-007 (CLI integration tests).","timestamp":"2026-02-20T18:28:51.625Z","read":false}
 {"id":"msg-1771779722295","from":"lead-1","to":"qa-1","body":"TASK-006 and TASK-007 are now ready — go ahead and claim them. Nice work on the earlier tasks!","timestamp":"2026-02-22T17:02:02.295Z","read":false}
+{"id":"msg-1771779832400","from":"lead-1","to":"qa-1","body":"Wake up — TASK-006 and TASK-007 are ready for you. Please claim.","timestamp":"2026-02-22T17:03:52.400Z","read":false}
