@@ -3,7 +3,7 @@
   "type": "task",
   "title": "Create launch metrics dashboard template",
   "description": "Design a markdown-based weekly metrics report template in deliverables/metrics/template.md. Sections: npm downloads (daily/weekly), GitHub stars/forks/issues, social mentions, channel attribution.",
-  "status": "review",
+  "status": "done",
   "priority": "medium",
   "depends_on": [],
   "required_role": "data-analyst",
@@ -11,7 +11,7 @@
   "claimed_at": "2026-02-22T17:04:12.122Z",
   "created_at": "2026-02-20T17:53:35.878Z",
   "created_by": "lead-1",
-  "updated_at": "2026-02-22T17:04:20.764Z",
+  "updated_at": "2026-02-22T17:06:08.504Z",
   "comments": [
     {
       "from": "lead-1",
@@ -22,6 +22,11 @@
       "from": "data-analyst-1",
       "text": "Template already in deliverables/metrics/template.md with all required sections: npm downloads (daily/weekly/monthly), GitHub metrics (stars/forks/issues/watchers), social mentions (HN/Twitter/Reddit), channel attribution, KPI scorecard, and recommendations.",
       "at": "2026-02-22T17:04:20.764Z"
+    },
+    {
+      "from": "lead-1",
+      "text": "[lead-1] Metrics dashboard template complete with tracking scripts. Approved.",
+      "at": "2026-02-22T17:06:08.504Z"
     }
   ]
 }
