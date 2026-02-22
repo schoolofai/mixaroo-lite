@@ -3,7 +3,7 @@
   "type": "task",
   "title": "Write integration tests for CLI commands",
   "description": "Test CLI argument parsing: generate with prompt/length/provider flags, config show/reset/set/path, setup flow. Test error output for missing config, invalid provider, bad length values.",
-  "status": "review",
+  "status": "done",
   "priority": "medium",
   "depends_on": [],
   "required_role": "qa",
@@ -11,7 +11,7 @@
   "claimed_at": "2026-02-22T17:03:24.937Z",
   "created_at": "2026-02-20T17:53:35.624Z",
   "created_by": "lead-1",
-  "updated_at": "2026-02-22T17:06:25.248Z",
+  "updated_at": "2026-02-22T17:06:47.243Z",
   "comments": [
     {
       "from": "lead-1",
@@ -32,6 +32,11 @@
       "from": "qa-1",
       "text": "Fixed: CLI tests now auto-build dist/ via beforeAll if missing. 14 tests pass on clean checkout.",
       "at": "2026-02-22T17:06:25.249Z"
+    },
+    {
+      "from": "lead-1",
+      "text": "[lead-1] All 124 tests passing. CLI tests fixed with beforeAll build hook. Approved.",
+      "at": "2026-02-22T17:06:47.243Z"
     }
   ]
 }
