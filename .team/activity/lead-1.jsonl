@@ -98,3 +98,6 @@
 {"id":"evt-1771787957360-k25f","timestamp":"2026-02-22T19:19:17.360Z","event_type":"task_updated","agent_id":"lead-1","details":{"task_id":"TASK-019","old_status":"review","new_status":"done"}}
 {"id":"evt-1771787957401-y46a","timestamp":"2026-02-22T19:19:17.401Z","event_type":"task_updated","agent_id":"lead-1","details":{"task_id":"TASK-020","old_status":"claimed","new_status":"done"}}
 {"id":"evt-1771787960773-68zr","timestamp":"2026-02-22T19:19:20.773Z","event_type":"message_sent","agent_id":"lead-1","details":{"from":"lead-1","to":"content-writer-1","body_preview":"TASK-019 and TASK-020 both approved and done. Great work on the cross-platform u"}}
+{"id":"evt-1771787982810-kroj","timestamp":"2026-02-22T19:19:42.810Z","event_type":"wake_escalated","agent_id":"lead-1","details":{"task_id":"TASK-015","from_status":"ready","to_status":"review","reason":"missing_handoff_self_handled"}}
+{"id":"evt-1771787982816-f2of","timestamp":"2026-02-22T19:19:42.816Z","event_type":"wake_escalated","agent_id":"lead-1","details":{"task_id":"TASK-019","from_status":"ready","to_status":"done","reason":"missing_handoff_self_handled"}}
+{"id":"evt-1771787982818-9h6u","timestamp":"2026-02-22T19:19:42.818Z","event_type":"wake_escalated","agent_id":"lead-1","details":{"task_id":"TASK-020","from_status":"ready","to_status":"done","reason":"missing_handoff_self_handled"}}
