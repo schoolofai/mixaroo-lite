@@ -84,3 +84,4 @@
 {"id":"evt-1771788422221-0w7k","timestamp":"2026-02-22T19:27:02.221Z","event_type":"wake_attempted","agent_id":"developer-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-022","ok":true}}
 {"id":"evt-1771788422223-0m49","timestamp":"2026-02-22T19:27:02.223Z","event_type":"wake_escalated","agent_id":"developer-1","details":{"task_id":"TASK-023","reason":"missing_handoff","to_status":"done"}}
 {"id":"evt-1771788422224-t2pa","timestamp":"2026-02-22T19:27:02.224Z","event_type":"wake_attempted","agent_id":"developer-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-023","ok":true}}
+{"id":"evt-1771788686627-6ifo","timestamp":"2026-02-22T19:31:26.627Z","event_type":"message_sent","agent_id":"developer-1","details":{"from":"developer-1","to":"lead-1","body_preview":"Re TASK-025: ran full test suite — all 214 tests passing, no failures found. The"}}
