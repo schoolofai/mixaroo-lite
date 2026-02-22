@@ -5,6 +5,8 @@ import { Command } from 'commander';
 import { setupCommand } from './commands/setup.js';
 import { generateCommand } from './commands/generate.js';
 import { configCommand } from './commands/config.js';
+import { listCommand } from './commands/list.js';
+import { playCommand } from './commands/play.js';
 
 const program = new Command();
 
@@ -45,11 +47,24 @@ config
   .description('Set a configuration value')
   .action(configCommand.set);
 
+// List saved playlists
+program
+  .command('list')
+  .description('Show saved playlists')
+  .action(listCommand);
+
+// Play a saved playlist
+program
+  .command('play <id>')
+  .description('Open a saved playlist by ID')
+  .action(playCommand);
+
 // Main generate command (default)
 program
   .argument('[prompt]', 'Describe the playlist you want')
   .option('-l, --length <number>', 'Number of songs (1-100)', '25')
   .option('-p, --provider <provider>', 'Override AI provider (openai, gemini, anthropic)')
+  .option('-s, --save', 'Save the playlist locally')
   .action(async (prompt, options) => {
     if (prompt) {
       await generateCommand(prompt, options);

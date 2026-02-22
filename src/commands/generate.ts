@@ -15,10 +15,12 @@ import {
   getSearchStats,
   SearchResult
 } from '../services/youtube.js';
+import { savePlaylist } from '../services/playlist-store.js';
 
 interface GenerateOptions {
   length: string;
   provider?: string;
+  save?: boolean;
 }
 
 export async function generateCommand(prompt: string, options: GenerateOptions): Promise<void> {
@@ -176,4 +178,12 @@ export async function generateCommand(prompt: string, options: GenerateOptions):
   console.log(chalk.cyan(`   ${playlistUrl}`));
   console.log();
   console.log(chalk.gray(`   ${videoIds.length} songs ready to play`));
+
+  // Save playlist if --save flag is set
+  if (options.save) {
+    const saved = savePlaylist(prompt, songs, playlistUrl);
+    console.log();
+    console.log(chalk.green(`💾 Playlist saved! ID: ${chalk.bold(saved.id)}`));
+    console.log(chalk.gray(`   Replay anytime: mx-lite play ${saved.id}`));
+  }
 }
