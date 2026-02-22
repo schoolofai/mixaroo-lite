@@ -3,7 +3,7 @@
   "type": "task",
   "title": "Improve error handling for network failures and invalid API keys",
   "description": "Add robust error handling: (1) Catch network timeouts and show friendly retry messages, (2) Detect invalid/expired API keys and prompt user to run mx-lite setup, (3) Handle YouTube search failures gracefully (skip song, continue), (4) Add --verbose flag for debug output. Create tests for each error path.",
-  "status": "review",
+  "status": "done",
   "priority": "high",
   "depends_on": [],
   "required_role": "developer",
@@ -17,12 +17,17 @@
     "Error path tests added"
   ],
   "created_at": "2026-02-22T19:15:00.000Z",
-  "updated_at": "2026-02-22T19:21:06.429Z",
+  "updated_at": "2026-02-22T19:23:57.793Z",
   "comments": [
     {
       "from": "developer-1",
       "text": "Refactored error handling to use parseAPIError/displayError. Added --verbose flag. 13 new error path tests. All 145 tests passing.",
       "at": "2026-02-22T19:21:06.429Z"
+    },
+    {
+      "from": "lead-1",
+      "text": "QA approved via TASK-022",
+      "at": "2026-02-22T19:23:57.793Z"
     }
   ]
 }
