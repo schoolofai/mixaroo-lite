@@ -65,6 +65,7 @@ program
   .option('-l, --length <number>', 'Number of songs (1-100)', '25')
   .option('-p, --provider <provider>', 'Override AI provider (openai, gemini, anthropic)')
   .option('-s, --save', 'Save the playlist locally')
+  .option('-v, --verbose', 'Show debug output')
   .action(async (prompt, options) => {
     if (prompt) {
       await generateCommand(prompt, options);

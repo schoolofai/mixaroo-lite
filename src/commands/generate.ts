@@ -16,11 +16,19 @@ import {
   SearchResult
 } from '../services/youtube.js';
 import { savePlaylist } from '../services/playlist-store.js';
+import { displayError, parseAPIError } from '../utils/errors.js';
 
 interface GenerateOptions {
   length: string;
   provider?: string;
   save?: boolean;
+  verbose?: boolean;
+}
+
+function verbose(options: GenerateOptions, ...args: unknown[]): void {
+  if (options.verbose) {
+    console.log(chalk.gray('[verbose]'), ...args);
+  }
 }
 
 export async function generateCommand(prompt: string, options: GenerateOptions): Promise<void> {
@@ -95,31 +103,20 @@ export async function generateCommand(prompt: string, options: GenerateOptions):
 
   const aiSpinner = ora('Generating playlist with AI...').start();
 
+  verbose(options, `Provider: ${provider}, Model: ${providerInfo.model}`);
+  verbose(options, `Requesting ${length} songs for prompt: "${prompt}"`);
+
   let songs: Song[];
   try {
     const aiService = getAIService(provider, apiKey);
     songs = await aiService.generatePlaylist(prompt, length);
     aiSpinner.succeed(`Generated ${songs.length} songs`);
+    verbose(options, `AI returned ${songs.length} songs`);
   } catch (error) {
     aiSpinner.fail('Failed to generate playlist');
-    console.log();
-    
-    const errorMessage = error instanceof Error ? error.message : String(error);
-    
-    if (errorMessage.includes('401') || errorMessage.includes('invalid') || errorMessage.includes('unauthorized')) {
-      console.error(chalk.red('❌ Invalid API key'));
-      console.log();
-      console.log(chalk.yellow('💡 Your API key may be invalid or expired.'));
-      console.log(`   Get a new key at: ${chalk.underline(providerInfo.keyUrl)}`);
-      console.log(`   Then run: ${chalk.cyan('mx-lite setup')}`);
-    } else if (errorMessage.includes('429') || errorMessage.includes('rate')) {
-      console.error(chalk.red('❌ Rate limit exceeded'));
-      console.log();
-      console.log(chalk.yellow('💡 You\'ve hit the API rate limit. Please wait a moment and try again.'));
-    } else {
-      console.error(chalk.red('❌ Error generating playlist:'), errorMessage);
-    }
-    
+    verbose(options, `AI error:`, error instanceof Error ? error.stack : error);
+    const parsed = parseAPIError(error, provider);
+    displayError(parsed);
     process.exit(1);
   }
 
@@ -129,13 +126,17 @@ export async function generateCommand(prompt: string, options: GenerateOptions):
 
   let results: SearchResult[];
   try {
-    results = await searchSongs(songs, (current, total, song, _found) => {
+    results = await searchSongs(songs, (current, total, song, found) => {
       ytSpinner.text = `Searching YouTube... (${current}/${total}) ${song.title}`;
+      if (options.verbose && !found) {
+        // Will show after spinner clears
+      }
     });
     ytSpinner.succeed('YouTube search complete');
   } catch (error) {
     ytSpinner.fail('YouTube search failed');
-    console.error(chalk.red('❌ Error searching YouTube:'), error instanceof Error ? error.message : String(error));
+    verbose(options, `YouTube error:`, error instanceof Error ? error.stack : error);
+    displayError(error);
     process.exit(1);
   }
 
