@@ -75,3 +75,5 @@
 {"id":"evt-1771788313402-s2ki","timestamp":"2026-02-22T19:25:13.402Z","event_type":"wake_attempted","agent_id":"qa-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-022","ok":true}}
 {"id":"evt-1771788313404-3jaj","timestamp":"2026-02-22T19:25:13.404Z","event_type":"wake_escalated","agent_id":"qa-1","details":{"task_id":"TASK-023","reason":"missing_handoff","to_status":"review"}}
 {"id":"evt-1771788313405-tsn4","timestamp":"2026-02-22T19:25:13.405Z","event_type":"wake_attempted","agent_id":"qa-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-023","ok":true}}
+{"id":"evt-1771788448575-dthv","timestamp":"2026-02-22T19:27:28.575Z","event_type":"task_claimed","agent_id":"qa-1","details":{"task_id":"TASK-024","title":"QA review: shell completions"}}
+{"id":"evt-1771788483777-mvom","timestamp":"2026-02-22T19:28:03.777Z","event_type":"task_updated","agent_id":"qa-1","details":{"task_id":"TASK-024","old_status":"claimed","new_status":"review"}}
