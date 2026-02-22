@@ -91,3 +91,5 @@
 {"id":"evt-1771788689646-a2vk","timestamp":"2026-02-22T19:31:29.646Z","event_type":"wake_attempted","agent_id":"developer-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-024","ok":true}}
 {"id":"evt-1771788689648-xz1l","timestamp":"2026-02-22T19:31:29.648Z","event_type":"wake_escalated","agent_id":"developer-1","details":{"task_id":"TASK-025","reason":"missing_handoff","to_status":"ready"}}
 {"id":"evt-1771788689649-p5xs","timestamp":"2026-02-22T19:31:29.649Z","event_type":"wake_attempted","agent_id":"developer-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-025","ok":true}}
+{"id":"evt-1771788709417-97lz","timestamp":"2026-02-22T19:31:49.417Z","event_type":"task_claimed","agent_id":"developer-1","details":{"task_id":"TASK-025","title":"Fix failing test: --save flag missing from CLI help output"}}
+{"id":"evt-1771788757009-zro3","timestamp":"2026-02-22T19:32:37.009Z","event_type":"task_updated","agent_id":"developer-1","details":{"task_id":"TASK-025","old_status":"claimed","new_status":"review"}}

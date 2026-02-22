@@ -1,17 +1,26 @@
 {
   "id": "TASK-025",
+  "type": "task",
   "title": "Fix failing test: --save flag missing from CLI help output",
   "description": "src/commands/__tests__/error-edge.test.ts expects '--save' in CLI help output but the flag isn't registered on the main generate command in src/cli.ts. Either add the -s/--save option to the program argument definition in cli.ts, or fix the test assertion to match actual behavior. The --save flag should be visible in help output since it's a user-facing feature.",
-  "status": "ready",
+  "status": "review",
   "priority": "high",
-  "role": "developer",
-  "claimed_by": null,
-  "created_at": "2026-02-22T19:30:00.000Z",
-  "updated_at": "2026-02-22T19:30:00.000Z",
+  "depends_on": [],
+  "required_role": "developer",
+  "claimed_by": "developer-1",
+  "claimed_at": "2026-02-22T19:31:49.417Z",
   "acceptance_criteria": [
     "All 214 tests pass (0 failures)",
     "--save flag visible in mx-lite --help output",
     "npx tsc --noEmit passes"
   ],
-  "comments": []
+  "created_at": "2026-02-22T19:30:00.000Z",
+  "updated_at": "2026-02-22T19:32:37.009Z",
+  "comments": [
+    {
+      "from": "developer-1",
+      "text": "Fixed: test was using stale dist/. Now uses tsx to run source directly. All 214 tests passing.",
+      "at": "2026-02-22T19:32:37.009Z"
+    }
+  ]
 }
