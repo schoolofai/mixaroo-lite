@@ -8,6 +8,7 @@ import { configCommand } from './commands/config.js';
 import { listCommand } from './commands/list.js';
 import { playCommand } from './commands/play.js';
 import { historyCommand } from './commands/history.js';
+import { completionsCommand } from './commands/completions.js';
 
 const program = new Command();
 
@@ -66,6 +67,12 @@ program
   .description('Show playlist generation history')
   .option('--limit <number>', 'Number of entries to show', '20')
   .action(historyCommand);
+
+// Completions command
+program
+  .command('completions <shell>')
+  .description('Generate shell completion script (bash, zsh, fish)')
+  .action(completionsCommand);
 
 // Main generate command (default)
 program

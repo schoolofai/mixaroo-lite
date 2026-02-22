@@ -160,6 +160,31 @@ mx-lite config set default-length 50
 mx-lite config path
 ```
 
+## Shell Completions
+
+Enable tab completion for all commands and flags:
+
+### Bash
+
+```bash
+# Add to ~/.bashrc
+eval "$(mx-lite completions bash)"
+```
+
+### Zsh
+
+```bash
+# Add to ~/.zshrc
+eval "$(mx-lite completions zsh)"
+```
+
+### Fish
+
+```bash
+# Save to completions directory
+mx-lite completions fish > ~/.config/fish/completions/mx-lite.fish
+```
+
 ## Troubleshooting
 
 ### "Invalid API key"
