@@ -31,3 +31,7 @@
 {"id":"evt-1771778968702-kvow","timestamp":"2026-02-22T16:49:28.702Z","event_type":"agent_registered","agent_id":"qa-1","details":{"role":"qa","product":"mixaroo-lite"}}
 {"id":"evt-1771779202382-f3js","timestamp":"2026-02-22T16:53:22.382Z","event_type":"agent_registered","agent_id":"qa-1","details":{"role":"qa","product":"mixaroo-lite"}}
 {"id":"evt-1771779534347-c3ch","timestamp":"2026-02-22T16:58:54.347Z","event_type":"agent_registered","agent_id":"qa-1","details":{"role":"qa","product":"mixaroo-lite"}}
+{"id":"evt-1771779738439-ic9a","timestamp":"2026-02-22T17:02:18.439Z","event_type":"task_claimed","agent_id":"qa-1","details":{"task_id":"TASK-006","title":"Write unit tests for config service (config.ts)"}}
+{"id":"evt-1771779804895-p7e9","timestamp":"2026-02-22T17:03:24.895Z","event_type":"task_updated","agent_id":"qa-1","details":{"task_id":"TASK-006","old_status":"claimed","new_status":"review"}}
+{"id":"evt-1771779804937-qr2r","timestamp":"2026-02-22T17:03:24.937Z","event_type":"task_claimed","agent_id":"qa-1","details":{"task_id":"TASK-007","title":"Write integration tests for CLI commands"}}
+{"id":"evt-1771779874802-smlr","timestamp":"2026-02-22T17:04:34.802Z","event_type":"task_updated","agent_id":"qa-1","details":{"task_id":"TASK-007","old_status":"claimed","new_status":"review"}}
