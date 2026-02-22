@@ -1,11 +1,24 @@
-import { describe, it, expect, vi, beforeEach } from 'vitest';
-import { execFileSync, execFile } from 'child_process';
+import { describe, it, expect, vi, beforeAll } from 'vitest';
+import { execFileSync } from 'child_process';
+import { existsSync } from 'fs';
 import { resolve } from 'path';
+
+const CLI_PATH = resolve(__dirname, '../dist/cli.js');
+
+// Ensure dist is built before running CLI integration tests
+beforeAll(() => {
+  if (!existsSync(CLI_PATH)) {
+    execFileSync('npm', ['run', 'build'], {
+      cwd: resolve(__dirname, '..'),
+      timeout: 30000,
+    });
+  }
+}, 30000);
 
 // Helper: run the built CLI and capture output
 function runCLI(args: string[]): { stdout: string; stderr: string; exitCode: number } {
   try {
-    const stdout = execFileSync('node', [resolve(__dirname, '../dist/cli.js'), ...args], {
+    const stdout = execFileSync('node', [CLI_PATH, ...args], {
       encoding: 'utf-8',
       timeout: 10000,
       env: { ...process.env, NODE_NO_WARNINGS: '1', FORCE_COLOR: '0', NO_COLOR: '1' },
