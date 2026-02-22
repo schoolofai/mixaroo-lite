@@ -47,3 +47,5 @@
 {"id":"evt-1771779878764-8ksx","timestamp":"2026-02-22T17:04:38.764Z","event_type":"wake_attempted","agent_id":"qa-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-011","ok":true}}
 {"id":"evt-1771779878766-4g8y","timestamp":"2026-02-22T17:04:38.766Z","event_type":"wake_escalated","agent_id":"qa-1","details":{"task_id":"TASK-014","reason":"missing_handoff","to_status":"ready"}}
 {"id":"evt-1771779878767-6tw6","timestamp":"2026-02-22T17:04:38.767Z","event_type":"wake_attempted","agent_id":"qa-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-014","ok":true}}
+{"id":"evt-1771779985249-gc3x","timestamp":"2026-02-22T17:06:25.249Z","event_type":"task_updated","agent_id":"qa-1","details":{"task_id":"TASK-007","old_status":"in_progress","new_status":"review"}}
+{"id":"evt-1771779985334-6h4h","timestamp":"2026-02-22T17:06:25.334Z","event_type":"message_sent","agent_id":"qa-1","details":{"from":"qa-1","to":"lead-1","body_preview":"TASK-007 fixed and resubmitted. Tests now auto-build dist/ if missing via before"}}
