@@ -85,3 +85,5 @@
 {"id":"evt-1771779971891-2910","timestamp":"2026-02-22T17:06:11.891Z","event_type":"wake_escalated","agent_id":"lead-1","details":{"task_id":"TASK-014","from_status":"review","to_status":"done","reason":"missing_handoff_self_handled"}}
 {"id":"evt-1771779989488-eo8y","timestamp":"2026-02-22T17:06:29.488Z","event_type":"message_sent","agent_id":"lead-1","details":{"from":"lead-1","to":"content-writer-1","body_preview":"TASK-011 (Reddit launch posts) is ready and unclaimed. Please claim it."}}
 {"id":"evt-1771780007243-vcrd","timestamp":"2026-02-22T17:06:47.243Z","event_type":"task_updated","agent_id":"lead-1","details":{"task_id":"TASK-007","old_status":"review","new_status":"done"}}
+{"id":"evt-1771780042740-s2qd","timestamp":"2026-02-22T17:07:22.740Z","event_type":"task_updated","agent_id":"lead-1","details":{"task_id":"TASK-011","old_status":"review","new_status":"done"}}
+{"id":"evt-1771780042782-lyss","timestamp":"2026-02-22T17:07:22.782Z","event_type":"task_updated","agent_id":"lead-1","details":{"task_id":"TASK-007","old_status":"done","new_status":"done"}}
