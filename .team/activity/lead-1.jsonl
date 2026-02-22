@@ -90,3 +90,4 @@
 {"id":"evt-1771780043033-8ajh","timestamp":"2026-02-22T17:07:23.033Z","event_type":"wake_escalated","agent_id":"lead-1","details":{"task_id":"TASK-011","from_status":"ready","to_status":"done","reason":"missing_handoff_self_handled"}}
 {"id":"evt-1771787426391-7rpj","timestamp":"2026-02-22T19:10:26.391Z","event_type":"agent_registered","agent_id":"lead-1","details":{"role":"lead","product":"mixaroo-lite"}}
 {"id":"evt-1771787457656-p387","timestamp":"2026-02-22T19:10:57.656Z","event_type":"directive_acknowledged","agent_id":"lead-1","details":{"directive_id":"evt-1771787438177-gl9t","action":"context_update","urgency":"interrupt"}}
+{"id":"evt-1771787647355-09sp","timestamp":"2026-02-22T19:14:07.355Z","event_type":"agent_registered","agent_id":"lead-1","details":{"role":"lead","product":"mixaroo-lite"}}
