@@ -53,3 +53,7 @@
 {"id":"evt-1771787984286-pw4c","timestamp":"2026-02-22T19:19:44.286Z","event_type":"task_updated","agent_id":"qa-1","details":{"task_id":"TASK-021","old_status":"backlog","new_status":"ready"}}
 {"id":"evt-1771788005991-75d7","timestamp":"2026-02-22T19:20:05.991Z","event_type":"task_claimed","agent_id":"qa-1","details":{"task_id":"TASK-021","title":"QA review: --save flag and playlist persistence"}}
 {"id":"evt-1771788079738-crax","timestamp":"2026-02-22T19:21:19.738Z","event_type":"task_updated","agent_id":"qa-1","details":{"task_id":"TASK-021","old_status":"claimed","new_status":"review"}}
+{"id":"evt-1771788091101-g134","timestamp":"2026-02-22T19:21:31.101Z","event_type":"message_sent","agent_id":"qa-1","details":{"from":"qa-1","to":"lead-1","body_preview":"TASK-021 QA complete: playlist persistence (TASK-015) reviewed and passed. Added"}}
+{"id":"evt-1771788115955-jcgt","timestamp":"2026-02-22T19:21:55.955Z","event_type":"task_updated","agent_id":"qa-1","details":{"task_id":"TASK-022","old_status":"backlog","new_status":"ready"}}
+{"id":"evt-1771788129801-ywqs","timestamp":"2026-02-22T19:22:09.801Z","event_type":"task_claimed","agent_id":"qa-1","details":{"task_id":"TASK-022","title":"QA review: error handling improvements"}}
+{"id":"evt-1771788187779-rvoc","timestamp":"2026-02-22T19:23:07.779Z","event_type":"task_updated","agent_id":"qa-1","details":{"task_id":"TASK-022","old_status":"claimed","new_status":"review"}}
