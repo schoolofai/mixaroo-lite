@@ -35,3 +35,15 @@
 {"id":"evt-1771779804895-p7e9","timestamp":"2026-02-22T17:03:24.895Z","event_type":"task_updated","agent_id":"qa-1","details":{"task_id":"TASK-006","old_status":"claimed","new_status":"review"}}
 {"id":"evt-1771779804937-qr2r","timestamp":"2026-02-22T17:03:24.937Z","event_type":"task_claimed","agent_id":"qa-1","details":{"task_id":"TASK-007","title":"Write integration tests for CLI commands"}}
 {"id":"evt-1771779874802-smlr","timestamp":"2026-02-22T17:04:34.802Z","event_type":"task_updated","agent_id":"qa-1","details":{"task_id":"TASK-007","old_status":"claimed","new_status":"review"}}
+{"id":"evt-1771779878736-5rce","timestamp":"2026-02-22T17:04:38.736Z","event_type":"wake_escalated","agent_id":"qa-1","details":{"task_id":"TASK-003","reason":"missing_handoff","to_status":"ready"}}
+{"id":"evt-1771779878754-e9cb","timestamp":"2026-02-22T17:04:38.754Z","event_type":"wake_attempted","agent_id":"qa-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-003","ok":true}}
+{"id":"evt-1771779878757-g6g4","timestamp":"2026-02-22T17:04:38.757Z","event_type":"wake_escalated","agent_id":"qa-1","details":{"task_id":"TASK-006","reason":"missing_handoff","to_status":"review"}}
+{"id":"evt-1771779878758-efbe","timestamp":"2026-02-22T17:04:38.758Z","event_type":"wake_attempted","agent_id":"qa-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-006","ok":true}}
+{"id":"evt-1771779878759-l4a6","timestamp":"2026-02-22T17:04:38.759Z","event_type":"wake_escalated","agent_id":"qa-1","details":{"task_id":"TASK-007","reason":"missing_handoff","to_status":"review"}}
+{"id":"evt-1771779878760-1m70","timestamp":"2026-02-22T17:04:38.760Z","event_type":"wake_attempted","agent_id":"qa-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-007","ok":true}}
+{"id":"evt-1771779878761-ksf5","timestamp":"2026-02-22T17:04:38.761Z","event_type":"wake_escalated","agent_id":"qa-1","details":{"task_id":"TASK-010","reason":"missing_handoff","to_status":"ready"}}
+{"id":"evt-1771779878762-o041","timestamp":"2026-02-22T17:04:38.762Z","event_type":"wake_attempted","agent_id":"qa-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-010","ok":true}}
+{"id":"evt-1771779878763-9z02","timestamp":"2026-02-22T17:04:38.763Z","event_type":"wake_escalated","agent_id":"qa-1","details":{"task_id":"TASK-011","reason":"missing_handoff","to_status":"ready"}}
+{"id":"evt-1771779878764-8ksx","timestamp":"2026-02-22T17:04:38.764Z","event_type":"wake_attempted","agent_id":"qa-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-011","ok":true}}
+{"id":"evt-1771779878766-4g8y","timestamp":"2026-02-22T17:04:38.766Z","event_type":"wake_escalated","agent_id":"qa-1","details":{"task_id":"TASK-014","reason":"missing_handoff","to_status":"ready"}}
+{"id":"evt-1771779878767-6tw6","timestamp":"2026-02-22T17:04:38.767Z","event_type":"wake_attempted","agent_id":"qa-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-014","ok":true}}
