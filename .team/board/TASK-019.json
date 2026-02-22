@@ -1,18 +1,21 @@
 {
   "id": "TASK-019",
+  "type": "task",
   "title": "Polish README with demo GIF placeholder and badges",
   "description": "Update README.md: (1) Add placeholder for demo GIF/terminal recording at top, (2) Ensure all badges work (npm version, CI, license), (3) Add 'Saved Playlists' and 'History' sections once those features land, (4) Add Contributing section, (5) Verify all code examples are accurate.",
-  "status": "ready",
+  "status": "claimed",
   "priority": "high",
-  "role": "content-writer",
-  "claimed_by": null,
-  "created_at": "2026-02-22T19:15:00.000Z",
-  "updated_at": "2026-02-22T19:15:00.000Z",
+  "depends_on": [],
+  "required_role": "content-writer",
+  "claimed_by": "content-writer-1",
   "acceptance_criteria": [
     "Demo GIF placeholder clearly marked",
     "All badges render correctly",
     "Contributing section added",
     "Code examples verified accurate"
   ],
-  "comments": []
+  "created_at": "2026-02-22T19:15:00.000Z",
+  "updated_at": "2026-02-22T19:15:00.000Z",
+  "comments": [],
+  "claimed_at": "2026-02-22T19:16:33.581Z"
 }

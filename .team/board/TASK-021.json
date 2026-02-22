@@ -4,7 +4,6 @@
   "description": "Review and test TASK-015 implementation. Verify save/list/play commands work correctly, edge cases handled (empty playlists, disk full, corrupted JSON), and all tests pass.",
   "status": "backlog",
   "priority": "high",
-  "role": "qa",
   "claimed_by": null,
   "created_at": "2026-02-22T19:15:00.000Z",
   "updated_at": "2026-02-22T19:15:00.000Z",
@@ -14,6 +13,9 @@
     "Edge cases tested",
     "No regressions"
   ],
-  "depends_on": ["TASK-015"],
-  "comments": []
+  "depends_on": [
+    "TASK-015"
+  ],
+  "comments": [],
+  "required_role": "qa"
 }

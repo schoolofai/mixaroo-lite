@@ -3,8 +3,14 @@
 **Turn any prompt into a YouTube playlist. From your terminal.**
 
 [![npm version](https://img.shields.io/npm/v/mixaroo-lite.svg)](https://www.npmjs.com/package/mixaroo-lite)
+[![CI](https://img.shields.io/github/actions/workflow/status/schoolofai/mixaroo-lite/ci.yml?branch=main&label=CI)](https://github.com/schoolofai/mixaroo-lite/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Node.js Version](https://img.shields.io/node/v/mixaroo-lite.svg)](https://nodejs.org/)
+
+<!-- 🎬 DEMO GIF — Replace this block with a terminal recording (e.g. asciinema or vhs)
+![mixaroo-lite demo](https://raw.githubusercontent.com/schoolofai/mixaroo-lite/main/docs/demo.gif)
+-->
+<p align="center"><em>📼 Demo recording coming soon — see <a href="docs/recording-guide.md">recording guide</a></em></p>
 
 ---
 
@@ -57,6 +63,8 @@ That's it. Click the link, start listening.
 - 🔐 **Secure** — API keys stored locally in your system config directory
 - 🎚️ **Customizable** — Request 1 to 100 songs per playlist
 - ⚡ **Fast** — Uses the cheapest, fastest models (gpt-4o-mini, gemini-1.5-flash, claude-3-haiku)
+- 💾 **Saved Playlists** — Save and replay your favorite generated playlists *(coming soon)*
+- 📜 **History** — Browse and re-open previously generated playlists *(coming soon)*
 
 ## Installation
 
@@ -204,7 +212,7 @@ All three use their cheapest/fastest models to keep costs minimal.
 
 ## Contributing
 
-Found a bug? Have an idea? PRs welcome!
+Contributions welcome! Here's how to get started:
 
 ```bash
 # Clone the repo
@@ -217,9 +225,25 @@ npm install
 # Build
 npm run build
 
+# Run tests
+npm test
+
 # Run locally
 node dist/cli.js "test prompt"
 ```
+
+**Before submitting a PR:**
+
+1. Make sure `npm test` passes
+2. Run `npm run build` to verify the build
+3. Add tests for new features
+4. Keep commits focused and well-described
+
+Found a bug? [Open an issue](https://github.com/schoolofai/mixaroo-lite/issues). Have a feature idea? We'd love to hear it.
+
+## Changelog
+
+See [CHANGELOG.md](CHANGELOG.md) for release history.
 
 ## License
 

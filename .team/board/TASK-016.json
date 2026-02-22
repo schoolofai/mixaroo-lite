@@ -4,7 +4,6 @@
   "description": "Add robust error handling: (1) Catch network timeouts and show friendly retry messages, (2) Detect invalid/expired API keys and prompt user to run mx-lite setup, (3) Handle YouTube search failures gracefully (skip song, continue), (4) Add --verbose flag for debug output. Create tests for each error path.",
   "status": "ready",
   "priority": "high",
-  "role": "developer",
   "claimed_by": null,
   "created_at": "2026-02-22T19:15:00.000Z",
   "updated_at": "2026-02-22T19:15:00.000Z",
@@ -15,5 +14,6 @@
     "--verbose flag shows debug output",
     "Error path tests added"
   ],
-  "comments": []
+  "comments": [],
+  "required_role": "developer"
 }

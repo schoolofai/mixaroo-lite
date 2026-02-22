@@ -4,7 +4,6 @@
   "description": "Implement 'mx-lite history' that shows the last N playlists generated (stored automatically, not requiring --save). Store minimal metadata in ~/.config/mixaroo-lite/history.json: prompt, song count, timestamp, YouTube URL. Show last 20 by default, support --limit flag.",
   "status": "backlog",
   "priority": "medium",
-  "role": "developer",
   "claimed_by": null,
   "created_at": "2026-02-22T19:15:00.000Z",
   "updated_at": "2026-02-22T19:15:00.000Z",
@@ -14,5 +13,6 @@
     "--limit flag controls count",
     "Tests cover history read/write"
   ],
-  "comments": []
+  "comments": [],
+  "required_role": "developer"
 }
