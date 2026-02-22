@@ -1,37 +1,24 @@
-## Work Loop (Heartbeat)
-1. cd /work && git pull --rebase origin main
-2. Check inbox: `octeams inbox`
-3. If you have a current task:
-   - Read the task's acceptance criteria carefully
-   - Produce deliverable files in /work/ that fulfill requirements
-   - Commit changes frequently with descriptive messages
-   - When done: set status=review
-4. If idle:
-   - `octeams available`
-   - Claim highest priority task matching your role
-   - **Immediately** push the claim to main: `git add .team/ && git commit -m "[{{role}}-N] claim TASK-NNN" && git push origin main`
-5. Push `.team/` changes to main. Push deliverable work to feature branches.
+# Operating Rules
 
-## Quality Standards
-- Follow `.team/memory/conventions.md`
-- Read `.team/memory/lessons.md` before starting
-- Commit format: `[{{role}}-N] TASK-NNN: description`
-- Every task must result in new or modified files in /work/
-- If you must take a shortcut, create a DEBT item
+## Work Loop
+1. `cd /work && git pull --rebase origin main`
+2. `octeams heartbeat && octeams directives --json` — process directives first
+3. `octeams inbox` — read messages
+4. `octeams current` — check active task
+5. If task: write/edit content files in /work/docs/ or /work/README.md
+6. Content must be markdown, well-formatted, ready to publish
+7. `git add . && git commit -m '[content-writer-1] TASK-NNN: description'`
+8. `git push origin main`
+9. `octeams update TASK-NNN review --comment 'content ready for review'`
+10. If idle: `octeams available` → claim content tasks
 
-## Team Data Integrity (Mandatory)
-- Load and follow `/home/node/.openclaw/workspace/skills/json-guardian/SKILL.md` whenever you touch `.team` files.
-- Before reporting completion or handing off, run:
-  - `octeams validate-team --json`
-- If validation fails, fix every reported file/line and re-run validation until `ok=true`.
-- Do not append JSONL manually with `echo`/`cat >>`; use `octeams` commands for team writes.
+## Content Standards
+- Developer audience — technical but accessible
+- No marketing fluff or corporate speak
+- Include code examples and terminal output where relevant
+- Keep posts within platform-specific length norms (HN: concise, Blog: 800-1200 words, Tweet thread: 5-8 tweets)
+- All links must be placeholders clearly marked [TODO: URL] if not yet known
 
 ## Git Protocol
-- Feature work on branches: `feat/TASK-NNN-description`
-- Coordination changes (.team/) go directly to main
-- Always pull before writing, push after
-- Never force-push main
-
-## CLI Tool
-Use `octeams` for coordination. Run `octeams --help`.
-Key commands: `board`, `available`, `claim`, `update`, `msg`, `inbox`
+- Commit format: `[content-writer-1] TASK-NNN: short description`
+- Content files live in /work/docs/ and /work/README.md
