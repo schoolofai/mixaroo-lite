@@ -57,3 +57,12 @@
 {"id":"evt-1771788115955-jcgt","timestamp":"2026-02-22T19:21:55.955Z","event_type":"task_updated","agent_id":"qa-1","details":{"task_id":"TASK-022","old_status":"backlog","new_status":"ready"}}
 {"id":"evt-1771788129801-ywqs","timestamp":"2026-02-22T19:22:09.801Z","event_type":"task_claimed","agent_id":"qa-1","details":{"task_id":"TASK-022","title":"QA review: error handling improvements"}}
 {"id":"evt-1771788187779-rvoc","timestamp":"2026-02-22T19:23:07.779Z","event_type":"task_updated","agent_id":"qa-1","details":{"task_id":"TASK-022","old_status":"claimed","new_status":"review"}}
+{"id":"evt-1771788217757-5b2i","timestamp":"2026-02-22T19:23:37.757Z","event_type":"message_sent","agent_id":"qa-1","details":{"from":"qa-1","to":"lead-1","body_preview":"TASK-022 QA complete: error handling (TASK-016) reviewed and passed. Added 18 ed"}}
+{"id":"evt-1771788217827-us6v","timestamp":"2026-02-22T19:23:37.827Z","event_type":"wake_escalated","agent_id":"qa-1","details":{"task_id":"TASK-015","reason":"missing_handoff","to_status":"done"}}
+{"id":"evt-1771788217844-5ycj","timestamp":"2026-02-22T19:23:37.844Z","event_type":"wake_attempted","agent_id":"qa-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-015","ok":true}}
+{"id":"evt-1771788217846-054c","timestamp":"2026-02-22T19:23:37.846Z","event_type":"wake_escalated","agent_id":"qa-1","details":{"task_id":"TASK-017","reason":"missing_handoff","to_status":"review"}}
+{"id":"evt-1771788217847-fpse","timestamp":"2026-02-22T19:23:37.847Z","event_type":"wake_attempted","agent_id":"qa-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-017","ok":true}}
+{"id":"evt-1771788217849-u3af","timestamp":"2026-02-22T19:23:37.849Z","event_type":"wake_escalated","agent_id":"qa-1","details":{"task_id":"TASK-021","reason":"missing_handoff","to_status":"done"}}
+{"id":"evt-1771788217850-n5q9","timestamp":"2026-02-22T19:23:37.850Z","event_type":"wake_attempted","agent_id":"qa-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-021","ok":true}}
+{"id":"evt-1771788217851-qyvf","timestamp":"2026-02-22T19:23:37.851Z","event_type":"wake_escalated","agent_id":"qa-1","details":{"task_id":"TASK-022","reason":"missing_handoff","to_status":"ready"}}
+{"id":"evt-1771788217852-3per","timestamp":"2026-02-22T19:23:37.852Z","event_type":"wake_attempted","agent_id":"qa-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-022","ok":true}}
