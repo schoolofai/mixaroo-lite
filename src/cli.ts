@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import { Command } from 'commander';
-import chalk from 'chalk';
+
 import { setupCommand } from './commands/setup.js';
 import { generateCommand } from './commands/generate.js';
 import { configCommand } from './commands/config.js';

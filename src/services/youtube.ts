@@ -30,7 +30,7 @@ export async function searchSong(title: string, artist: string): Promise<string 
       if (video) {
         return video.videoId;
       }
-    } catch (error) {
+    } catch (_error) {
       // Try next query variation
       continue;
     }
@@ -68,7 +68,7 @@ export async function searchSongs(
       if (onProgress) {
         onProgress(i + 1, songs.length, song, videoId !== null);
       }
-    } catch (error) {
+    } catch (_error) {
       // If search fails, mark as not found
       results.push({ song, videoId: null });
       

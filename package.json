@@ -14,7 +14,9 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "clean": "rm -rf dist",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix"
   },
   "keywords": [
     "playlist",
@@ -47,9 +49,12 @@
     "yt-search": "^2.13.1"
   },
   "devDependencies": {
+    "@eslint/js": "^9.39.3",
     "@types/inquirer": "^9.0.9",
     "@types/node": "^20.11.0",
+    "eslint": "^9.0.0",
     "typescript": "^5.9.3",
+    "typescript-eslint": "^8.56.0",
     "vitest": "^2.1.9"
   }
 }

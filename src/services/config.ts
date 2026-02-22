@@ -1,7 +1,6 @@
 import Conf from 'conf';
-import { fileURLToPath } from 'url';
-import { dirname, join } from 'path';
-import { chmod, stat } from 'fs/promises';
+import { dirname } from 'path';
+import { chmod } from 'fs/promises';
 
 // Provider types
 export type AIProvider = 'openai' | 'gemini' | 'anthropic';

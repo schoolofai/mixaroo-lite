@@ -127,7 +127,7 @@ export async function generateCommand(prompt: string, options: GenerateOptions):
 
   let results: SearchResult[];
   try {
-    results = await searchSongs(songs, (current, total, song, found) => {
+    results = await searchSongs(songs, (current, total, song, _found) => {
       ytSpinner.text = `Searching YouTube... (${current}/${total}) ${song.title}`;
     });
     ytSpinner.succeed('YouTube search complete');

@@ -125,7 +125,7 @@ export async function setupCommand(): Promise<void> {
         }
         console.log();
       }
-    } catch (error) {
+    } catch (_error) {
       spinner.fail('Validation failed');
       console.log();
       console.log(chalk.red('❌ Could not validate API key. There may be a network issue.'));

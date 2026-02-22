@@ -177,7 +177,7 @@ export async function validateApiKey(provider: AIProvider, apiKey: string): Prom
     // Make a simple test request
     await service.generatePlaylist('one happy song', 1);
     return true;
-  } catch (error) {
+  } catch (_error) {
     return false;
   }
 }
