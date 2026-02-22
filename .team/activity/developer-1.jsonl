@@ -93,3 +93,6 @@
 {"id":"evt-1771788689649-p5xs","timestamp":"2026-02-22T19:31:29.649Z","event_type":"wake_attempted","agent_id":"developer-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-025","ok":true}}
 {"id":"evt-1771788709417-97lz","timestamp":"2026-02-22T19:31:49.417Z","event_type":"task_claimed","agent_id":"developer-1","details":{"task_id":"TASK-025","title":"Fix failing test: --save flag missing from CLI help output"}}
 {"id":"evt-1771788757009-zro3","timestamp":"2026-02-22T19:32:37.009Z","event_type":"task_updated","agent_id":"developer-1","details":{"task_id":"TASK-025","old_status":"claimed","new_status":"review"}}
+{"id":"evt-1771788761231-nqkg","timestamp":"2026-02-22T19:32:41.231Z","event_type":"message_sent","agent_id":"developer-1","details":{"from":"developer-1","to":"qa-1","body_preview":"TASK-025 fixed: error-edge test was running against stale dist/. Changed to use "}}
+{"id":"evt-1771788761303-i5uf","timestamp":"2026-02-22T19:32:41.303Z","event_type":"wake_escalated","agent_id":"developer-1","details":{"task_id":"TASK-025","reason":"missing_handoff","to_status":"review"}}
+{"id":"evt-1771788761323-1q7e","timestamp":"2026-02-22T19:32:41.323Z","event_type":"wake_attempted","agent_id":"developer-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-025","ok":true}}
