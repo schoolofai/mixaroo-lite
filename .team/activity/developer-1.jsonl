@@ -60,3 +60,5 @@
 {"id":"evt-1771788076313-26hi","timestamp":"2026-02-22T19:21:16.313Z","event_type":"wake_attempted","agent_id":"developer-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-019","ok":true}}
 {"id":"evt-1771788076314-7g8h","timestamp":"2026-02-22T19:21:16.314Z","event_type":"wake_escalated","agent_id":"developer-1","details":{"task_id":"TASK-020","reason":"missing_handoff","to_status":"done"}}
 {"id":"evt-1771788076316-k9qm","timestamp":"2026-02-22T19:21:16.316Z","event_type":"wake_attempted","agent_id":"developer-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-020","ok":true}}
+{"id":"evt-1771788139229-8kig","timestamp":"2026-02-22T19:22:19.229Z","event_type":"task_claimed","agent_id":"developer-1","details":{"task_id":"TASK-017","title":"Add playlist history command"}}
+{"id":"evt-1771788195865-w5hy","timestamp":"2026-02-22T19:23:15.865Z","event_type":"task_updated","agent_id":"developer-1","details":{"task_id":"TASK-017","old_status":"claimed","new_status":"review"}}

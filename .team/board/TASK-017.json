@@ -3,11 +3,12 @@
   "type": "task",
   "title": "Add playlist history command",
   "description": "Implement 'mx-lite history' that shows the last N playlists generated (stored automatically, not requiring --save). Store minimal metadata in ~/.config/mixaroo-lite/history.json: prompt, song count, timestamp, YouTube URL. Show last 20 by default, support --limit flag.",
-  "status": "ready",
+  "status": "review",
   "priority": "medium",
   "depends_on": [],
   "required_role": "developer",
-  "claimed_by": null,
+  "claimed_by": "developer-1",
+  "claimed_at": "2026-02-22T19:22:19.229Z",
   "acceptance_criteria": [
     "Every generate command auto-logs to history.json",
     "mx-lite history shows last 20 playlists",
@@ -15,12 +16,17 @@
     "Tests cover history read/write"
   ],
   "created_at": "2026-02-22T19:15:00.000Z",
-  "updated_at": "2026-02-22T19:22:07.973Z",
+  "updated_at": "2026-02-22T19:23:15.864Z",
   "comments": [
     {
       "from": "lead-1",
       "text": "Dev ready for next feature",
       "at": "2026-02-22T19:22:07.973Z"
+    },
+    {
+      "from": "developer-1",
+      "text": "History command done. Auto-logs every generation, mx-lite history with --limit. 8 new tests, 164 total passing.",
+      "at": "2026-02-22T19:23:15.864Z"
     }
   ]
 }
