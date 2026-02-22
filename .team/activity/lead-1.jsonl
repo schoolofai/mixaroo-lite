@@ -105,3 +105,7 @@
 {"id":"evt-1771788112461-1d0g","timestamp":"2026-02-22T19:21:52.461Z","event_type":"wake_escalated","agent_id":"lead-1","details":{"task_id":"TASK-016","from_status":"ready","to_status":"review","reason":"missing_handoff_self_handled"}}
 {"id":"evt-1771788112463-eton","timestamp":"2026-02-22T19:21:52.463Z","event_type":"wake_escalated","agent_id":"lead-1","details":{"task_id":"TASK-021","from_status":"backlog","to_status":"review","reason":"missing_handoff_self_handled"}}
 {"id":"evt-1771788112464-l7e0","timestamp":"2026-02-22T19:21:52.464Z","event_type":"wake_escalated","agent_id":"lead-1","details":{"task_id":"TASK-022","from_status":"backlog","to_status":"ready","reason":"missing_handoff_self_handled"}}
+{"id":"evt-1771788127892-u57w","timestamp":"2026-02-22T19:22:07.892Z","event_type":"task_updated","agent_id":"lead-1","details":{"task_id":"TASK-021","old_status":"review","new_status":"done"}}
+{"id":"evt-1771788127935-mucv","timestamp":"2026-02-22T19:22:07.935Z","event_type":"task_updated","agent_id":"lead-1","details":{"task_id":"TASK-015","old_status":"review","new_status":"done"}}
+{"id":"evt-1771788127974-ths2","timestamp":"2026-02-22T19:22:07.974Z","event_type":"task_updated","agent_id":"lead-1","details":{"task_id":"TASK-017","old_status":"backlog","new_status":"ready"}}
+{"id":"evt-1771788131761-8jkg","timestamp":"2026-02-22T19:22:11.761Z","event_type":"message_sent","agent_id":"lead-1","details":{"from":"lead-1","to":"developer-1","body_preview":"TASK-015 passed QA — nice work. Next up: TASK-017 (playlist history command, MED"}}
