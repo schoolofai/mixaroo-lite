@@ -8,3 +8,5 @@
 {"id":"evt-1771778960567-z775","timestamp":"2026-02-22T16:49:20.567Z","event_type":"agent_registered","agent_id":"data-analyst-1","details":{"role":"data-analyst","product":"mixaroo-lite"}}
 {"id":"evt-1771779194197-ipun","timestamp":"2026-02-22T16:53:14.197Z","event_type":"agent_registered","agent_id":"data-analyst-1","details":{"role":"data-analyst","product":"mixaroo-lite"}}
 {"id":"evt-1771779528523-47up","timestamp":"2026-02-22T16:58:48.523Z","event_type":"agent_registered","agent_id":"data-analyst-1","details":{"role":"data-analyst","product":"mixaroo-lite"}}
+{"id":"evt-1771779852122-agwb","timestamp":"2026-02-22T17:04:12.122Z","event_type":"task_claimed","agent_id":"data-analyst-1","details":{"task_id":"TASK-014","title":"Create launch metrics dashboard template"}}
+{"id":"evt-1771779860765-e5p8","timestamp":"2026-02-22T17:04:20.765Z","event_type":"task_updated","agent_id":"data-analyst-1","details":{"task_id":"TASK-014","old_status":"claimed","new_status":"review"}}
