@@ -18,3 +18,4 @@
 {"id":"evt-1771612173337-16tx","from":"qa-1","to":"lead-1","body":"[wake-router] Missing task.handoff for TASK-012 transition review -> done. Lead routing required.","timestamp":"2026-02-20T18:29:33.337Z","read":false,"type":"wake_escalation"}
 {"id":"evt-1771612173340-9ann","from":"qa-1","to":"lead-1","body":"[wake-router] Missing task.handoff for TASK-013 transition review -> done. Lead routing required.","timestamp":"2026-02-20T18:29:33.340Z","read":false,"type":"wake_escalation"}
 {"id":"evt-1771774279160-2juc","from":"human","to":"lead-1","body":"Ping: confirm you are alive and your API token is working.","timestamp":"2026-02-22T15:31:19.160Z","read":false}
+{"id":"evt-1771774425733-xobj","from":"human","to":"lead-1","body":"Status check: please confirm you are operational, review your inbox, and report what tasks are on the board.","timestamp":"2026-02-22T15:33:45.733Z","read":false}
