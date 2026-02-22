@@ -77,3 +77,12 @@
 {"id":"evt-1771788313405-tsn4","timestamp":"2026-02-22T19:25:13.405Z","event_type":"wake_attempted","agent_id":"qa-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-023","ok":true}}
 {"id":"evt-1771788448575-dthv","timestamp":"2026-02-22T19:27:28.575Z","event_type":"task_claimed","agent_id":"qa-1","details":{"task_id":"TASK-024","title":"QA review: shell completions"}}
 {"id":"evt-1771788483777-mvom","timestamp":"2026-02-22T19:28:03.777Z","event_type":"task_updated","agent_id":"qa-1","details":{"task_id":"TASK-024","old_status":"claimed","new_status":"review"}}
+{"id":"evt-1771788499098-g12r","timestamp":"2026-02-22T19:28:19.098Z","event_type":"message_sent","agent_id":"qa-1","details":{"from":"qa-1","to":"lead-1","body_preview":"TASK-024 QA complete: shell completions (TASK-018) reviewed and passed. Created "}}
+{"id":"evt-1771788499172-4wx3","timestamp":"2026-02-22T19:28:19.172Z","event_type":"wake_escalated","agent_id":"qa-1","details":{"task_id":"TASK-017","reason":"missing_handoff","to_status":"done"}}
+{"id":"evt-1771788499189-8oyl","timestamp":"2026-02-22T19:28:19.189Z","event_type":"wake_attempted","agent_id":"qa-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-017","ok":true}}
+{"id":"evt-1771788499191-15ly","timestamp":"2026-02-22T19:28:19.191Z","event_type":"wake_escalated","agent_id":"qa-1","details":{"task_id":"TASK-018","reason":"missing_handoff","to_status":"review"}}
+{"id":"evt-1771788499192-nyo0","timestamp":"2026-02-22T19:28:19.192Z","event_type":"wake_attempted","agent_id":"qa-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-018","ok":true}}
+{"id":"evt-1771788499193-pb6q","timestamp":"2026-02-22T19:28:19.193Z","event_type":"wake_escalated","agent_id":"qa-1","details":{"task_id":"TASK-023","reason":"missing_handoff","to_status":"done"}}
+{"id":"evt-1771788499194-t2wh","timestamp":"2026-02-22T19:28:19.194Z","event_type":"wake_attempted","agent_id":"qa-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-023","ok":true}}
+{"id":"evt-1771788499196-uxix","timestamp":"2026-02-22T19:28:19.196Z","event_type":"wake_escalated","agent_id":"qa-1","details":{"task_id":"TASK-024","reason":"missing_handoff","to_status":"ready"}}
+{"id":"evt-1771788499196-zi5z","timestamp":"2026-02-22T19:28:19.196Z","event_type":"wake_attempted","agent_id":"qa-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-024","ok":true}}
