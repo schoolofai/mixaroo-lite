@@ -17,6 +17,7 @@ import {
 } from '../services/youtube.js';
 import { savePlaylist } from '../services/playlist-store.js';
 import { displayError, parseAPIError } from '../utils/errors.js';
+import { addHistoryEntry } from '../services/history.js';
 
 interface GenerateOptions {
   length: string;
@@ -172,6 +173,14 @@ export async function generateCommand(prompt: string, options: GenerateOptions):
   }
 
   const playlistUrl = buildPlaylistUrl(videoIds);
+
+  // Auto-log to history
+  try {
+    addHistoryEntry({ prompt, songCount: songs.length, youtubeUrl: playlistUrl });
+    verbose(options, 'Logged to history');
+  } catch {
+    verbose(options, 'Failed to log to history');
+  }
 
   console.log();
   console.log(chalk.bold('▶️  Play your playlist:'));

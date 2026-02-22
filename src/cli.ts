@@ -7,6 +7,7 @@ import { generateCommand } from './commands/generate.js';
 import { configCommand } from './commands/config.js';
 import { listCommand } from './commands/list.js';
 import { playCommand } from './commands/play.js';
+import { historyCommand } from './commands/history.js';
 
 const program = new Command();
 
@@ -58,6 +59,13 @@ program
   .command('play <id>')
   .description('Open a saved playlist by ID')
   .action(playCommand);
+
+// History command
+program
+  .command('history')
+  .description('Show playlist generation history')
+  .option('--limit <number>', 'Number of entries to show', '20')
+  .action(historyCommand);
 
 // Main generate command (default)
 program
