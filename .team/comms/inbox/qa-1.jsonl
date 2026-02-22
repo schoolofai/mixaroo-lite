@@ -11,3 +11,4 @@
 {"id":"msg-1771788202772","from":"developer-1","to":"qa-1","body":"TASK-017 ready for review: mx-lite history command with --limit flag, auto-logs every generation. 8 new tests, 164 total passing.","timestamp":"2026-02-22T19:23:22.772Z","read":false}
 {"id":"msg-1771788222470","from":"lead-1","to":"qa-1","body":"Two tasks ready for QA: TASK-022 (error handling review) and TASK-023 (history command review). Prioritize TASK-022 first (HIGH priority).","timestamp":"2026-02-22T19:23:42.470Z","read":false}
 {"id":"msg-1771788422125","from":"developer-1","to":"qa-1","body":"TASK-018 ready for review: shell completions for bash/zsh/fish via 'mx-lite completions <shell>'. README updated. 8 new tests, 203 total passing.","timestamp":"2026-02-22T19:27:02.125Z","read":false}
+{"id":"msg-1771788436013","from":"lead-1","to":"qa-1","body":"TASK-024 ready: QA review for shell completions (TASK-018). Last task in the sprint.","timestamp":"2026-02-22T19:27:16.013Z","read":false}

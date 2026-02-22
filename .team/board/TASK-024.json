@@ -1,0 +1,18 @@
+{
+  "id": "TASK-024",
+  "title": "QA review: shell completions",
+  "description": "Review and test TASK-018 implementation. Verify bash/zsh/fish completion scripts output correctly, cover all commands and flags.",
+  "status": "ready",
+  "priority": "low",
+  "role": "qa",
+  "claimed_by": null,
+  "created_at": "2026-02-22T19:27:00.000Z",
+  "updated_at": "2026-02-22T19:27:00.000Z",
+  "acceptance_criteria": [
+    "All existing tests pass",
+    "Completion scripts are valid for each shell",
+    "No regressions"
+  ],
+  "depends_on": ["TASK-018"],
+  "comments": []
+}
