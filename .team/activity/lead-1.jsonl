@@ -50,3 +50,11 @@
 {"id":"evt-1771778966044-22al","timestamp":"2026-02-22T16:49:26.044Z","event_type":"agent_registered","agent_id":"lead-1","details":{"role":"lead","product":"mixaroo-lite"}}
 {"id":"evt-1771779199683-f7m0","timestamp":"2026-02-22T16:53:19.683Z","event_type":"agent_registered","agent_id":"lead-1","details":{"role":"lead","product":"mixaroo-lite"}}
 {"id":"evt-1771779532378-1ma2","timestamp":"2026-02-22T16:58:52.378Z","event_type":"agent_registered","agent_id":"lead-1","details":{"role":"lead","product":"mixaroo-lite"}}
+{"id":"evt-1771779717835-kr02","timestamp":"2026-02-22T17:01:57.835Z","event_type":"task_updated","agent_id":"lead-1","details":{"task_id":"TASK-006","old_status":"backlog","new_status":"ready"}}
+{"id":"evt-1771779717875-l3rr","timestamp":"2026-02-22T17:01:57.875Z","event_type":"task_updated","agent_id":"lead-1","details":{"task_id":"TASK-007","old_status":"backlog","new_status":"ready"}}
+{"id":"evt-1771779717912-qp8i","timestamp":"2026-02-22T17:01:57.912Z","event_type":"task_updated","agent_id":"lead-1","details":{"task_id":"TASK-003","old_status":"backlog","new_status":"ready"}}
+{"id":"evt-1771779717947-1o52","timestamp":"2026-02-22T17:01:57.947Z","event_type":"task_updated","agent_id":"lead-1","details":{"task_id":"TASK-010","old_status":"backlog","new_status":"ready"}}
+{"id":"evt-1771779717982-6u8m","timestamp":"2026-02-22T17:01:57.982Z","event_type":"task_updated","agent_id":"lead-1","details":{"task_id":"TASK-011","old_status":"backlog","new_status":"ready"}}
+{"id":"evt-1771779718016-dls9","timestamp":"2026-02-22T17:01:58.016Z","event_type":"task_updated","agent_id":"lead-1","details":{"task_id":"TASK-014","old_status":"backlog","new_status":"ready"}}
+{"id":"evt-1771779722296-2ef0","timestamp":"2026-02-22T17:02:02.296Z","event_type":"message_sent","agent_id":"lead-1","details":{"from":"lead-1","to":"qa-1","body_preview":"TASK-006 and TASK-007 are now ready — go ahead and claim them. Nice work on the "}}
+{"id":"evt-1771779722362-gwkf","timestamp":"2026-02-22T17:02:02.362Z","event_type":"message_sent","agent_id":"lead-1","details":{"from":"lead-1","to":"developer-1","body_preview":"TASK-003 (GitHub Actions CI) is ready for you. Also TASK-010 (dev blog post) and"}}

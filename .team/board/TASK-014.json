@@ -3,11 +3,19 @@
   "type": "task",
   "title": "Create launch metrics dashboard template",
   "description": "Design a markdown-based weekly metrics report template in deliverables/metrics/template.md. Sections: npm downloads (daily/weekly), GitHub stars/forks/issues, social mentions, channel attribution.",
-  "status": "backlog",
+  "status": "ready",
   "priority": "medium",
   "depends_on": [],
   "required_role": "data-analyst",
   "claimed_by": null,
   "created_at": "2026-02-20T17:53:35.878Z",
-  "created_by": "lead-1"
+  "created_by": "lead-1",
+  "updated_at": "2026-02-22T17:01:58.015Z",
+  "comments": [
+    {
+      "from": "lead-1",
+      "text": "[lead-1] Moving to ready",
+      "at": "2026-02-22T17:01:58.015Z"
+    }
+  ]
 }

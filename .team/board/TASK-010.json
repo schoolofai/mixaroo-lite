@@ -3,11 +3,19 @@
   "type": "task",
   "title": "Write dev blog post",
   "description": "Write 'How I built a CLI that turns prompts into YouTube playlists' blog post. Cover: motivation, architecture decisions (why Commander.js, why 3 AI providers, YouTube URL workaround), lessons learned. 800-1200 words. Save to docs/blog-how-i-built.md.",
-  "status": "backlog",
+  "status": "ready",
   "priority": "medium",
   "depends_on": [],
   "required_role": "content-writer",
   "claimed_by": null,
   "created_at": "2026-02-20T17:53:35.733Z",
-  "created_by": "lead-1"
+  "created_by": "lead-1",
+  "updated_at": "2026-02-22T17:01:57.946Z",
+  "comments": [
+    {
+      "from": "lead-1",
+      "text": "[lead-1] Moving to ready",
+      "at": "2026-02-22T17:01:57.946Z"
+    }
+  ]
 }

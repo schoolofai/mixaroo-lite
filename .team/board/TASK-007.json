@@ -3,11 +3,19 @@
   "type": "task",
   "title": "Write integration tests for CLI commands",
   "description": "Test CLI argument parsing: generate with prompt/length/provider flags, config show/reset/set/path, setup flow. Test error output for missing config, invalid provider, bad length values.",
-  "status": "backlog",
+  "status": "ready",
   "priority": "medium",
   "depends_on": [],
   "required_role": "qa",
   "claimed_by": null,
   "created_at": "2026-02-20T17:53:35.624Z",
-  "created_by": "lead-1"
+  "created_by": "lead-1",
+  "updated_at": "2026-02-22T17:01:57.874Z",
+  "comments": [
+    {
+      "from": "lead-1",
+      "text": "[lead-1] Moving to ready per QA request",
+      "at": "2026-02-22T17:01:57.874Z"
+    }
+  ]
 }
