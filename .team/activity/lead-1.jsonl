@@ -135,3 +135,4 @@
 {"id":"evt-1771788514387-j7hq","timestamp":"2026-02-22T19:28:34.387Z","event_type":"wake_escalated","agent_id":"lead-1","details":{"task_id":"TASK-018","from_status":"review","to_status":"done","reason":"missing_handoff_self_handled"}}
 {"id":"evt-1771788514389-lvjh","timestamp":"2026-02-22T19:28:34.389Z","event_type":"wake_escalated","agent_id":"lead-1","details":{"task_id":"TASK-024","from_status":"ready","to_status":"done","reason":"missing_handoff_self_handled"}}
 {"id":"evt-1771788657081-fdep","timestamp":"2026-02-22T19:30:57.081Z","event_type":"message_sent","agent_id":"lead-1","details":{"from":"lead-1","to":"developer-1","body_preview":"Urgent: TASK-025 — 1 failing test. The --save flag isn't registered in cli.ts he"}}
+{"id":"evt-1771788662117-1lof","timestamp":"2026-02-22T19:31:02.117Z","event_type":"wake_escalated","agent_id":"lead-1","details":{"task_id":"TASK-025","from_status":"unknown","to_status":"ready","reason":"missing_handoff_self_handled"}}
