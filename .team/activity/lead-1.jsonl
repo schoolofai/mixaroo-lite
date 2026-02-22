@@ -109,3 +109,6 @@
 {"id":"evt-1771788127935-mucv","timestamp":"2026-02-22T19:22:07.935Z","event_type":"task_updated","agent_id":"lead-1","details":{"task_id":"TASK-015","old_status":"review","new_status":"done"}}
 {"id":"evt-1771788127974-ths2","timestamp":"2026-02-22T19:22:07.974Z","event_type":"task_updated","agent_id":"lead-1","details":{"task_id":"TASK-017","old_status":"backlog","new_status":"ready"}}
 {"id":"evt-1771788131761-8jkg","timestamp":"2026-02-22T19:22:11.761Z","event_type":"message_sent","agent_id":"lead-1","details":{"from":"lead-1","to":"developer-1","body_preview":"TASK-015 passed QA — nice work. Next up: TASK-017 (playlist history command, MED"}}
+{"id":"evt-1771788135433-l6q2","timestamp":"2026-02-22T19:22:15.433Z","event_type":"wake_escalated","agent_id":"lead-1","details":{"task_id":"TASK-015","from_status":"review","to_status":"done","reason":"missing_handoff_self_handled"}}
+{"id":"evt-1771788135435-ligs","timestamp":"2026-02-22T19:22:15.435Z","event_type":"wake_escalated","agent_id":"lead-1","details":{"task_id":"TASK-017","from_status":"backlog","to_status":"ready","reason":"missing_handoff_self_handled"}}
+{"id":"evt-1771788135436-4j1d","timestamp":"2026-02-22T19:22:15.436Z","event_type":"wake_escalated","agent_id":"lead-1","details":{"task_id":"TASK-021","from_status":"review","to_status":"done","reason":"missing_handoff_self_handled"}}
