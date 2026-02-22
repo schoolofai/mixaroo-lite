@@ -98,7 +98,7 @@ mx-lite "your vibe here"
 
 ⭐ github.com/schoolofai/mixaroo-lite
 
-macOS today, Linux/Windows soon.
+Works on macOS, Linux, and Windows.
 
 #buildinpublic #opensource #cli
 ```
@@ -179,7 +179,7 @@ npm install -g mixaroo-lite
 ```
 ⭐ github.com/schoolofai/mixaroo-lite
 
-macOS today, more platforms soon.
+macOS, Linux, and Windows.
 
 #buildinpublic #opensource
 ```

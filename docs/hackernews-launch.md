@@ -34,7 +34,7 @@ You describe a vibe (`mx-lite "chill lo-fi beats for late night coding"`), the A
 
 **How it works:** TypeScript CLI (Commander.js) that talks to OpenAI, Gemini, or Anthropic — whichever you have a key for. Uses the cheapest models (gpt-4o-mini, gemini-1.5-flash, claude-3-haiku) since song generation doesn't need frontier intelligence. YouTube search via yt-search, no API key required. Config stored locally via `conf` (XDG-compliant).
 
-**Honest limitations:** YouTube search is solid for popular tracks (~90%) but struggles with obscure stuff. The AI occasionally invents songs that don't exist — we just skip those. And the "playlist" is actually a `watch_videos` URL workaround, not a real YouTube playlist. Currently macOS only (Linux/Windows coming).
+**Honest limitations:** YouTube search is solid for popular tracks (~90%) but struggles with obscure stuff. The AI occasionally invents songs that don't exist — we just skip those. And the "playlist" is actually a `watch_videos` URL workaround, not a real YouTube playlist. Works on macOS, Linux, and Windows.
 
 **Why a CLI?** I live in my terminal. Context-switching to a browser to build a playlist felt wrong. Plus CLIs are fun to build.
 

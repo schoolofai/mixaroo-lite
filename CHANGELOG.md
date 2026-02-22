@@ -19,7 +19,6 @@ Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Known Issues
 
-- macOS only (Linux and Windows support planned)
 - YouTube search may miss obscure or very new tracks
 - AI occasionally generates songs that don't exist (gracefully skipped)
 - YouTube playlist URL uses `watch_videos` workaround, not native playlist creation
