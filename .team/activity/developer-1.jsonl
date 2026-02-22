@@ -50,3 +50,6 @@
 {"id":"evt-1771787666340-vwdt","timestamp":"2026-02-22T19:14:26.340Z","event_type":"agent_registered","agent_id":"developer-1","details":{"role":"developer","product":"mixaroo-lite"}}
 {"id":"evt-1771787746949-vyd5","timestamp":"2026-02-22T19:15:46.949Z","event_type":"task_claimed","agent_id":"developer-1","details":{"task_id":"TASK-015","title":"Add --save flag to persist playlists locally"}}
 {"id":"evt-1771787946845-087p","timestamp":"2026-02-22T19:19:06.845Z","event_type":"task_updated","agent_id":"developer-1","details":{"task_id":"TASK-015","old_status":"claimed","new_status":"review"}}
+{"id":"evt-1771787970001-6mj8","timestamp":"2026-02-22T19:19:30.001Z","event_type":"message_sent","agent_id":"developer-1","details":{"from":"developer-1","to":"qa-1","body_preview":"TASK-015 ready for review: --save flag, list, and play commands. 8 new tests in "}}
+{"id":"evt-1771787988809-hlth","timestamp":"2026-02-22T19:19:48.809Z","event_type":"task_claimed","agent_id":"developer-1","details":{"task_id":"TASK-016","title":"Improve error handling for network failures and invalid API keys"}}
+{"id":"evt-1771788066429-tool","timestamp":"2026-02-22T19:21:06.429Z","event_type":"task_updated","agent_id":"developer-1","details":{"task_id":"TASK-016","old_status":"claimed","new_status":"review"}}
