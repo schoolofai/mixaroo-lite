@@ -47,3 +47,4 @@
 {"id":"evt-1771779954824-gbmr","timestamp":"2026-02-22T17:05:54.824Z","event_type":"wake_attempted","agent_id":"developer-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-013","ok":true}}
 {"id":"evt-1771779954826-bl0g","timestamp":"2026-02-22T17:05:54.826Z","event_type":"wake_escalated","agent_id":"developer-1","details":{"task_id":"TASK-014","reason":"missing_handoff","to_status":"review"}}
 {"id":"evt-1771779954826-0k1r","timestamp":"2026-02-22T17:05:54.826Z","event_type":"wake_attempted","agent_id":"developer-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-014","ok":true}}
+{"id":"evt-1771787666340-vwdt","timestamp":"2026-02-22T19:14:26.340Z","event_type":"agent_registered","agent_id":"developer-1","details":{"role":"developer","product":"mixaroo-lite"}}
