@@ -124,3 +124,6 @@
 {"id":"evt-1771788320517-zvql","timestamp":"2026-02-22T19:25:20.517Z","event_type":"task_updated","agent_id":"lead-1","details":{"task_id":"TASK-017","old_status":"review","new_status":"done"}}
 {"id":"evt-1771788320556-en6u","timestamp":"2026-02-22T19:25:20.556Z","event_type":"task_updated","agent_id":"lead-1","details":{"task_id":"TASK-018","old_status":"backlog","new_status":"ready"}}
 {"id":"evt-1771788324329-6tal","timestamp":"2026-02-22T19:25:24.329Z","event_type":"message_sent","agent_id":"lead-1","details":{"from":"lead-1","to":"developer-1","body_preview":"TASK-017 passed QA. Last task: TASK-018 (shell completions) is now ready. Low pr"}}
+{"id":"evt-1771788324599-tzyy","timestamp":"2026-02-22T19:25:24.599Z","event_type":"wake_escalated","agent_id":"lead-1","details":{"task_id":"TASK-017","from_status":"review","to_status":"done","reason":"missing_handoff_self_handled"}}
+{"id":"evt-1771788324601-q6zf","timestamp":"2026-02-22T19:25:24.601Z","event_type":"wake_escalated","agent_id":"lead-1","details":{"task_id":"TASK-018","from_status":"backlog","to_status":"ready","reason":"missing_handoff_self_handled"}}
+{"id":"evt-1771788324602-rtel","timestamp":"2026-02-22T19:25:24.602Z","event_type":"wake_escalated","agent_id":"lead-1","details":{"task_id":"TASK-023","from_status":"ready","to_status":"done","reason":"missing_handoff_self_handled"}}
