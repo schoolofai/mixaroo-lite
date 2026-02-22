@@ -106,7 +106,7 @@ describe('error handling edge cases', () => {
     it('should show --verbose in CLI help output', async () => {
       const { execSync } = await import('child_process');
       // The -v/--verbose flag is on the default command, visible in full help
-      const result = execSync('node dist/cli.js --help', { cwd: '/work', encoding: 'utf-8' });
+      const result = execSync('npx tsx src/cli.ts --help', { cwd: '/work', encoding: 'utf-8' });
       // Verify the flag exists by checking it doesn't error with --verbose
       expect(result).toContain('-s, --save');
     });
