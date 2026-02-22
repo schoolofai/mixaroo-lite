@@ -68,3 +68,10 @@
 {"id":"evt-1771788217852-3per","timestamp":"2026-02-22T19:23:37.852Z","event_type":"wake_attempted","agent_id":"qa-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-022","ok":true}}
 {"id":"evt-1771788253075-fq9p","timestamp":"2026-02-22T19:24:13.075Z","event_type":"task_claimed","agent_id":"qa-1","details":{"task_id":"TASK-023","title":"QA review: playlist history command"}}
 {"id":"evt-1771788304991-wa8q","timestamp":"2026-02-22T19:25:04.991Z","event_type":"task_updated","agent_id":"qa-1","details":{"task_id":"TASK-023","old_status":"claimed","new_status":"review"}}
+{"id":"evt-1771788313310-i3l4","timestamp":"2026-02-22T19:25:13.310Z","event_type":"message_sent","agent_id":"qa-1","details":{"from":"qa-1","to":"lead-1","body_preview":"TASK-023 QA complete: history command (TASK-017) reviewed and passed. Added 13 e"}}
+{"id":"evt-1771788313380-bl0g","timestamp":"2026-02-22T19:25:13.380Z","event_type":"wake_escalated","agent_id":"qa-1","details":{"task_id":"TASK-016","reason":"missing_handoff","to_status":"done"}}
+{"id":"evt-1771788313399-iadm","timestamp":"2026-02-22T19:25:13.399Z","event_type":"wake_attempted","agent_id":"qa-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-016","ok":true}}
+{"id":"evt-1771788313401-ws9e","timestamp":"2026-02-22T19:25:13.401Z","event_type":"wake_escalated","agent_id":"qa-1","details":{"task_id":"TASK-022","reason":"missing_handoff","to_status":"done"}}
+{"id":"evt-1771788313402-s2ki","timestamp":"2026-02-22T19:25:13.402Z","event_type":"wake_attempted","agent_id":"qa-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-022","ok":true}}
+{"id":"evt-1771788313404-3jaj","timestamp":"2026-02-22T19:25:13.404Z","event_type":"wake_escalated","agent_id":"qa-1","details":{"task_id":"TASK-023","reason":"missing_handoff","to_status":"review"}}
+{"id":"evt-1771788313405-tsn4","timestamp":"2026-02-22T19:25:13.405Z","event_type":"wake_attempted","agent_id":"qa-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-023","ok":true}}
