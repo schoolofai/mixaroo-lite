@@ -3,7 +3,7 @@
   "type": "task",
   "title": "Fix failing test: --save flag missing from CLI help output",
   "description": "src/commands/__tests__/error-edge.test.ts expects '--save' in CLI help output but the flag isn't registered on the main generate command in src/cli.ts. Either add the -s/--save option to the program argument definition in cli.ts, or fix the test assertion to match actual behavior. The --save flag should be visible in help output since it's a user-facing feature.",
-  "status": "review",
+  "status": "done",
   "priority": "high",
   "depends_on": [],
   "required_role": "developer",
@@ -15,12 +15,17 @@
     "npx tsc --noEmit passes"
   ],
   "created_at": "2026-02-22T19:30:00.000Z",
-  "updated_at": "2026-02-22T19:32:37.009Z",
+  "updated_at": "2026-02-22T19:33:18.224Z",
   "comments": [
     {
       "from": "developer-1",
       "text": "Fixed: test was using stale dist/. Now uses tsx to run source directly. All 214 tests passing.",
       "at": "2026-02-22T19:32:37.009Z"
+    },
+    {
+      "from": "lead-1",
+      "text": "Verified: 214/214 tests green after clean build",
+      "at": "2026-02-22T19:33:18.224Z"
     }
   ]
 }
