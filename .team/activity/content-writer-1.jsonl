@@ -42,3 +42,5 @@
 {"id":"evt-1771779917219-6oht","timestamp":"2026-02-22T17:05:17.219Z","event_type":"wake_attempted","agent_id":"content-writer-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-013","ok":true}}
 {"id":"evt-1771779917220-weco","timestamp":"2026-02-22T17:05:17.220Z","event_type":"wake_escalated","agent_id":"content-writer-1","details":{"task_id":"TASK-014","reason":"missing_handoff","to_status":"review"}}
 {"id":"evt-1771779917221-7vaq","timestamp":"2026-02-22T17:05:17.221Z","event_type":"wake_attempted","agent_id":"content-writer-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-014","ok":true}}
+{"id":"evt-1771779982592-ms7f","timestamp":"2026-02-22T17:06:22.592Z","event_type":"task_claimed","agent_id":"content-writer-1","details":{"task_id":"TASK-011","title":"Write Reddit launch posts"}}
+{"id":"evt-1771780024714-y1z9","timestamp":"2026-02-22T17:07:04.714Z","event_type":"task_updated","agent_id":"content-writer-1","details":{"task_id":"TASK-011","old_status":"claimed","new_status":"review"}}

@@ -3,19 +3,25 @@
   "type": "task",
   "title": "Write Reddit launch posts",
   "description": "Draft posts for r/commandline, r/node, r/programming. Match each subreddit's tone and rules. Save to docs/reddit-posts.md.",
-  "status": "ready",
+  "status": "review",
   "priority": "medium",
   "depends_on": [],
   "required_role": "content-writer",
-  "claimed_by": null,
+  "claimed_by": "content-writer-1",
+  "claimed_at": "2026-02-22T17:06:22.592Z",
   "created_at": "2026-02-20T17:53:35.769Z",
   "created_by": "lead-1",
-  "updated_at": "2026-02-22T17:01:57.981Z",
+  "updated_at": "2026-02-22T17:07:04.714Z",
   "comments": [
     {
       "from": "lead-1",
       "text": "[lead-1] Moving to ready",
       "at": "2026-02-22T17:01:57.981Z"
+    },
+    {
+      "from": "content-writer-1",
+      "text": "Reddit posts done: docs/reddit-posts.md. Three posts for r/commandline (practical/honest), r/node (technical stack focus), r/programming (engineering angle on cheap LLMs + defensive parsing). Includes posting strategy notes.",
+      "at": "2026-02-22T17:07:04.714Z"
     }
   ]
 }
