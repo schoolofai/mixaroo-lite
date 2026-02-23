@@ -253,3 +253,4 @@
 {"id":"evt-1771847875195-secp","timestamp":"2026-02-23T11:57:55.195Z","event_type":"task_updated","agent_id":"lead-1","details":{"task_id":"TASK-042","old_status":"review","new_status":"done"}}
 {"id":"evt-1771853490258-h8xc","timestamp":"2026-02-23T13:31:30.258Z","event_type":"agent_registered","agent_id":"lead-1","details":{"role":"lead","product":"mixaroo-lite"}}
 {"id":"evt-1771853517711-0s3u","timestamp":"2026-02-23T13:31:57.711Z","event_type":"directive_acknowledged","agent_id":"lead-1","details":{"directive_id":"evt-1771853502524-dncd","action":"context_update","urgency":"interrupt"}}
+{"id":"evt-1771853793081-12n9","timestamp":"2026-02-23T13:36:33.081Z","event_type":"agent_registered","agent_id":"lead-1","details":{"role":"lead","product":"mixaroo-lite"}}
