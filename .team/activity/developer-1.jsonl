@@ -96,3 +96,4 @@
 {"id":"evt-1771788761231-nqkg","timestamp":"2026-02-22T19:32:41.231Z","event_type":"message_sent","agent_id":"developer-1","details":{"from":"developer-1","to":"qa-1","body_preview":"TASK-025 fixed: error-edge test was running against stale dist/. Changed to use "}}
 {"id":"evt-1771788761303-i5uf","timestamp":"2026-02-22T19:32:41.303Z","event_type":"wake_escalated","agent_id":"developer-1","details":{"task_id":"TASK-025","reason":"missing_handoff","to_status":"review"}}
 {"id":"evt-1771788761323-1q7e","timestamp":"2026-02-22T19:32:41.323Z","event_type":"wake_attempted","agent_id":"developer-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-025","ok":true}}
+{"id":"evt-1771814937740-u5f9","timestamp":"2026-02-23T02:48:57.740Z","event_type":"agent_registered","agent_id":"developer-1","details":{"role":"developer","product":"mixaroo-lite"}}
