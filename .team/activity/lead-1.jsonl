@@ -245,3 +245,6 @@
 {"id":"evt-1771847696940-m9fh","timestamp":"2026-02-23T11:54:56.940Z","event_type":"wake_escalated","agent_id":"lead-1","details":{"task_id":"TASK-039","from_status":"ready","to_status":"done","reason":"missing_handoff_self_handled"}}
 {"id":"evt-1771847696941-10zb","timestamp":"2026-02-23T11:54:56.941Z","event_type":"wake_escalated","agent_id":"lead-1","details":{"task_id":"TASK-041","from_status":"backlog","to_status":"ready","reason":"missing_handoff_self_handled"}}
 {"id":"evt-1771847696943-8zpd","timestamp":"2026-02-23T11:54:56.943Z","event_type":"wake_escalated","agent_id":"lead-1","details":{"task_id":"TASK-042","from_status":"backlog","to_status":"ready","reason":"missing_handoff_self_handled"}}
+{"id":"evt-1771847735757-l20y","timestamp":"2026-02-23T11:55:35.757Z","event_type":"task_updated","agent_id":"lead-1","details":{"task_id":"TASK-041","old_status":"ready","new_status":"ready"}}
+{"id":"evt-1771847735802-jef8","timestamp":"2026-02-23T11:55:35.802Z","event_type":"task_updated","agent_id":"lead-1","details":{"task_id":"TASK-042","old_status":"ready","new_status":"ready"}}
+{"id":"evt-1771847740841-od6n","timestamp":"2026-02-23T11:55:40.841Z","event_type":"message_sent","agent_id":"lead-1","details":{"from":"lead-1","to":"qa-1","body_preview":"All dependencies are clear — TASK-036/037/038/039 are done. TASK-040 (tarball va"}}

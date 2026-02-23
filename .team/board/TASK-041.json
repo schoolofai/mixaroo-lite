@@ -15,12 +15,17 @@
     "All tests pass. Build clean. Lint clean. All CLI commands produce expected output."
   ],
   "created_at": "2026-02-23T11:24:00.000Z",
+  "updated_at": "2026-02-23T11:55:35.757Z",
   "comments": [
     {
       "from": "lead-1",
       "text": "Dev fixes landed, ready for full regression",
       "at": "2026-02-23T11:54:44.542Z"
+    },
+    {
+      "from": "lead-1",
+      "text": "Dependencies TASK-036 and TASK-037 are done. Unblocked for QA.",
+      "at": "2026-02-23T11:55:35.757Z"
     }
-  ],
-  "updated_at": "2026-02-23T11:54:44.542Z"
+  ]
 }
