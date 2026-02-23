@@ -212,3 +212,5 @@
 {"id":"evt-1771815615289-49e3","timestamp":"2026-02-23T03:00:15.289Z","event_type":"message_sent","agent_id":"lead-1","details":{"from":"lead-1","to":"content-writer-1","body_preview":"TASK-034 (content accuracy fixes from QA audit) is ready. Claim it."}}
 {"id":"evt-1771815617968-pach","timestamp":"2026-02-23T03:00:17.968Z","event_type":"wake_escalated","agent_id":"lead-1","details":{"task_id":"TASK-032","from_status":"ready","to_status":"in_progress","reason":"missing_handoff_self_handled"}}
 {"id":"evt-1771815617970-3nqt","timestamp":"2026-02-23T03:00:17.970Z","event_type":"wake_escalated","agent_id":"lead-1","details":{"task_id":"TASK-034","from_status":"ready","to_status":"review","reason":"missing_handoff_self_handled"}}
+{"id":"evt-1771815642279-f9rs","timestamp":"2026-02-23T03:00:42.279Z","event_type":"task_updated","agent_id":"lead-1","details":{"task_id":"TASK-034","old_status":"review","new_status":"done"}}
+{"id":"evt-1771815642323-r4ry","timestamp":"2026-02-23T03:00:42.323Z","event_type":"task_updated","agent_id":"lead-1","details":{"task_id":"TASK-032","old_status":"in_progress","new_status":"review"}}
