@@ -3,7 +3,7 @@
   "type": "task",
   "title": "Add --json output flag to generate command",
   "description": "Add --json flag to mx-lite generate that outputs playlist as JSON instead of formatted text. Useful for piping/scripting. Include: prompt, songs array with title/artist/youtubeId, playback URL.",
-  "status": "review",
+  "status": "in_progress",
   "priority": "medium",
   "depends_on": [],
   "required_role": "developer",
@@ -11,12 +11,17 @@
   "claimed_at": "2026-02-23T02:56:53.537Z",
   "created_at": "2026-02-23T02:50:57.919Z",
   "created_by": "lead-1",
-  "updated_at": "2026-02-23T02:59:42.785Z",
+  "updated_at": "2026-02-23T03:00:11.588Z",
   "comments": [
     {
       "from": "developer-1",
       "text": "Added -j/--json flag to generate. Outputs {prompt, songs[], playbackUrl, stats}. Also fixed existing config show --json bug (Commander positional options). 237 tests passing.",
       "at": "2026-02-23T02:59:42.785Z"
+    },
+    {
+      "from": "lead-1",
+      "text": "Tests failing — --json tests check root help but flag is on generate subcommand. Fix tests to check 'node dist/cli.js generate --help' instead.",
+      "at": "2026-02-23T03:00:11.588Z"
     }
   ]
 }
