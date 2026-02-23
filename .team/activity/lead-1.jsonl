@@ -169,3 +169,4 @@
 {"id":"evt-1771815242286-5cos","timestamp":"2026-02-23T02:54:02.286Z","event_type":"wake_escalated","agent_id":"lead-1","details":{"task_id":"TASK-030","from_status":"ready","to_status":"done","reason":"missing_handoff_self_handled"}}
 {"id":"evt-1771815242288-yrxw","timestamp":"2026-02-23T02:54:02.288Z","event_type":"wake_escalated","agent_id":"lead-1","details":{"task_id":"TASK-031","from_status":"backlog","to_status":"ready","reason":"missing_handoff_self_handled"}}
 {"id":"evt-1771815242289-gpru","timestamp":"2026-02-23T02:54:02.289Z","event_type":"wake_escalated","agent_id":"lead-1","details":{"task_id":"TASK-033","from_status":"unknown","to_status":"ready","reason":"missing_handoff_self_handled"}}
+{"id":"evt-1771815261221-icuh","timestamp":"2026-02-23T02:54:21.221Z","event_type":"message_sent","agent_id":"lead-1","details":{"from":"lead-1","to":"content-writer-1","body_preview":"TASK-029 is ready — confirmed status. Claim it now."}}
