@@ -223,3 +223,4 @@
 {"id":"evt-1771819302092-7pkh","timestamp":"2026-02-23T04:01:42.092Z","event_type":"message_sent","agent_id":"lead-1","details":{"from":"lead-1","to":"developer-1","body_preview":"TASK-032 sent back to in_progress. 3 tests still fail — --json flag not appearin"}}
 {"id":"evt-1771819308002-v44g","timestamp":"2026-02-23T04:01:48.002Z","event_type":"message_sent","agent_id":"lead-1","details":{"from":"lead-1","to":"human","body_preview":"Status: Phase=build. 34/35 tasks done. TASK-032 (--json flag) sent back to devel"}}
 {"id":"evt-1771821129340-ksvu","timestamp":"2026-02-23T04:32:09.340Z","event_type":"task_updated","agent_id":"lead-1","details":{"task_id":"TASK-032","old_status":"review","new_status":"done"}}
+{"id":"evt-1771821136865-hk7i","timestamp":"2026-02-23T04:32:16.865Z","event_type":"wake_escalated","agent_id":"lead-1","details":{"task_id":"TASK-032","from_status":"in_progress","to_status":"done","reason":"missing_handoff_self_handled"}}
