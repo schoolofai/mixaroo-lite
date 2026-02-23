@@ -78,7 +78,7 @@ Two boring but important choices:
 
 **Commander.js** for CLI parsing. It's the standard for a reason — great TypeScript support, subcommands work naturally (`mx-lite setup`, `mx-lite config show`), and the default argument becomes the main command. That means `mx-lite "chill vibes"` just works without a `generate` subcommand.
 
-**conf** for configuration storage. It gives you XDG-compliant config paths out of the box (`~/.config/mixaroo-lite/` on Linux, `~/Library/Preferences/` on macOS). API keys are stored locally, never transmitted anywhere except to your chosen AI provider. We also `chmod 600` the config file on creation because API keys in world-readable files are a bad time.
+**conf** for configuration storage. It gives you XDG-compliant config paths out of the box (`~/.config/mixaroo-lite-nodejs/` on Linux, `~/Library/Preferences/mixaroo-lite-nodejs/` on macOS). API keys are stored locally, never transmitted anywhere except to your chosen AI provider. We also `chmod 600` the config file on creation because API keys in world-readable files are a bad time.
 
 ## Lessons Learned
 
@@ -95,8 +95,9 @@ Two boring but important choices:
 The roadmap is short:
 
 - **Spotify integration** — Create actual Spotify playlists (the OAuth dance is unavoidable here, but worth it)
-- **Save/load** — Save playlists locally so you can replay favorites
 - **Expand** — `mx-lite expand` to add more songs matching an existing playlist's vibe
+
+*(Save/load is already shipped — `mx-lite list` and `mx-lite play <id>` let you revisit favorites.)*
 
 ## Try It
 
@@ -106,6 +107,6 @@ mx-lite setup
 mx-lite "jazz standards that make you feel like you're in a noir film"
 ```
 
-The whole thing is [open source on GitHub](https://github.com/schoolofai/mixaroo-lite). It's ~500 lines of TypeScript doing something that feels like magic the first time you run it.
+The whole thing is [open source on GitHub](https://github.com/schoolofai/mixaroo-lite). It's ~1,700 lines of TypeScript doing something that feels like magic the first time you run it.
 
 That's the fun part about building with LLMs — sometimes the simplest integration produces the most satisfying result.

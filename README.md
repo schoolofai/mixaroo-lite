@@ -110,7 +110,7 @@ You'll be asked to:
 1. Choose your AI provider (OpenAI, Gemini, or Anthropic)
 2. Enter your API key
 
-The key is validated before saving. Config is stored in `~/.config/mixaroo-lite/`.
+The key is validated before saving. Config is stored in `~/.config/mixaroo-lite-nodejs/`.
 
 ### Generate Playlists
 
@@ -135,7 +135,7 @@ mx-lite "nostalgic video game soundtracks"
 ### Options
 
 ```bash
-# Custom playlist length (default: 25, max: 100)
+# Custom playlist length (default: 30, max: 100)
 mx-lite "punk rock" --length 50
 mx-lite "ambient" -l 10
 

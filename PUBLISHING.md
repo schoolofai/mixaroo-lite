@@ -6,7 +6,7 @@
 2. Build succeeds: `npm run build`
 3. Verify CLI works: `node dist/cli.js --help`
 4. Check package contents: `npm pack --dry-run`
-   - Should be ~30 files, ~17 kB
+   - Verify file count and size after build (varies by release)
    - No test files or source maps
 5. Dry-run publish: `npm publish --dry-run`
 
@@ -23,4 +23,4 @@ npm publish        # publishes to npm registry
 - **Binary:** `mx-lite`
 - **Entry:** `dist/cli.js`
 - **Files included:** `dist/**/*.js` and `dist/**/*.d.ts` (excluding tests)
-- **Package size:** ~17 kB
+- **Package size:** Run `npm pack --dry-run` after build to verify

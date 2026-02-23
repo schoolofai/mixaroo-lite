@@ -20,7 +20,7 @@ $ mx-lite setup
 ✅ Setup complete!
 
    Provider: OpenAI (gpt-4o-mini)
-   Config:   ~/.config/mixaroo-lite/
+   Config:   ~/.config/mixaroo-lite-nodejs/
 
 Try it out:
    mx-lite "90s rock road trip"
@@ -111,7 +111,7 @@ $ mx-lite "80s synthwave for coding" -l 10
 $ mx-lite config show
   Provider: OpenAI (gpt-4o-mini)
   Songs:    25 (default)
-  Config:   ~/.config/mixaroo-lite/config.json
+  Config:   ~/.config/mixaroo-lite-nodejs/config.json
 
 $ mx-lite "jazz for late nights" --length 15
 🎵 Generating 15 songs for: "jazz for late nights"
