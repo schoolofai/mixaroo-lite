@@ -80,3 +80,5 @@
 {"id":"evt-1771815255968-uju9","timestamp":"2026-02-23T02:54:15.968Z","event_type":"wake_attempted","agent_id":"content-writer-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-031","ok":true}}
 {"id":"evt-1771815255969-x0hd","timestamp":"2026-02-23T02:54:15.969Z","event_type":"wake_escalated","agent_id":"content-writer-1","details":{"task_id":"TASK-033","reason":"missing_handoff","to_status":"ready"}}
 {"id":"evt-1771815255970-yt0g","timestamp":"2026-02-23T02:54:15.970Z","event_type":"wake_attempted","agent_id":"content-writer-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-033","ok":true}}
+{"id":"evt-1771815269515-lhr8","timestamp":"2026-02-23T02:54:29.515Z","event_type":"task_claimed","agent_id":"content-writer-1","details":{"task_id":"TASK-029","title":"Final README polish with demo content"}}
+{"id":"evt-1771815302298-g2pn","timestamp":"2026-02-23T02:55:02.298Z","event_type":"task_updated","agent_id":"content-writer-1","details":{"task_id":"TASK-029","old_status":"claimed","new_status":"review"}}
