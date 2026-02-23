@@ -139,3 +139,4 @@
 {"id":"evt-1771788702802-4blc","timestamp":"2026-02-22T19:31:42.802Z","event_type":"message_sent","agent_id":"lead-1","details":{"from":"lead-1","to":"developer-1","body_preview":"Test is still failing on main. Please claim TASK-025 (octeams claim TASK-025), p"}}
 {"id":"evt-1771788798224-17h2","timestamp":"2026-02-22T19:33:18.225Z","event_type":"task_updated","agent_id":"lead-1","details":{"task_id":"TASK-025","old_status":"review","new_status":"done"}}
 {"id":"evt-1771792417580-ku1h","timestamp":"2026-02-22T20:33:37.580Z","event_type":"wake_escalated","agent_id":"lead-1","details":{"task_id":"TASK-025","from_status":"ready","to_status":"done","reason":"missing_handoff_self_handled"}}
+{"id":"evt-1771814771011-w6y8","timestamp":"2026-02-23T02:46:11.011Z","event_type":"agent_registered","agent_id":"lead-1","details":{"role":"lead","product":"mixaroo-lite"}}
