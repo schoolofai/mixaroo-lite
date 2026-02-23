@@ -101,3 +101,17 @@
 {"id":"evt-1771815147945-0r0n","timestamp":"2026-02-23T02:52:27.945Z","event_type":"task_updated","agent_id":"developer-1","details":{"task_id":"TASK-027","old_status":"claimed","new_status":"review"}}
 {"id":"evt-1771815153120-62so","timestamp":"2026-02-23T02:52:33.120Z","event_type":"task_claimed","agent_id":"developer-1","details":{"task_id":"TASK-026","title":"npm publish dry-run and package validation"}}
 {"id":"evt-1771815222708-dw0u","timestamp":"2026-02-23T02:53:42.708Z","event_type":"task_updated","agent_id":"developer-1","details":{"task_id":"TASK-026","old_status":"claimed","new_status":"review"}}
+{"id":"evt-1771815310001-vizt","timestamp":"2026-02-23T02:55:10.001Z","event_type":"wake_escalated","agent_id":"developer-1","details":{"task_id":"TASK-026","reason":"missing_handoff","to_status":"done"}}
+{"id":"evt-1771815310021-0vyy","timestamp":"2026-02-23T02:55:10.021Z","event_type":"wake_attempted","agent_id":"developer-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-026","ok":true}}
+{"id":"evt-1771815310023-fpzw","timestamp":"2026-02-23T02:55:10.023Z","event_type":"wake_escalated","agent_id":"developer-1","details":{"task_id":"TASK-027","reason":"missing_handoff","to_status":"done"}}
+{"id":"evt-1771815310024-nx2c","timestamp":"2026-02-23T02:55:10.024Z","event_type":"wake_attempted","agent_id":"developer-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-027","ok":true}}
+{"id":"evt-1771815310026-t6hu","timestamp":"2026-02-23T02:55:10.026Z","event_type":"wake_escalated","agent_id":"developer-1","details":{"task_id":"TASK-028","reason":"missing_handoff","to_status":"done"}}
+{"id":"evt-1771815310027-8mfs","timestamp":"2026-02-23T02:55:10.027Z","event_type":"wake_attempted","agent_id":"developer-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-028","ok":true}}
+{"id":"evt-1771815310028-f5wo","timestamp":"2026-02-23T02:55:10.028Z","event_type":"wake_escalated","agent_id":"developer-1","details":{"task_id":"TASK-029","reason":"missing_handoff","to_status":"review"}}
+{"id":"evt-1771815310029-apgu","timestamp":"2026-02-23T02:55:10.029Z","event_type":"wake_attempted","agent_id":"developer-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-029","ok":true}}
+{"id":"evt-1771815310030-2rxt","timestamp":"2026-02-23T02:55:10.030Z","event_type":"wake_escalated","agent_id":"developer-1","details":{"task_id":"TASK-030","reason":"missing_handoff","to_status":"done"}}
+{"id":"evt-1771815310031-pcab","timestamp":"2026-02-23T02:55:10.031Z","event_type":"wake_attempted","agent_id":"developer-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-030","ok":true}}
+{"id":"evt-1771815310034-uqn2","timestamp":"2026-02-23T02:55:10.034Z","event_type":"wake_escalated","agent_id":"developer-1","details":{"task_id":"TASK-031","reason":"missing_handoff","to_status":"ready"}}
+{"id":"evt-1771815310034-gszo","timestamp":"2026-02-23T02:55:10.034Z","event_type":"wake_attempted","agent_id":"developer-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-031","ok":true}}
+{"id":"evt-1771815310036-9exe","timestamp":"2026-02-23T02:55:10.036Z","event_type":"wake_escalated","agent_id":"developer-1","details":{"task_id":"TASK-033","reason":"missing_handoff","to_status":"ready"}}
+{"id":"evt-1771815310037-ft32","timestamp":"2026-02-23T02:55:10.037Z","event_type":"wake_attempted","agent_id":"developer-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-033","ok":true}}
