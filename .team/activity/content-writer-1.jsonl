@@ -103,3 +103,4 @@
 {"id":"evt-1771815606120-0xxn","timestamp":"2026-02-23T03:00:06.120Z","event_type":"wake_attempted","agent_id":"content-writer-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-034","ok":true}}
 {"id":"evt-1771815606122-72mo","timestamp":"2026-02-23T03:00:06.122Z","event_type":"wake_escalated","agent_id":"content-writer-1","details":{"task_id":"TASK-035","reason":"missing_handoff","to_status":"done"}}
 {"id":"evt-1771815606123-lx54","timestamp":"2026-02-23T03:00:06.123Z","event_type":"wake_attempted","agent_id":"content-writer-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-035","ok":true}}
+{"id":"evt-1771845852198-xjb5","timestamp":"2026-02-23T11:24:12.198Z","event_type":"agent_registered","agent_id":"content-writer-1","details":{"role":"content-writer","product":"mixaroo-lite"}}
