@@ -1,114 +1,150 @@
-# GTM Strategy — mixaroo-lite
+# Go-to-Market Strategy: mixaroo-lite
 
-**Product:** AI-powered CLI playlist generator with YouTube playback links
-**Version:** 1.0.0 | **CLI command:** `mx-lite`
-**Date:** 2026-02-23
+## Product Summary
+
+mixaroo-lite is an AI-powered CLI tool that turns natural language prompts into YouTube playlists. Users describe a mood or theme, the AI generates a tracklist, YouTube search finds each track, and users get a single playback URL. Supports OpenAI, Google Gemini, and Anthropic Claude.
+
+**Stack**: TypeScript, Node.js 18+, Commander.js, conf (XDG config), yt-search  
+**Distribution**: npm (`npm install -g mixaroo-lite`), Homebrew tap  
+**Status**: v1.0.0, 1,712 LOC, 238 passing tests, launch docs drafted
 
 ---
 
-## 1. Product Summary
+## Value Proposition
 
-mixaroo-lite is a Node.js CLI tool that uses AI (OpenAI, Anthropic, Google Gemini) to generate music playlists from natural language prompts and creates YouTube playback links. Key commands: `setup`, `generate`, `list`, `play`, `history`, `config`, `completions`.
+**For** developers and terminal-native power users who live in the CLI,  
+**mixaroo-lite** is the playlist generator that lets you  
+**go from mood description to music in one command**,  
+unlike Spotify/YouTube's browse-and-queue workflow which  
+**requires context-switching, account management, and manual curation**.
 
-**Core value prop:** "Describe a vibe, get a YouTube playlist in seconds — from your terminal."
+---
 
-## 2. Target Market
+## Target Market
 
-### Primary: Developer/Power-User Music Lovers
-- Developers who live in the terminal
-- CLI enthusiasts (homebrew/npm ecosystem users)
-- Music discovery hobbyists who want AI-curated playlists
+### Primary Audience
+- **Developer / CLI enthusiast** (ages 20–40)
+- Lives in terminal, uses tools like fzf, ripgrep, tmux
+- Listens to music while coding; frustrated by playlist curation friction
+- Active on Hacker News, Reddit r/commandline, Dev.to, Twitter dev community
+- Willingness to pay: $0 (open-source), but high word-of-mouth potential
 
-### Secondary: AI Tool Enthusiasts
-- People exploring AI-powered CLI tools
-- Content creators looking for quick playlist generation
-- Productivity-focused users who want music without leaving workflow
+### Secondary Audience
+- **Music hobbyists** curious about AI-generated recommendations
+- YouTube-first listeners who want quick, themed playlists
+- Educators/content creators who need curated background music
 
-### Market Size
-- npm has ~17M weekly active users
-- CLI tool category growing 20%+ YoY
-- AI-powered tools are peak-attention in 2026
+### Market Sizing
+- **TAM**: ~30M developers worldwide who listen to music while working
+- **SAM**: ~5M CLI-active developers on macOS/Linux who install npm packages
+- **SOM**: 5,000–15,000 installs in first 90 days (realistic for Show HN + Reddit + Twitter launch)
 
-## 3. Competitive Landscape
+---
 
-| Competitor | Differentiator |
-|---|---|
-| Spotify AI DJ | Locked to Spotify, no CLI, no prompt control |
-| ChatGPT playlists | No YouTube links, no save/replay, no CLI |
-| Maroofy | Web-only, song-similarity not prompt-based |
-| playlistify | Web app, no terminal workflow |
+## Competitive Landscape
 
-**mixaroo-lite's moat:** Only CLI-native, multi-provider AI playlist tool with direct YouTube links, local persistence, and shell completions.
+| Competitor | Strengths | Weaknesses | Pricing | Our Differentiation |
+|-----------|-----------|------------|---------|---------------------|
+| Spotify Discover | Huge catalog, ML-powered | Requires account, GUI-only, no CLI | Freemium ($10/mo) | CLI-native, no account needed |
+| YouTube Music | Integrated with YouTube | No natural-language prompt, GUI-only | Freemium ($10/mo) | AI prompt → instant playlist |
+| spotify-tui | CLI-based, real Spotify | Requires Spotify Premium, complex auth | $10/mo Spotify | Zero-account, one-command setup |
+| playlisty.ai | AI-generated playlists | Web-only, requires Spotify connection | Free | Terminal-native, YouTube-based |
+| ChatGPT + manual search | Flexible AI prompts | Manual copy-paste, no playback link | $20/mo | Automated end-to-end pipeline |
 
-## 4. Launch Channels (Priority Order)
+### Key Insight
+No existing tool combines AI prompt understanding with CLI delivery and YouTube playback. mixaroo-lite owns the intersection of "AI playlist" + "terminal workflow" + "zero-account YouTube".
 
-### Tier 1 — High Impact
-1. **Hacker News** — "Show HN: I built an AI playlist generator for the terminal"
-   - Target: front page via developer-appeal angle
-   - Existing draft: `docs/hackernews-launch.md`
-2. **Reddit r/commandline + r/node** — CLI tool showcase
-   - Existing draft: `docs/reddit-posts.md`
-3. **npm publish** — Primary distribution, `npm install -g mixaroo-lite`
+---
 
-### Tier 2 — Sustained Growth
-4. **Twitter/X launch thread** — Existing draft: `docs/twitter-launch-thread.md`
-5. **Dev.to / Hashnode blog** — "How I Built" story (draft: `docs/blog-how-i-built.md`)
-6. **GitHub README + demo GIF** — Discovery via GitHub trending
+## Positioning
 
-### Tier 3 — Long Tail
-7. **YouTube demo video** — Recording guide exists: `docs/recording-guide.md`
-8. **Product Hunt** — Week 2 launch for sustained momentum
-9. **Newsletter mentions** — CLI/AI tool roundups
+- **Category**: Developer CLI tools / AI-powered music utilities
+- **Differentiator**: Only tool that does prompt → playlist → YouTube playback entirely from the terminal
+- **Price Position**: Free and open-source (growth > revenue for now)
+- **Tagline**: "Turn any prompt into a YouTube playlist. From your terminal."
 
-## 5. Launch Sequence
+---
 
-### Week 0 (Pre-launch)
-- [ ] Fix remaining test failures (11 JSON output tests)
-- [ ] Fix npm tarball (test file leak identified by QA)
-- [ ] Fix documentation accuracy issues (7 items from QA audit)
-- [ ] Record demo GIF for README
-- [ ] Verify all AI providers work end-to-end
+## Growth Model (AARRR)
 
-### Week 1 (Launch)
-- Day 1: npm publish + GitHub release
-- Day 1: Hacker News "Show HN" post
-- Day 1: Twitter launch thread
-- Day 2: Reddit posts (r/commandline, r/node, r/javascript)
-- Day 3: Dev.to blog post
-- Day 5: Respond to feedback, ship hotfixes
+### Acquisition (How users discover us)
+1. **Hacker News Show HN** — Primary launch channel. Dev-tool CLI projects perform well. Draft ready at docs/hackernews-launch.md.
+2. **Reddit** — r/commandline, r/programming, r/node, r/coolgithubprojects. Drafts at docs/reddit-posts.md.
+3. **Twitter/X Dev Community** — Launch thread with demo GIF. Draft at docs/twitter-launch-thread.md.
+4. **npm discovery** — Keywords (playlist, music, youtube, ai, cli) drive organic npm searches.
+5. **GitHub SEO** — Topics, description, README badges, demo GIF.
 
-### Week 2 (Amplify)
-- Product Hunt launch
-- GitHub stars campaign (add to awesome-cli lists)
-- Iterate on feedback from Week 1
+### Activation (First-use "aha moment")
+- `npm install -g mixaroo-lite && mx-lite setup && mx-lite "chill lo-fi beats"`
+- Time to "aha": < 2 minutes (setup + first generation)
+- Demo GIF in README shows the full flow (needs recording — see docs/recording-guide.md)
 
-### Week 3+ (Sustain)
-- Weekly npm download tracking
-- Community feature requests → roadmap
-- SEO content (tutorials, comparisons)
+### Retention (Why users come back)
+- `--save` flag lets users build a library of playlists
+- `mx-lite list` / `mx-lite play` for replaying favorites
+- `mx-lite history` for recent generations
+- Shell completions (`mx-lite completions`) reduce friction
 
-## 6. Success Metrics
+### Revenue (Future monetization)
+- Phase 1 (now): Free, build user base
+- Phase 2 (post-1K stars): Sponsorships, GitHub Sponsors
+- Phase 3 (post-5K stars): Premium features (Spotify export, playlist sharing, web UI)
 
-| Metric | Week 1 Target | Month 1 Target |
-|---|---|---|
-| npm weekly downloads | 200 | 1,000 |
-| GitHub stars | 100 | 500 |
-| HN upvotes | 50+ | — |
-| Issues/PRs from community | 5 | 20 |
+### Referral (Word-of-mouth mechanics)
+- The YouTube playlist URL itself is shareable — every playlist shared promotes the tool
+- GitHub star count as social proof
+- "Built with mixaroo-lite" potential in shared playlists
 
-## 7. Growth Levers
+---
 
-1. **Shell completions** — Reduces friction, increases daily use
-2. **Multi-provider AI** — Broader audience (not locked to OpenAI)
-3. **Playlist persistence** — Replay value = retention
-4. **History command** — Usage tracking encourages exploration
-5. **`--json` output** — Enables piping/scripting = power-user love
+## KPIs and Success Metrics
 
-## 8. Risks & Mitigations
+| Metric | 30-day Target | 90-day Target | Measurement Method |
+|--------|--------------|---------------|-------------------|
+| GitHub Stars | 200 | 1,000 | GitHub API |
+| npm Weekly Downloads | 500 | 2,000 | npm stats |
+| Hacker News Points | 50+ | — | HN post |
+| Reddit Upvotes (combined) | 100+ | — | Reddit posts |
+| Test Coverage | 90%+ | 95%+ | vitest coverage |
+| Open Issues Resolved | 80% within 7d | 80% within 7d | GitHub Issues |
 
-| Risk | Mitigation |
-|---|---|
-| YouTube API rate limits / breakage | yt-search is scraping-based; monitor, add fallback |
-| AI provider API costs for users | Clear docs on free tiers; Gemini has generous free |
-| Low discoverability | SEO blog + multiple launch channels |
-| npm security audit (18 vulns) | Audit and fix before publish |
+---
+
+## Go-to-Market Timeline
+
+| Week | Phase | Activities | Deliverables |
+|------|-------|-----------|-------------|
+| 1 | Polish | Record demo GIF, fix doc issues, tsconfig.build.json cleanup, verify npm publish | Demo GIF, clean tarball, accurate docs |
+| 2 | Pre-launch | Finalize HN post, Reddit posts, Twitter thread. Set up GitHub Actions CI badge. | Launch content ready |
+| 3 | Launch | Post to HN, Reddit, Twitter. Monitor and respond to comments. | Live posts, engagement |
+| 4 | Sustain | Address issues from launch feedback. Blog post on Dev.to. | Bug fixes, blog |
+| 5-6 | Feature | Spotify export, playlist sharing URL, multi-platform improvements | New features shipped |
+| 7-8 | Growth | Second wave: Product Hunt, Dev.to, newsletter mentions | Broader reach |
+| 9-12 | Iterate | Analyze metrics, prioritize feature requests, consider v2 roadmap | Data-driven roadmap |
+
+---
+
+## Recommended Tech Stack (Current — No Changes Needed)
+
+| Layer | Technology | Rationale |
+|-------|-----------|-----------|
+| Language | TypeScript | Type safety, developer audience alignment |
+| CLI Framework | Commander.js | Industry standard, excellent DX |
+| AI Providers | OpenAI + Gemini + Anthropic | User choice, cheapest models |
+| YouTube Search | yt-search | No API key required, good accuracy |
+| Config | conf (XDG) | Platform-native config paths |
+| Testing | vitest | Fast, TypeScript-native, 238 tests |
+| CI | GitHub Actions | Standard for OSS |
+| Distribution | npm + Homebrew | Covers macOS + Linux + Windows |
+
+---
+
+## Risk Assessment
+
+| Risk | Likelihood | Impact | Mitigation |
+|------|-----------|--------|-----------|
+| YouTube watch_videos URL breaks | Medium | High | Monitor, add fallback (individual links) |
+| AI hallucinated songs | Low | Medium | Already handled (skip non-found tracks) |
+| API key cost concerns | Low | Low | Uses cheapest models, ~$0.001/playlist |
+| yt-search rate limiting | Medium | Medium | Add caching, retry logic |
+| Competition from Spotify CLI tools | Low | Low | Different value prop (no account needed) |

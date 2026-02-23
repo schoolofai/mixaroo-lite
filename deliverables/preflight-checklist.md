@@ -1,62 +1,80 @@
-# Pre-Flight Checklist — mixaroo-lite v1.0.0
+# Pre-Flight Checklist: mixaroo-lite
 
-**Date:** 2026-02-23 | **Status:** IN PROGRESS
+## Status Legend
+- **BLOCKING** — Team cannot start this workstream without it
+- **NEEDED BEFORE LAUNCH** — Can start but must have before go-live
+- **NICE-TO-HAVE** — Can work around if not available
 
 ---
 
-## 🔴 Blockers (Must Fix Before Publish)
+## Code & Build
 
-- [ ] **npm tarball leaks test files** — 44 test files compiled into dist/ via tsc. Fix: tsconfig.build.json excludes `__tests__` dirs (TASK-033 addressed this — verify)
-- [ ] **11 test failures** — `json-output.test.ts` and `cli.test.ts` fail (need `npm run build` before integration tests)
-- [ ] **npm audit: 18 vulnerabilities** (5 moderate, 13 high) — Run `npm audit fix`, evaluate breaking changes
-- [x] **Documentation accuracy** — 7 issues found by QA (TASK-031): fixed default length (30→25), fixed config paths, verified no `config get` reference remains
+| Item | Status | Notes |
+|------|--------|-------|
+| GitHub repo access | ✅ Available | https://github.com/schoolofai/mixaroo-lite |
+| npm registry access (publish) | **BLOCKING** | Need npm token with publish rights to `mixaroo-lite` package |
+| Node.js 18+ runtime | ✅ Available | v22 in containers |
+| TypeScript build (tsconfig.build.json) | ✅ Available | Excludes tests from dist/ |
+| Test suite passing | ✅ 238/238 | vitest, all green |
+| CI pipeline (GitHub Actions) | ✅ Available | .github/workflows/ci.yml exists |
 
-## 🟡 Should Fix Before Launch
+## Distribution
 
-- [ ] **Demo GIF** — README has placeholder, need actual recording (guide: `docs/recording-guide.md`)
-- [x] **CHANGELOG date** — Fixed to 2026-02-19 (matches initial commit)
-- [x] **Blog post accuracy** — Blog already says ~1,700; fixed Twitter (~500→~1,700); fixed HN save/load roadmap
-- [ ] **CI pipeline** — `.github/workflows/ci.yml` exists but verify it passes on GitHub
+| Item | Status | Notes |
+|------|--------|-------|
+| npm publish token | **BLOCKING** | Required to publish v1.0.0 to npm |
+| Homebrew tap repo | **NEEDED BEFORE LAUNCH** | schoolofai/homebrew-tap — need access or creation |
+| Package tarball clean | ✅ Fixed | .npmignore + tsconfig.build.json exclude test files |
 
-## 🟢 Nice to Have
+## AI Provider Keys (for testing)
 
-- [ ] **npm audit fix --force** — Address all 18 vulnerabilities
-- [ ] **Add LICENSE file** — package.json says MIT but no LICENSE file in repo
-- [ ] **Author field** — package.json `author` is empty
-- [ ] **Repository field** — Add `repository` to package.json for npm listing
-- [ ] **Homepage field** — Add for npm sidebar link
+| Item | Status | Notes |
+|------|--------|-------|
+| OpenAI API key | **NICE-TO-HAVE** | For integration testing; unit tests mock providers |
+| Google Gemini API key | **NICE-TO-HAVE** | Same |
+| Anthropic API key | **NICE-TO-HAVE** | Same |
 
-## ✅ Already Done
+## Launch Content
 
-- [x] tsconfig.build.json created (excludes tests from build)
-- [x] .npmignore configured
-- [x] Shell completions (bash, zsh, fish)
-- [x] Playlist persistence (save/load)
-- [x] History command
-- [x] Error handling with structured error types
-- [x] Multi-provider AI support (OpenAI, Anthropic, Gemini)
-- [x] 227+ tests passing
-- [x] Launch content drafted (HN, Reddit, Twitter, blog, demo script)
-- [x] README polished with CI badge and contributing guidelines
-- [x] Package validation tests
+| Item | Status | Notes |
+|------|--------|-------|
+| Demo GIF/recording | **NEEDED BEFORE LAUNCH** | docs/recording-guide.md + assets/demo.tape exist but GIF not recorded |
+| Hacker News post draft | ✅ Ready | docs/hackernews-launch.md |
+| Reddit posts drafts | ✅ Ready | docs/reddit-posts.md |
+| Twitter thread draft | ✅ Ready | docs/twitter-launch-thread.md |
+| Blog post draft | ✅ Ready | docs/blog-how-i-built.md |
+| README polish | ✅ Done | Badges, install instructions, feature list |
 
-## Verification Commands
+## Documentation Accuracy
 
-```bash
-# Build
-npm run build
+| Item | Status | Notes |
+|------|--------|-------|
+| Config path references | ⚠️ Needs fix | Some docs reference wrong config path |
+| Default length documentation | ⚠️ Needs fix | Some docs say 25, actual default is 25 (conf schema) |
+| Demo script accuracy | ⚠️ Needs fix | docs/demo-script.md has stale config path |
 
-# Test
-npm test
+## Analytics & Monitoring
 
-# Verify tarball contents
-npm pack --dry-run
+| Item | Status | Notes |
+|------|--------|-------|
+| npm download tracking | **NICE-TO-HAVE** | npm stats are public, no setup needed |
+| GitHub star tracking | **NICE-TO-HAVE** | Consider star-history.com embed |
+| Error reporting | **NICE-TO-HAVE** | Consider optional telemetry in future |
 
-# Check for vulnerabilities
-npm audit
+---
 
-# Smoke test CLI
-node dist/cli.js --version
-node dist/cli.js --help
-node dist/cli.js config show --json
-```
+## Summary for CEO
+
+**BLOCKING (must provide before team can ship)**:
+1. npm publish token — without this we cannot release to npm
+
+**NEEDED BEFORE LAUNCH (can start work, must have before go-live)**:
+1. Demo GIF recording — README needs a visual demo
+2. Homebrew tap repository access — for macOS distribution
+
+**NICE-TO-HAVE (team can work around)**:
+1. AI provider API keys for integration testing
+2. Analytics/monitoring setup
+3. Star tracking embeds
+
+**Recommendation**: Provide the npm publish token when ready. The team can do all code polish, doc fixes, and content work in parallel. We'll flag when we hit the publish blocker.
