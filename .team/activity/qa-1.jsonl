@@ -113,3 +113,4 @@
 {"id":"evt-1771815433747-va80","timestamp":"2026-02-23T02:57:13.747Z","event_type":"wake_attempted","agent_id":"qa-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-032","ok":true}}
 {"id":"evt-1771815433749-l995","timestamp":"2026-02-23T02:57:13.749Z","event_type":"wake_escalated","agent_id":"qa-1","details":{"task_id":"TASK-033","reason":"missing_handoff","to_status":"done"}}
 {"id":"evt-1771815433749-pjvc","timestamp":"2026-02-23T02:57:13.749Z","event_type":"wake_attempted","agent_id":"qa-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-033","ok":true}}
+{"id":"evt-1771815479481-swkj","timestamp":"2026-02-23T02:57:59.481Z","event_type":"message_sent","agent_id":"qa-1","details":{"from":"qa-1","to":"lead-1","body_preview":"Verified TASK-033 fix: tarball now 30 files, 17.3 kB, zero test files, zero sour"}}
