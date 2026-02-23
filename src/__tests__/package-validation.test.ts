@@ -17,11 +17,16 @@ describe('npm package validation', () => {
     });
 
     it('has correct bin entry', () => {
-      expect(pkg.bin).toEqual({ 'mx-lite': './dist/cli.js' });
+      expect(pkg.bin).toEqual({ 'mx-lite': 'dist/cli.js' });
     });
 
     it('has files field restricting to dist', () => {
-      expect(pkg.files).toEqual(['dist']);
+      expect(pkg.files).toEqual([
+        'dist/**/*.js',
+        'dist/**/*.d.ts',
+        '!dist/**/__tests__/**',
+        '!dist/**/*.test.*',
+      ]);
     });
 
     it('has engines field', () => {
@@ -97,13 +102,10 @@ describe('npm package validation', () => {
   });
 
   describe('npm pack contents', () => {
-    it('tarball does not contain test files (BUG: currently fails)', () => {
+    it('tarball does not contain test files', () => {
       const out = execSync('npm pack --dry-run 2>&1', { cwd: ROOT, encoding: 'utf-8' });
       const testFiles = out.split('\n').filter(l => l.includes('__tests__'));
-      // This SHOULD be 0 — test files should not ship in the package.
-      // Currently 44 test-related files are included because tsc compiles
-      // tests into dist/ and package.json files: ["dist"] includes everything.
-      expect(testFiles.length).toBe(44); // documenting current (buggy) state
+      expect(testFiles.length).toBe(0);
     });
 
     it('tarball includes README', () => {
