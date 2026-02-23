@@ -1,57 +1,62 @@
-# Pre-Flight Checklist — mixaroo-lite
+# Pre-Flight Checklist — mixaroo-lite v1.0.0
 
-**Generated:** 2026-02-23 | **Cycle:** adopt
+**Date:** 2026-02-23 | **Status:** IN PROGRESS
 
 ---
 
-## ✅ Code Quality
+## 🔴 Blockers (Must Fix Before Publish)
 
-- [x] TypeScript compiles without errors
-- [x] ESLint configured and passing
-- [x] 214+ tests passing (vitest)
-- [x] CI pipeline configured (.github/workflows/ci.yml)
-- [x] Error handling with custom error classes
-- [x] Multi-provider AI support (OpenAI, Gemini, Anthropic)
+- [ ] **npm tarball leaks test files** — 44 test files compiled into dist/ via tsc. Fix: tsconfig.build.json excludes `__tests__` dirs (TASK-033 addressed this — verify)
+- [ ] **11 test failures** — `json-output.test.ts` and `cli.test.ts` fail (need `npm run build` before integration tests)
+- [ ] **npm audit: 18 vulnerabilities** (5 moderate, 13 high) — Run `npm audit fix`, evaluate breaking changes
+- [ ] **Documentation accuracy** — 7 issues found by QA (TASK-031): wrong default length (25→30), wrong config path, nonexistent `config get` subcommand referenced
 
-## ✅ Feature Completeness (v1.0)
+## 🟡 Should Fix Before Launch
 
-- [x] `mx-lite <prompt>` — generate playlist from prompt
-- [x] `mx-lite setup` — interactive provider configuration
-- [x] `mx-lite config` — manage settings
-- [x] `mx-lite list` — view saved playlists
-- [x] `mx-lite play` — replay saved playlists
-- [x] `mx-lite history` — view generation history
-- [x] `mx-lite completions` — shell completions (bash/zsh/fish)
-- [x] YouTube search and playback URL generation
+- [ ] **Demo GIF** — README has placeholder, need actual recording (guide: `docs/recording-guide.md`)
+- [ ] **CHANGELOG date** — Says 2026-02-20, confirm or update
+- [ ] **Blog post accuracy** — Claims ~500 lines but source is ~1,700; roadmap lists save/load as future but it's shipped
+- [ ] **CI pipeline** — `.github/workflows/ci.yml` exists but verify it passes on GitHub
+
+## 🟢 Nice to Have
+
+- [ ] **npm audit fix --force** — Address all 18 vulnerabilities
+- [ ] **Add LICENSE file** — package.json says MIT but no LICENSE file in repo
+- [ ] **Author field** — package.json `author` is empty
+- [ ] **Repository field** — Add `repository` to package.json for npm listing
+- [ ] **Homepage field** — Add for npm sidebar link
+
+## ✅ Already Done
+
+- [x] tsconfig.build.json created (excludes tests from build)
+- [x] .npmignore configured
+- [x] Shell completions (bash, zsh, fish)
 - [x] Playlist persistence (save/load)
+- [x] History command
+- [x] Error handling with structured error types
+- [x] Multi-provider AI support (OpenAI, Anthropic, Gemini)
+- [x] 227+ tests passing
+- [x] Launch content drafted (HN, Reddit, Twitter, blog, demo script)
+- [x] README polished with CI badge and contributing guidelines
+- [x] Package validation tests
 
-## 🔲 Launch Readiness
+## Verification Commands
 
-- [ ] Demo GIF recorded and added to README
-- [ ] `npm publish --dry-run` verified
-- [ ] npm package page looks correct (description, keywords, links)
-- [x] README has install instructions (npm + brew)
-- [x] LICENSE file present (MIT)
-- [x] CHANGELOG.md exists
+```bash
+# Build
+npm run build
 
-## 🔲 Launch Content
+# Test
+npm test
 
-- [x] docs/hackernews-launch.md — Show HN post draft
-- [x] docs/blog-how-i-built.md — Dev.to article draft
-- [x] docs/reddit-posts.md — Reddit post templates
-- [x] docs/twitter-launch-thread.md — Twitter thread draft
-- [x] docs/demo-script.md — Demo script
-- [x] docs/recording-guide.md — Recording instructions
+# Verify tarball contents
+npm pack --dry-run
 
-## 🔲 Infrastructure
+# Check for vulnerabilities
+npm audit
 
-- [ ] npm account with publish access
-- [ ] GitHub repo is public (or will be at launch)
-- [ ] Homebrew tap repo created (schoolofai/tap)
-- [ ] GitHub Actions secrets configured for npm publish
-
-## 🔲 Post-Launch
-
-- [ ] Monitoring for GitHub issues/stars
-- [ ] npm download tracking script (deliverables/metrics/)
-- [ ] Community response plan (who responds to issues, PRs)
+# Smoke test CLI
+node dist/cli.js --version
+node dist/cli.js --help
+node dist/cli.js config show --json
+```
