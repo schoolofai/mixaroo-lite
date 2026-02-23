@@ -3,18 +3,19 @@
   "type": "task",
   "title": "QA review — documentation accuracy fixes",
   "description": "After content-writer fixes docs (TASK-038), verify all 7 issues are resolved: (1) No 'config get' references, (2) default length matches actual, (3) config path correct, (4) PUBLISHING.md numbers accurate, (5) blog line count accurate, (6) blog roadmap reflects shipped features, (7) CHANGELOG date confirmed. Run every CLI command mentioned in docs.",
-  "status": "ready",
+  "status": "review",
   "priority": "medium",
   "depends_on": [
     "TASK-038"
   ],
   "required_role": "qa",
-  "claimed_by": null,
+  "claimed_by": "qa-1",
+  "claimed_at": "2026-02-23T11:57:30.404Z",
   "acceptance_criteria": [
     "All 7 accuracy issues confirmed fixed. Every CLI command in docs verified working."
   ],
   "created_at": "2026-02-23T11:24:00.000Z",
-  "updated_at": "2026-02-23T11:55:35.801Z",
+  "updated_at": "2026-02-23T11:57:33.996Z",
   "comments": [
     {
       "from": "lead-1",
@@ -25,6 +26,11 @@
       "from": "lead-1",
       "text": "Dependency TASK-038 is done. Unblocked for QA.",
       "at": "2026-02-23T11:55:35.801Z"
+    },
+    {
+      "from": "qa-1",
+      "text": "6/7 issues verified fixed. REMAINING: docs/demo-script.md:53 shows ~/.config/mixaroo-lite/ instead of ~/.config/mixaroo-lite-nodejs/. All other fixes confirmed: no config get refs, default length 25 correct, config path correct in README/blog, CHANGELOG date 2026-02-19 correct, blog ~1700 lines matches actual (1712), blog roadmap reflects shipped save/load.",
+      "at": "2026-02-23T11:57:33.996Z"
     }
   ]
 }

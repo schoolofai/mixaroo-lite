@@ -2,17 +2,25 @@
   "id": "TASK-040",
   "type": "task",
   "title": "Verify npm tarball is clean — no test files in package",
-  "status": "ready",
+  "description": "Previous cycle found test files leaking into npm tarball. tsconfig.build.json and .npmignore fixes were applied. Verify: (1) npm run build, (2) npm pack --dry-run — should show ~30 files, no __tests__ dirs, no .test. files, no source maps. (3) Run package-validation.test.ts. Report exact file count and size.",
+  "status": "review",
   "priority": "high",
-  "required_role": "qa",
   "depends_on": [
     "TASK-036"
   ],
-  "claimed_by": null,
-  "created_at": "2026-02-23T11:24:00.000Z",
-  "description": "Previous cycle found test files leaking into npm tarball. tsconfig.build.json and .npmignore fixes were applied. Verify: (1) npm run build, (2) npm pack --dry-run — should show ~30 files, no __tests__ dirs, no .test. files, no source maps. (3) Run package-validation.test.ts. Report exact file count and size.",
+  "required_role": "qa",
+  "claimed_by": "qa-1",
+  "claimed_at": "2026-02-23T11:57:18.342Z",
   "acceptance_criteria": [
     "npm pack --dry-run shows zero test files, zero source maps. Package validation tests pass. File count and size documented."
   ],
-  "comments": []
+  "created_at": "2026-02-23T11:24:00.000Z",
+  "comments": [
+    {
+      "from": "qa-1",
+      "text": "PASS. npm pack --dry-run: 31 files (30 dist + LICENSE + README + package.json), 18.5 kB packed, 64.9 kB unpacked. Zero test files, zero __tests__ dirs, zero .map source maps. package-validation.test.ts: 20/20 pass.",
+      "at": "2026-02-23T11:57:22.451Z"
+    }
+  ],
+  "updated_at": "2026-02-23T11:57:22.451Z"
 }
