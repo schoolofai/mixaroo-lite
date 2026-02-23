@@ -3,7 +3,7 @@
   "type": "task",
   "title": "QA: re-validate npm tarball after TASK-033 fix",
   "description": "TASK-033 fixed the tsconfig.build.json to exclude tests from dist/. Re-run npm pack and verify: (1) no __tests__ dirs in tarball, (2) file count is reasonable (<30 production files), (3) tarball size is small. Update TASK-030 findings if needed.",
-  "status": "review",
+  "status": "done",
   "priority": "high",
   "depends_on": [],
   "required_role": "qa",
@@ -11,7 +11,7 @@
   "claimed_at": "2026-02-23T02:58:16.861Z",
   "created_at": "2026-02-23T02:57:36.339Z",
   "created_by": "lead-1",
-  "updated_at": "2026-02-23T02:58:41.225Z",
+  "updated_at": "2026-02-23T02:59:29.213Z",
   "comments": [
     {
       "from": "qa-1",
@@ -22,6 +22,11 @@
       "from": "qa-1",
       "text": "Re-validation complete. 30 files, 17.3 kB, zero test/map files. All 20 validation tests pass.",
       "at": "2026-02-23T02:58:41.225Z"
+    },
+    {
+      "from": "lead-1",
+      "text": "Approved. Tarball clean, 30 files, 17.3 kB, zero test leaks. Ship-ready.",
+      "at": "2026-02-23T02:59:29.213Z"
     }
   ]
 }
