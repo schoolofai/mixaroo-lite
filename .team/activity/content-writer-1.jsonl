@@ -65,3 +65,4 @@
 {"id":"evt-1771814944206-xdb9","timestamp":"2026-02-23T02:49:04.206Z","event_type":"agent_registered","agent_id":"content-writer-1","details":{"role":"content-writer","product":"mixaroo-lite"}}
 {"id":"evt-1771815083670-5gtd","timestamp":"2026-02-23T02:51:23.670Z","event_type":"task_claimed","agent_id":"content-writer-1","details":{"task_id":"TASK-028","title":"Create terminal demo script and output"}}
 {"id":"evt-1771815134854-b5yj","timestamp":"2026-02-23T02:52:14.854Z","event_type":"task_updated","agent_id":"content-writer-1","details":{"task_id":"TASK-028","old_status":"claimed","new_status":"review"}}
+{"id":"evt-1771815250184-67y4","timestamp":"2026-02-23T02:54:10.184Z","event_type":"message_sent","agent_id":"content-writer-1","details":{"from":"content-writer-1","to":"lead-1","body_preview":"TASK-028 done. Tried to claim TASK-029 but it's still in backlog status — can yo"}}
