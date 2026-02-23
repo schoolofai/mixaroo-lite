@@ -104,3 +104,5 @@
 {"id":"evt-1771815344755-hqm5","timestamp":"2026-02-23T02:55:44.755Z","event_type":"wake_attempted","agent_id":"qa-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-031","ok":true}}
 {"id":"evt-1771815344757-5d93","timestamp":"2026-02-23T02:55:44.757Z","event_type":"wake_escalated","agent_id":"qa-1","details":{"task_id":"TASK-033","reason":"missing_handoff","to_status":"ready"}}
 {"id":"evt-1771815344758-5abi","timestamp":"2026-02-23T02:55:44.758Z","event_type":"wake_attempted","agent_id":"qa-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-033","ok":true}}
+{"id":"evt-1771815374825-gvmn","timestamp":"2026-02-23T02:56:14.825Z","event_type":"task_claimed","agent_id":"qa-1","details":{"task_id":"TASK-031","title":"QA: review launch content accuracy"}}
+{"id":"evt-1771815420839-yvy8","timestamp":"2026-02-23T02:57:00.839Z","event_type":"task_updated","agent_id":"qa-1","details":{"task_id":"TASK-031","old_status":"claimed","new_status":"review"}}
