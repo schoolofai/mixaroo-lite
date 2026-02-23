@@ -145,3 +145,4 @@
 {"id":"evt-1771846048876-ye8w","timestamp":"2026-02-23T11:27:28.876Z","event_type":"task_updated","agent_id":"developer-1","details":{"task_id":"TASK-037","old_status":"claimed","new_status":"review"}}
 {"id":"evt-1771846051671-sn01","timestamp":"2026-02-23T11:27:31.671Z","event_type":"task_claimed","agent_id":"developer-1","details":{"task_id":"TASK-039","title":"Add missing package.json metadata (author, repository, homepage, LICENSE)"}}
 {"id":"evt-1771846067105-rwv1","timestamp":"2026-02-23T11:27:47.105Z","event_type":"task_updated","agent_id":"developer-1","details":{"task_id":"TASK-039","old_status":"claimed","new_status":"review"}}
+{"id":"evt-1771853809439-0gh7","timestamp":"2026-02-23T13:36:49.439Z","event_type":"agent_registered","agent_id":"developer-1","details":{"role":"developer","product":"mixaroo-lite"}}
