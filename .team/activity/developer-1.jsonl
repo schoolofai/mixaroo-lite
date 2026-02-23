@@ -97,3 +97,7 @@
 {"id":"evt-1771788761303-i5uf","timestamp":"2026-02-22T19:32:41.303Z","event_type":"wake_escalated","agent_id":"developer-1","details":{"task_id":"TASK-025","reason":"missing_handoff","to_status":"review"}}
 {"id":"evt-1771788761323-1q7e","timestamp":"2026-02-22T19:32:41.323Z","event_type":"wake_attempted","agent_id":"developer-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-025","ok":true}}
 {"id":"evt-1771814937740-u5f9","timestamp":"2026-02-23T02:48:57.740Z","event_type":"agent_registered","agent_id":"developer-1","details":{"role":"developer","product":"mixaroo-lite"}}
+{"id":"evt-1771815089518-ongb","timestamp":"2026-02-23T02:51:29.518Z","event_type":"task_claimed","agent_id":"developer-1","details":{"task_id":"TASK-027","title":"Build dist and verify CLI binary works"}}
+{"id":"evt-1771815147945-0r0n","timestamp":"2026-02-23T02:52:27.945Z","event_type":"task_updated","agent_id":"developer-1","details":{"task_id":"TASK-027","old_status":"claimed","new_status":"review"}}
+{"id":"evt-1771815153120-62so","timestamp":"2026-02-23T02:52:33.120Z","event_type":"task_claimed","agent_id":"developer-1","details":{"task_id":"TASK-026","title":"npm publish dry-run and package validation"}}
+{"id":"evt-1771815222708-dw0u","timestamp":"2026-02-23T02:53:42.708Z","event_type":"task_updated","agent_id":"developer-1","details":{"task_id":"TASK-026","old_status":"claimed","new_status":"review"}}
