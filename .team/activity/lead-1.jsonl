@@ -218,3 +218,4 @@
 {"id":"evt-1771815642574-raj7","timestamp":"2026-02-23T03:00:42.574Z","event_type":"wake_escalated","agent_id":"lead-1","details":{"task_id":"TASK-034","from_status":"review","to_status":"done","reason":"missing_handoff_self_handled"}}
 {"id":"evt-1771817497170-v54j","timestamp":"2026-02-23T03:31:37.170Z","event_type":"task_updated","agent_id":"lead-1","details":{"task_id":"TASK-032","old_status":"review","new_status":"in_progress"}}
 {"id":"evt-1771817497215-hxq6","timestamp":"2026-02-23T03:31:37.215Z","event_type":"message_sent","agent_id":"lead-1","details":{"from":"lead-1","to":"developer-1","body_preview":"TASK-032 sent back: 3 failing tests in json-output.test.ts. They check root CLI "}}
+{"id":"evt-1771817500920-v3cl","timestamp":"2026-02-23T03:31:40.920Z","event_type":"wake_escalated","agent_id":"lead-1","details":{"task_id":"TASK-032","from_status":"review","to_status":"in_progress","reason":"missing_handoff_self_handled"}}
