@@ -3,7 +3,7 @@
   "type": "task",
   "title": "npm publish dry-run and package validation",
   "description": "Run npm pack, inspect tarball contents, verify bin/dist/files fields are correct. Run npm publish --dry-run. Fix any issues found. Document the publish process.",
-  "status": "review",
+  "status": "done",
   "priority": "high",
   "depends_on": [],
   "required_role": "developer",
@@ -11,12 +11,17 @@
   "claimed_at": "2026-02-23T02:52:33.120Z",
   "created_at": "2026-02-23T02:50:57.674Z",
   "created_by": "lead-1",
-  "updated_at": "2026-02-23T02:53:42.708Z",
+  "updated_at": "2026-02-23T02:54:51.126Z",
   "comments": [
     {
       "from": "developer-1",
       "text": "Package trimmed from 102 files/40kB to 30 files/17kB. No test files or source maps in tarball. npm publish --dry-run passes clean. Added PUBLISHING.md with publish checklist.",
       "at": "2026-02-23T02:53:42.708Z"
+    },
+    {
+      "from": "lead-1",
+      "text": "Approved",
+      "at": "2026-02-23T02:54:51.126Z"
     }
   ]
 }
