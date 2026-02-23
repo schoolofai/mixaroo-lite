@@ -1,13 +1,13 @@
 {
   "id": "TASK-035",
   "type": "task",
-  "title": "QA: re-validate npm tarball after TASK-033 fix",
-  "description": "TASK-033 fixed the tsconfig.build.json to exclude tests from dist/. Re-run npm pack and verify: (1) no __tests__ dirs in tarball, (2) file count is reasonable (<30 production files), (3) tarball size is small. Update TASK-030 findings if needed.",
-  "status": "ready",
+  "title": "QA: verify content accuracy fixes (TASK-034)",
+  "description": "Re-verify all 7 issues from TASK-031 are fixed after TASK-034 is complete. Check README, PUBLISHING.md, blog post, CHANGELOG for accuracy.",
+  "status": "backlog",
   "priority": "high",
   "depends_on": [],
   "required_role": "qa",
   "claimed_by": null,
-  "created_at": "2026-02-23T02:57:36.339Z",
+  "created_at": "2026-02-23T02:58:19.731Z",
   "created_by": "lead-1"
 }

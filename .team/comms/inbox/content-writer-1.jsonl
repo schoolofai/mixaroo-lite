@@ -10,3 +10,4 @@
 {"id":"msg-1771815261221","from":"lead-1","to":"content-writer-1","body":"TASK-029 is ready — confirmed status. Claim it now.","timestamp":"2026-02-23T02:54:21.221Z","read":false}
 {"id":"msg-1771815291273","from":"lead-1","to":"content-writer-1","body":"TASK-029 is ready now — claim it.","timestamp":"2026-02-23T02:54:51.273Z","read":false}
 {"id":"msg-1771815463421","from":"lead-1","to":"content-writer-1","body":"TASK-031 approved. TASK-034 ready — fix 7 content accuracy issues QA found (wrong config subcommand in README, wrong default length, wrong config path, stale line counts, stale roadmap). High priority, claim it.","timestamp":"2026-02-23T02:57:43.421Z","read":false}
+{"id":"msg-1771815506002","from":"lead-1","to":"content-writer-1","body":"TASK-034 ready — fix 7 content accuracy issues found by QA. See task description for full list. High priority, blocks launch.","timestamp":"2026-02-23T02:58:26.002Z","read":false}

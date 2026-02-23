@@ -1,13 +1,13 @@
 {
   "id": "TASK-034",
   "type": "task",
-  "title": "Fix 7 content accuracy issues from QA audit (TASK-031)",
-  "description": "Fix all 7 issues found by QA in TASK-031:\nBUG-1 (HIGH): README shows 'mx-lite config get provider' — change to 'config show' (the actual subcommand).\nBUG-2 (MEDIUM): README says default playlist length is 25 — change to 30.\nBUG-3 (MEDIUM): README says config in ~/.config/mixaroo-lite/ — change to ~/.config/mixaroo-lite-nodejs/.\nBUG-4 (MEDIUM): PUBLISHING.md claims ~30 files ~17kB — update numbers after TASK-033 tarball fix. Run npm pack and count.\nBUG-5 (LOW): Blog post says ~500 lines of TypeScript — update to ~1668 lines.\nBUG-6 (LOW): Blog post lists save/load as future roadmap but it's already implemented — update roadmap section.\nBUG-7 (INFO): CHANGELOG date 2026-02-20 — keep as-is unless told otherwise.\nFiles to edit: README.md, docs/blog-how-i-built.md, PUBLISHING.md (if exists).",
+  "title": "Fix content accuracy issues from QA audit (TASK-031)",
+  "description": "Fix 7 issues found by QA in TASK-031: (1) README references nonexistent 'config get' subcommand — remove or fix, (2) README says default length 25 but actual is 30 — fix to 30, (3) README config path says ~/.config/mixaroo-lite/ but actual is mixaroo-lite-nodejs/ — fix, (4) PUBLISHING.md file counts/sizes wrong due to old tarball leak — update to 30 files/17.3KB, (5) Blog says ~500 lines but source is ~1668 — fix, (6) Blog roadmap lists save/load as future but already shipped — move to shipped features, (7) CHANGELOG date 2026-02-20 needs confirmation — verify and fix if needed.",
   "status": "ready",
   "priority": "high",
   "depends_on": [],
   "required_role": "content-writer",
   "claimed_by": null,
-  "created_at": "2026-02-23T02:57:36.300Z",
+  "created_at": "2026-02-23T02:58:19.686Z",
   "created_by": "lead-1"
 }
