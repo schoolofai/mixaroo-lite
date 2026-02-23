@@ -1,0 +1,18 @@
+# Test files
+dist/**/__tests__
+dist/**/*.test.*
+
+# Source maps (optional, saves package size)
+dist/**/*.map
+
+# Source
+src/
+tests/
+
+# Dev files
+.team/
+.github/
+*.tgz
+vitest.config.*
+tsconfig.json
+eslint.config.*

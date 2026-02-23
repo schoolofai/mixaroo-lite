@@ -4,7 +4,7 @@
   "description": "AI-powered CLI tool that generates playlists and creates YouTube playback links",
   "main": "dist/cli.js",
   "bin": {
-    "mx-lite": "./dist/cli.js"
+    "mx-lite": "dist/cli.js"
   },
   "type": "module",
   "scripts": {
@@ -34,7 +34,10 @@
     "node": ">=18"
   },
   "files": [
-    "dist"
+    "dist/**/*.js",
+    "dist/**/*.d.ts",
+    "!dist/**/__tests__/**",
+    "!dist/**/*.test.*"
   ],
   "dependencies": {
     "@anthropic-ai/sdk": "^0.77.0",
