@@ -15,7 +15,8 @@ const program = new Command();
 program
   .name('mx-lite')
   .description('AI-powered playlist generator that creates YouTube playback links')
-  .version('1.0.0');
+  .version('1.0.0')
+  .enablePositionalOptions();
 
 // Setup command
 program
@@ -32,7 +33,7 @@ config
   .command('show')
   .description('Display current configuration')
   .option('--json', 'Output as JSON')
-  .action(configCommand.show);
+  .action((options) => configCommand.show(options));
 
 config
   .command('reset')
@@ -81,6 +82,7 @@ program
   .option('-p, --provider <provider>', 'Override AI provider (openai, gemini, anthropic)')
   .option('-s, --save', 'Save the playlist locally')
   .option('-v, --verbose', 'Show debug output')
+  .option('-j, --json', 'Output as JSON (for scripting/piping)')
   .action(async (prompt, options) => {
     if (prompt) {
       await generateCommand(prompt, options);

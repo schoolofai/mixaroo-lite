@@ -24,6 +24,7 @@ interface GenerateOptions {
   provider?: string;
   save?: boolean;
   verbose?: boolean;
+  json?: boolean;
 }
 
 function verbose(options: GenerateOptions, ...args: unknown[]): void {
@@ -98,11 +99,13 @@ export async function generateCommand(prompt: string, options: GenerateOptions):
   const providerInfo = PROVIDER_INFO[provider];
 
   // Generate playlist with AI
-  console.log(chalk.blue(`🎵 Generating ${length} songs for: "${prompt}"`));
-  console.log(chalk.gray(`   Using ${providerInfo.name} (${providerInfo.model})`));
-  console.log();
+  if (!options.json) {
+    console.log(chalk.blue(`🎵 Generating ${length} songs for: "${prompt}"`));
+    console.log(chalk.gray(`   Using ${providerInfo.name} (${providerInfo.model})`));
+    console.log();
+  }
 
-  const aiSpinner = ora('Generating playlist with AI...').start();
+  const aiSpinner = options.json ? null : ora('Generating playlist with AI...').start();
 
   verbose(options, `Provider: ${provider}, Model: ${providerInfo.model}`);
   verbose(options, `Requesting ${length} songs for prompt: "${prompt}"`);
@@ -111,10 +114,10 @@ export async function generateCommand(prompt: string, options: GenerateOptions):
   try {
     const aiService = getAIService(provider, apiKey);
     songs = await aiService.generatePlaylist(prompt, length);
-    aiSpinner.succeed(`Generated ${songs.length} songs`);
+    aiSpinner?.succeed(`Generated ${songs.length} songs`);
     verbose(options, `AI returned ${songs.length} songs`);
   } catch (error) {
-    aiSpinner.fail('Failed to generate playlist');
+    aiSpinner?.fail('Failed to generate playlist');
     verbose(options, `AI error:`, error instanceof Error ? error.stack : error);
     const parsed = parseAPIError(error, provider);
     displayError(parsed);
@@ -122,20 +125,20 @@ export async function generateCommand(prompt: string, options: GenerateOptions):
   }
 
   // Search YouTube for songs
-  console.log();
-  const ytSpinner = ora('Searching YouTube...').start();
+  if (!options.json) console.log();
+  const ytSpinner = options.json ? null : ora('Searching YouTube...').start();
 
   let results: SearchResult[];
   try {
     results = await searchSongs(songs, (current, total, song, found) => {
-      ytSpinner.text = `Searching YouTube... (${current}/${total}) ${song.title}`;
+      if (ytSpinner) ytSpinner.text = `Searching YouTube... (${current}/${total}) ${song.title}`;
       if (options.verbose && !found) {
         // Will show after spinner clears
       }
     });
-    ytSpinner.succeed('YouTube search complete');
+    ytSpinner?.succeed('YouTube search complete');
   } catch (error) {
-    ytSpinner.fail('YouTube search failed');
+    ytSpinner?.fail('YouTube search failed');
     verbose(options, `YouTube error:`, error instanceof Error ? error.stack : error);
     displayError(error);
     process.exit(1);
@@ -143,6 +146,45 @@ export async function generateCommand(prompt: string, options: GenerateOptions):
 
   // Get stats
   const stats = getSearchStats(results);
+
+  // JSON output mode
+  if (options.json) {
+    const videoIds = results
+      .filter(r => r.videoId !== null)
+      .map(r => r.videoId as string);
+    const playlistUrl = videoIds.length > 0 ? buildPlaylistUrl(videoIds) : null;
+
+    const jsonOutput = {
+      prompt,
+      songs: results.map(r => ({
+        title: r.song.title,
+        artist: r.song.artist,
+        youtubeId: r.videoId ?? null,
+      })),
+      playbackUrl: playlistUrl,
+      stats: {
+        total: stats.total,
+        found: stats.found,
+        notFound: stats.notFound,
+      },
+    };
+
+    // Auto-log to history
+    if (playlistUrl) {
+      try {
+        addHistoryEntry({ prompt, songCount: songs.length, youtubeUrl: playlistUrl });
+      } catch { /* ignore */ }
+    }
+
+    // Save if --save
+    if (options.save && playlistUrl) {
+      const saved = savePlaylist(prompt, songs, playlistUrl);
+      (jsonOutput as any).savedId = saved.id;
+    }
+
+    console.log(JSON.stringify(jsonOutput, null, 2));
+    return;
+  }
 
   // Display results
   console.log();
