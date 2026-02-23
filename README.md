@@ -7,34 +7,37 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Node.js Version](https://img.shields.io/node/v/mixaroo-lite.svg)](https://nodejs.org/)
 
-<!-- 🎬 DEMO GIF — Replace this block with a terminal recording (e.g. asciinema or vhs)
-![mixaroo-lite demo](https://raw.githubusercontent.com/schoolofai/mixaroo-lite/main/docs/demo.gif)
--->
-<p align="center"><em>📼 Demo recording coming soon — see <a href="docs/recording-guide.md">recording guide</a></em></p>
+<!-- TODO: Replace with demo.gif once recorded (see assets/demo.tape + docs/recording-guide.md) -->
 
 ---
 
 ```
-$ mx-lite "90s rock road trip anthems"
+$ mx-lite "upbeat 80s synthwave for coding" -l 10
 
-🎵 Generating 25 songs for: "90s rock road trip anthems"
+🎵 Generating 10 songs for: "upbeat 80s synthwave for coding"
    Using OpenAI (gpt-4o-mini)
 
-✓ Generated 25 songs
+✓ Generated 10 songs
 ✓ YouTube search complete
 
-📋 Playlist: 90s rock road trip anthems
+📋 Playlist: upbeat 80s synthwave for coding
 
-    1. Smells Like Teen Spirit - Nirvana ✓
-    2. Wonderwall - Oasis ✓
-    3. Under the Bridge - Red Hot Chili Peppers ✓
-    ...
+    1. Nightcall - Kavinsky ✓
+    2. A Real Hero - College & Electric Youth ✓
+    3. Sunset - The Midnight ✓
+    4. Tech Noir - Gunship ✓
+    5. Turbo Killer - Carpenter Brut ✓
+    6. Running in the Night - FM-84 ✓
+    7. Resonance - HOME ✓
+    8. The Darkness - Perturbator ✓
+    9. Blizzard - Kavinsky ✓
+   10. Crystals - M|O|O|N ✓
 
 ▶️  Play your playlist:
 
-   https://www.youtube.com/watch_videos?video_ids=...
+   https://www.youtube.com/watch_videos?video_ids=MV_3Dpw-BRY,_kFz1MOUFQ8,...
 
-   25 songs ready to play
+   10 songs ready to play
 ```
 
 ## Quick Start
@@ -63,8 +66,8 @@ That's it. Click the link, start listening.
 - 🔐 **Secure** — API keys stored locally in your system config directory
 - 🎚️ **Customizable** — Request 1 to 100 songs per playlist
 - ⚡ **Fast** — Uses the cheapest, fastest models (gpt-4o-mini, gemini-1.5-flash, claude-3-haiku)
-- 💾 **Saved Playlists** — Save and replay your favorite generated playlists *(coming soon)*
-- 📜 **History** — Browse and re-open previously generated playlists *(coming soon)*
+- 💾 **Saved Playlists** — Save and replay your favorite generated playlists
+- 📜 **History** — Browse and re-open previously generated playlists
 
 ## Installation
 
