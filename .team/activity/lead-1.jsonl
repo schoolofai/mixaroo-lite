@@ -214,3 +214,5 @@
 {"id":"evt-1771815617970-3nqt","timestamp":"2026-02-23T03:00:17.970Z","event_type":"wake_escalated","agent_id":"lead-1","details":{"task_id":"TASK-034","from_status":"ready","to_status":"review","reason":"missing_handoff_self_handled"}}
 {"id":"evt-1771815642279-f9rs","timestamp":"2026-02-23T03:00:42.279Z","event_type":"task_updated","agent_id":"lead-1","details":{"task_id":"TASK-034","old_status":"review","new_status":"done"}}
 {"id":"evt-1771815642323-r4ry","timestamp":"2026-02-23T03:00:42.323Z","event_type":"task_updated","agent_id":"lead-1","details":{"task_id":"TASK-032","old_status":"in_progress","new_status":"review"}}
+{"id":"evt-1771815642573-1drn","timestamp":"2026-02-23T03:00:42.573Z","event_type":"wake_escalated","agent_id":"lead-1","details":{"task_id":"TASK-032","from_status":"in_progress","to_status":"review","reason":"missing_handoff_self_handled"}}
+{"id":"evt-1771815642574-raj7","timestamp":"2026-02-23T03:00:42.574Z","event_type":"wake_escalated","agent_id":"lead-1","details":{"task_id":"TASK-034","from_status":"review","to_status":"done","reason":"missing_handoff_self_handled"}}
