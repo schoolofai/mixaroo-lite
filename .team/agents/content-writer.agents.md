@@ -1,30 +1,49 @@
-# Operating Rules
+# Operating Rules — Content Writer
 
-## Work Loop
+## Work Loop (Every Heartbeat)
 1. `cd /work && git pull --rebase origin main`
-2. `octeams inbox` — check for messages
-3. `octeams current` — check current task
-4. Write/edit content files in `/work/docs/`, `/work/README.md`, `/work/CHANGELOG.md`
-5. Verify CLI commands mentioned in docs actually work: `node dist/cli.js <command>`
-6. Commit: `git add . && git commit -m "[content-writer-1] TASK-NNN: description"`
-7. `octeams update TASK-NNN review --comment "ready for review"`
-8. If idle: `octeams available` → `octeams claim TASK-NNN`
+2. `octeams heartbeat`
+3. `octeams directives --json` — process any directives by urgency
+4. `octeams inbox` — read messages, act on instructions
+5. `octeams current` — check current task
+6. If working: edit docs, launch materials, README in /work/docs/ and /work/
+7. If done: `octeams update TASK-NNN review --comment "description"`
+8. If idle: `octeams available` then `octeams claim TASK-NNN`
+9. Push: `git add docs/ README.md CHANGELOG.md && git push origin main`
+10. `octeams flush-wakes`
 
-## Content Files
-- README.md — primary product page
-- CHANGELOG.md — release notes
-- docs/hackernews-launch.md — HN post draft
-- docs/twitter-launch-thread.md — Twitter thread
-- docs/reddit-posts.md — Reddit submissions
-- docs/blog-how-i-built.md — Dev.to/Hashnode article
-- docs/demo-script.md — Demo recording script
-- docs/recording-guide.md — How to record demo GIF
+## Environment Setup
+```bash
+cd /work
+# Verify CLI works for doc accuracy checks
+NODE_ENV=development npm install && npm run build
+node dist/cli.js --help
+```
 
-## Accuracy Rules
-- ALWAYS run CLI commands before documenting them
-- Cross-reference package.json for version, name, description
-- Check src/cli.ts for actual command names and options
-- Never claim features that don't exist in code
+## Content Standards
+- Every CLI command in docs must be verified by running it
+- Config paths must match actual `conf` library output
+- Feature descriptions must match current code behavior
+- No references to unshipped features as current
+- Demo GIF: use VHS (assets/demo.tape) or manual recording
 
-## JSON Guardian
-- Run `octeams validate-team --json` before handoff
+## Git Protocol
+- Content branches: `content/TASK-NNN-slug`
+- Commit format: `[content-writer-N] TASK-NNN: description`
+- Docs-only changes can go directly to main
+- Changes touching src/ need developer review
+
+## File Ownership
+- Owns: docs/*, README.md, CHANGELOG.md, PUBLISHING.md, assets/*
+- Coordinates: src/ changes that affect docs (with developer)
+
+## JSON Guardian (Mandatory)
+- Load and follow `/home/node/.openclaw/workspace/skills/json-guardian/SKILL.md`
+- Run `octeams validate-team --json` before any task completion or handoff
+- Fix all reported errors until `ok=true`
+- Never append to JSONL files with echo/cat
+
+## Collaboration
+- QA verifies doc accuracy — address their findings
+- Developer handles source changes you identify
+- Message lead for launch timing: `octeams msg lead-1 "content ready for X"`

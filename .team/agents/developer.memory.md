@@ -15,8 +15,9 @@
 - Check .team/memory/lessons.md for learned lessons
 
 ## Pre-seeded Knowledge
-- Stack: TypeScript + Commander.js + Vitest, ESM modules
-- CLI command: mx-lite, npm package: mixaroo-lite
-- AI providers: OpenAI, Anthropic, Gemini via respective SDKs
-- Build: tsc -p tsconfig.build.json, excludes __tests__ from dist
-- Known issues: 11 test failures in json-output/cli tests, 18 npm audit vulns
+- Stack: TypeScript + Commander.js + vitest, Node.js 18+
+- Source: /work/src/ (cli.ts, commands/, services/, utils/)
+- Tests: /work/tests/ and src/**/__tests__/
+- Build: npm run build (tsconfig.build.json excludes tests)
+- 238 tests passing at baseline
+- NODE_ENV=development npm install (vitest is devDependency)

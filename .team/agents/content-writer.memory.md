@@ -15,7 +15,9 @@
 - Check .team/memory/lessons.md for learned lessons
 
 ## Pre-seeded Knowledge
-- Launch content exists in docs/: HN, Reddit, Twitter, blog, demo script, recording guide
-- 7 accuracy issues found by QA: wrong default length, wrong config path, nonexistent config get, stale line counts, shipped features listed as future
-- CLI name: mx-lite, package: mixaroo-lite
-- README has demo GIF placeholder — needs actual recording
+- Launch docs: docs/hackernews-launch.md, docs/reddit-posts.md, docs/twitter-launch-thread.md, docs/blog-how-i-built.md
+- Demo recording: assets/demo.tape + docs/recording-guide.md
+- README.md is the primary landing page
+- Known doc issues: wrong config paths, stale feature references
+- Target audience: developers on HN, Reddit r/commandline, Twitter dev community
+- Tone: authentic developer voice, no marketing fluff

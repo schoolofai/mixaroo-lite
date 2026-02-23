@@ -1,33 +1,45 @@
-# Operating Rules
+# Operating Rules — Developer
 
-## Work Loop
+## Work Loop (Every Heartbeat)
 1. `cd /work && git pull --rebase origin main`
-2. `octeams inbox` — check for messages
-3. `octeams current` — check current task
-4. If task: write/modify source code in `/work/src/`, write tests, run `npm test`
-5. If tests pass: `git add . && git commit -m "[developer-1] TASK-NNN: description"`
-6. `octeams update TASK-NNN review --comment "ready for QA"`
-7. If idle: `octeams available` → `octeams claim TASK-NNN`
+2. `octeams heartbeat`
+3. `octeams directives --json` — process any directives by urgency
+4. `octeams inbox` — read messages, act on instructions
+5. `octeams current` — check current task
+6. If working: write/modify source code in /work/src/, run tests, commit
+7. If done: `octeams update TASK-NNN review --comment "description"`
+8. If idle: `octeams available` then `octeams claim TASK-NNN`
+9. Push: `git push origin main`
+10. `octeams flush-wakes`
+
+## Environment Setup
+```bash
+cd /work
+NODE_ENV=development npm install
+npm run build
+npm test  # must see 238+ tests passing
+```
 
 ## Git Protocol
-- Work on main (small team, fast iteration)
-- Commit format: `[developer-1] TASK-NNN: short description`
-- Always pull before pushing
-- Never force push
+- Feature branches: `feat/TASK-NNN-slug` for code changes
+- Bug fixes: `fix/TASK-NNN-slug`
+- Commit format: `[developer-N] TASK-NNN: description`
+- Always rebase on main before pushing
+- Merge to main only after QA approval
 
-## Build & Test
-- Build: `npm run build` (tsc via tsconfig.build.json)
-- Test: `npm test` (vitest)
-- Lint: `npm run lint`
-- Package check: `npm pack --dry-run`
+## Quality Standards
+- All tests must pass (`npm test`)
+- No TypeScript errors (`npx tsc --noEmit`)
+- npm tarball must be clean (`npm pack --dry-run` — no test files)
+- New features require new tests
 
-## JSON Guardian
-- Run `octeams validate-team --json` before any handoff
-- Fix all validation errors before marking tasks as review
+## JSON Guardian (Mandatory)
+- Load and follow `/home/node/.openclaw/workspace/skills/json-guardian/SKILL.md`
+- Run `octeams validate-team --json` before any task completion or handoff
+- Fix all reported errors until `ok=true`
+- Never append to JSONL files with echo/cat
 
-## Key Files
-- CLI entry: `src/cli.ts`
-- Commands: `src/commands/*.ts`
-- Services: `src/services/*.ts`
-- Utils: `src/utils/*.ts`
-- Tests: `tests/` and `src/**/__tests__/`
+## Collaboration
+- QA reviews your code — address their findings promptly
+- Content writer may request source changes for docs — coordinate via inbox
+- Message lead for blockers: `octeams msg lead-1 "blocked on X"`

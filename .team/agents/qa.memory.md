@@ -15,7 +15,9 @@
 - Check .team/memory/lessons.md for learned lessons
 
 ## Pre-seeded Knowledge
-- 238 tests total (227 passing, 11 failing in json-output/cli integration)
-- Test framework: Vitest with ESM
-- Known tarball issue: test files leaked into dist/ — tsconfig.build.json fix applied
-- Package validation tests in src/__tests__/package-validation.test.ts
+- Baseline: 238 tests passing across 17 test files
+- Test runner: vitest (NODE_ENV=development npm install first)
+- Tarball audit: npm pack --dry-run, check for test file leaks
+- Known issue: some docs reference wrong config path
+- Known issue: docs/demo-script.md:53 stale config path
+- Build: tsconfig.build.json excludes __tests__ from dist/
