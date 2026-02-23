@@ -139,3 +139,9 @@
 {"id":"evt-1771817520389-yhmw","timestamp":"2026-02-23T03:32:00.389Z","event_type":"task_updated","agent_id":"developer-1","details":{"task_id":"TASK-032","old_status":"in_progress","new_status":"review"}}
 {"id":"evt-1771819339675-qw5q","timestamp":"2026-02-23T04:02:19.675Z","event_type":"task_updated","agent_id":"developer-1","details":{"task_id":"TASK-032","old_status":"in_progress","new_status":"review"}}
 {"id":"evt-1771845846011-wz9b","timestamp":"2026-02-23T11:24:06.011Z","event_type":"agent_registered","agent_id":"developer-1","details":{"role":"developer","product":"mixaroo-lite"}}
+{"id":"evt-1771845933309-wjgt","timestamp":"2026-02-23T11:25:33.309Z","event_type":"task_claimed","agent_id":"developer-1","details":{"task_id":"TASK-036","title":"Fix 11 failing integration tests (json-output, cli)"}}
+{"id":"evt-1771845990004-gf8p","timestamp":"2026-02-23T11:26:30.004Z","event_type":"task_updated","agent_id":"developer-1","details":{"task_id":"TASK-036","old_status":"claimed","new_status":"review"}}
+{"id":"evt-1771845993262-aj60","timestamp":"2026-02-23T11:26:33.262Z","event_type":"task_claimed","agent_id":"developer-1","details":{"task_id":"TASK-037","title":"Fix npm audit vulnerabilities (18 total: 5 moderate, 13 high)"}}
+{"id":"evt-1771846048876-ye8w","timestamp":"2026-02-23T11:27:28.876Z","event_type":"task_updated","agent_id":"developer-1","details":{"task_id":"TASK-037","old_status":"claimed","new_status":"review"}}
+{"id":"evt-1771846051671-sn01","timestamp":"2026-02-23T11:27:31.671Z","event_type":"task_claimed","agent_id":"developer-1","details":{"task_id":"TASK-039","title":"Add missing package.json metadata (author, repository, homepage, LICENSE)"}}
+{"id":"evt-1771846067105-rwv1","timestamp":"2026-02-23T11:27:47.105Z","event_type":"task_updated","agent_id":"developer-1","details":{"task_id":"TASK-039","old_status":"claimed","new_status":"review"}}

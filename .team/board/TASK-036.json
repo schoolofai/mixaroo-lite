@@ -2,15 +2,23 @@
   "id": "TASK-036",
   "type": "bug",
   "title": "Fix 11 failing integration tests (json-output, cli)",
-  "status": "ready",
-  "priority": "high",
-  "required_role": "developer",
-  "depends_on": [],
-  "claimed_by": null,
-  "created_at": "2026-02-23T11:24:00.000Z",
   "description": "11 tests fail in src/commands/__tests__/json-output.test.ts and tests/cli.test.ts. They use execSync('node dist/cli.js ...') which requires a build step. Fix: either add a beforeAll build hook or fix the test setup. Run npm test to verify all 238 tests pass.",
+  "status": "review",
+  "priority": "high",
+  "depends_on": [],
+  "required_role": "developer",
+  "claimed_by": "developer-1",
+  "claimed_at": "2026-02-23T11:25:33.309Z",
   "acceptance_criteria": [
     "All 238+ tests pass with npm test on a clean checkout (no prior build needed)."
   ],
-  "comments": []
+  "created_at": "2026-02-23T11:24:00.000Z",
+  "comments": [
+    {
+      "from": "developer-1",
+      "text": "Added vitest globalSetup that ensures dist/ is built before tests run. All 238 tests pass on clean checkout.",
+      "at": "2026-02-23T11:26:30.004Z"
+    }
+  ],
+  "updated_at": "2026-02-23T11:26:30.004Z"
 }

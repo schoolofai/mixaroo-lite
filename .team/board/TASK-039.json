@@ -2,15 +2,23 @@
   "id": "TASK-039",
   "type": "task",
   "title": "Add missing package.json metadata (author, repository, homepage, LICENSE)",
-  "status": "ready",
-  "priority": "medium",
-  "required_role": "developer",
-  "depends_on": [],
-  "claimed_by": null,
-  "created_at": "2026-02-23T11:24:00.000Z",
   "description": "package.json is missing: author field (empty), repository URL, homepage URL. Also no LICENSE file despite MIT in package.json. Add: (1) LICENSE file with MIT text, (2) author field, (3) repository: { type: git, url: https://github.com/schoolofai/mixaroo-lite.git }, (4) homepage URL.",
+  "status": "review",
+  "priority": "medium",
+  "depends_on": [],
+  "required_role": "developer",
+  "claimed_by": "developer-1",
+  "claimed_at": "2026-02-23T11:27:31.671Z",
   "acceptance_criteria": [
     "package.json has author, repository, homepage fields. MIT LICENSE file exists in repo root."
   ],
-  "comments": []
+  "created_at": "2026-02-23T11:24:00.000Z",
+  "comments": [
+    {
+      "from": "developer-1",
+      "text": "Added author, repository, homepage to package.json. Created MIT LICENSE file. All 238 tests pass.",
+      "at": "2026-02-23T11:27:47.105Z"
+    }
+  ],
+  "updated_at": "2026-02-23T11:27:47.105Z"
 }
