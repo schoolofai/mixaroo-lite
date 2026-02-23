@@ -121,3 +121,5 @@
 {"id":"evt-1771815357441-yuu4","timestamp":"2026-02-23T02:55:57.441Z","event_type":"wake_attempted","agent_id":"developer-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-029","ok":true}}
 {"id":"evt-1771815357443-u2pd","timestamp":"2026-02-23T02:55:57.443Z","event_type":"wake_escalated","agent_id":"developer-1","details":{"task_id":"TASK-033","reason":"missing_handoff","to_status":"review"}}
 {"id":"evt-1771815357444-a86j","timestamp":"2026-02-23T02:55:57.444Z","event_type":"wake_attempted","agent_id":"developer-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-033","ok":true}}
+{"id":"evt-1771815413537-lpcl","timestamp":"2026-02-23T02:56:53.537Z","event_type":"task_claimed","agent_id":"developer-1","details":{"task_id":"TASK-032","title":"Add --json output flag to generate command"}}
+{"id":"evt-1771815582786-cx17","timestamp":"2026-02-23T02:59:42.786Z","event_type":"task_updated","agent_id":"developer-1","details":{"task_id":"TASK-032","old_status":"claimed","new_status":"review"}}
