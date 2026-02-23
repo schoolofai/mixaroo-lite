@@ -80,7 +80,7 @@ The boring stuff:
 • Uses cheapest models — under 1¢ per playlist
 • API key stays on your machine, no telemetry
 • YouTube search via yt-search (no API key)
-• TypeScript, ~500 lines
+• TypeScript, ~1,700 lines
 
 Simple tools > complex platforms.
 ```

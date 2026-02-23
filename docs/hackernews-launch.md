@@ -38,7 +38,7 @@ You describe a vibe (`mx-lite "chill lo-fi beats for late night coding"`), the A
 
 **Why a CLI?** I live in my terminal. Context-switching to a browser to build a playlist felt wrong. Plus CLIs are fun to build.
 
-Next up: Spotify integration (the OAuth dance awaits), playlist save/load, and an "expand this playlist" command.
+Next up: Spotify integration (the OAuth dance awaits) and an "expand this playlist" command. Save/load is already shipped — `mx-lite list` and `mx-lite play <id>` let you revisit favorites.
 
 Would love feedback — what would make this useful for you?
 
@@ -93,7 +93,7 @@ Would love feedback — what would make this useful for you?
 > Cost and speed. Song lists don't need GPT-4-level reasoning. The cheapest tier from each provider works great and keeps it under a cent per playlist.
 
 **"Privacy concerns?"**
-> Your API key is stored locally in ~/.config/mixaroo-lite/ with standard file permissions. Nothing leaves your machine except the AI provider API call. No servers, no telemetry, no analytics.
+> Your API key is stored locally in ~/.config/mixaroo-lite-nodejs/ with standard file permissions. Nothing leaves your machine except the AI provider API call. No servers, no telemetry, no analytics.
 
 **"How accurate is YouTube search?"**
 > ~90%+ for popular music. Less reliable for deep cuts, covers, or songs with very generic names. We search "artist - title" and take the top result via yt-search.

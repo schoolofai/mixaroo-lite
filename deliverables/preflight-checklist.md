@@ -9,13 +9,13 @@
 - [ ] **npm tarball leaks test files** — 44 test files compiled into dist/ via tsc. Fix: tsconfig.build.json excludes `__tests__` dirs (TASK-033 addressed this — verify)
 - [ ] **11 test failures** — `json-output.test.ts` and `cli.test.ts` fail (need `npm run build` before integration tests)
 - [ ] **npm audit: 18 vulnerabilities** (5 moderate, 13 high) — Run `npm audit fix`, evaluate breaking changes
-- [ ] **Documentation accuracy** — 7 issues found by QA (TASK-031): wrong default length (25→30), wrong config path, nonexistent `config get` subcommand referenced
+- [x] **Documentation accuracy** — 7 issues found by QA (TASK-031): fixed default length (30→25), fixed config paths, verified no `config get` reference remains
 
 ## 🟡 Should Fix Before Launch
 
 - [ ] **Demo GIF** — README has placeholder, need actual recording (guide: `docs/recording-guide.md`)
-- [ ] **CHANGELOG date** — Says 2026-02-20, confirm or update
-- [ ] **Blog post accuracy** — Claims ~500 lines but source is ~1,700; roadmap lists save/load as future but it's shipped
+- [x] **CHANGELOG date** — Fixed to 2026-02-19 (matches initial commit)
+- [x] **Blog post accuracy** — Blog already says ~1,700; fixed Twitter (~500→~1,700); fixed HN save/load roadmap
 - [ ] **CI pipeline** — `.github/workflows/ci.yml` exists but verify it passes on GitHub
 
 ## 🟢 Nice to Have

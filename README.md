@@ -135,7 +135,7 @@ mx-lite "nostalgic video game soundtracks"
 ### Options
 
 ```bash
-# Custom playlist length (default: 30, max: 100)
+# Custom playlist length (default: 25, max: 100)
 mx-lite "punk rock" --length 50
 mx-lite "ambient" -l 10
 
