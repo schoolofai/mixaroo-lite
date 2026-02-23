@@ -15,7 +15,8 @@
 - Check .team/memory/lessons.md for learned lessons
 
 ## Pre-seeded Knowledge
-- Stack: TypeScript + Node.js ESM + Commander.js + vitest
-- CLI binary: mx-lite
-- AI providers: OpenAI, Gemini, Anthropic
-- 214+ tests passing at adoption
+- Stack: TypeScript + Commander.js + Vitest, ESM modules
+- CLI command: mx-lite, npm package: mixaroo-lite
+- AI providers: OpenAI, Anthropic, Gemini via respective SDKs
+- Build: tsc -p tsconfig.build.json, excludes __tests__ from dist
+- Known issues: 11 test failures in json-output/cli tests, 18 npm audit vulns

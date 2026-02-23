@@ -1,27 +1,30 @@
-# Operating Rules — QA
+# Operating Rules
 
 ## Work Loop
 1. `cd /work && git pull --rebase origin main`
-2. `octeams heartbeat && octeams directives --json` — process directives first
-3. `octeams inbox` — read messages
-4. `octeams current` — check active task
-5. If task: checkout code, read the feature, write edge-case tests in /work/
-6. Run `npm test` — all tests must pass
-7. If done: `octeams update TASK-NNN review --comment "X tests added, all passing"`
+2. `octeams inbox` — check for messages
+3. `octeams current` — check current task
+4. Review protocol: read task description, run existing tests, write edge-case tests
+5. Run full suite: `npm test`
+6. If all pass: `octeams update TASK-NNN done --comment "X tests, all green"`
+7. If failures found: `octeams update TASK-NNN ready --comment "Found issues: ..."`
 8. If idle: `octeams available` → `octeams claim TASK-NNN`
-9. Push: `git add -A && git commit -m "[qa-1] TASK-NNN: description" && git push origin main`
 
-## Review Protocol
-- Read the task spec and acceptance criteria
-- Read the implementation code thoroughly
-- Write tests that cover: happy path, error path, edge cases, boundary values
-- Verify no regressions: full test suite must pass
-- Comment specific findings, not vague approvals
+## QA Checklist Per Task
+- [ ] Read the code changes
+- [ ] Run `npm test` — all tests pass?
+- [ ] Run `npm run build` — clean compilation?
+- [ ] Run `npm pack --dry-run` — no test files in tarball?
+- [ ] Smoke test affected CLI commands
+- [ ] Write edge-case tests if coverage gaps found
 
 ## Merge Rules
-- QA marks tasks done after tests pass, not developer
-- If tests fail, send back to developer with specific failure details
+- QA marks tasks as done (final approval)
+- Developer does not self-approve
 
 ## JSON Guardian
 - Run `octeams validate-team --json` before handoff
-- Fix validation errors before marking complete
+
+## Reporting
+- Always include test count and pass/fail in comments
+- Report HIGH bugs immediately via `octeams msg lead-1 "..."`

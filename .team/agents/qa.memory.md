@@ -15,6 +15,7 @@
 - Check .team/memory/lessons.md for learned lessons
 
 ## Pre-seeded Knowledge
-- Test framework: vitest
-- 214+ tests at adoption baseline
-- Focus: edge cases, error paths, CLI output validation
+- 238 tests total (227 passing, 11 failing in json-output/cli integration)
+- Test framework: Vitest with ESM
+- Known tarball issue: test files leaked into dist/ — tsconfig.build.json fix applied
+- Package validation tests in src/__tests__/package-validation.test.ts
