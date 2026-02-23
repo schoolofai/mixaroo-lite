@@ -108,6 +108,19 @@ describe('npm package validation', () => {
       expect(testFiles.length).toBe(0);
     });
 
+    it('tarball does not contain source maps', () => {
+      const out = execSync('npm pack --dry-run 2>&1', { cwd: ROOT, encoding: 'utf-8' });
+      const mapFiles = out.split('\n').filter(l => /\.js\.map|\.d\.ts\.map/.test(l));
+      expect(mapFiles.length).toBe(0);
+    });
+
+    it('tarball has reasonable file count (under 50)', () => {
+      const out = execSync('npm pack --dry-run 2>&1', { cwd: ROOT, encoding: 'utf-8' });
+      const match = out.match(/total files:\s+(\d+)/);
+      expect(match).toBeTruthy();
+      expect(Number(match![1])).toBeLessThan(50);
+    });
+
     it('tarball includes README', () => {
       const out = execSync('npm pack --dry-run 2>&1', { cwd: ROOT, encoding: 'utf-8' });
       expect(out).toContain('README.md');
