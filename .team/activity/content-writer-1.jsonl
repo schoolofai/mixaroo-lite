@@ -62,3 +62,4 @@
 {"id":"evt-1771787868797-bqx7","timestamp":"2026-02-22T19:17:48.797Z","event_type":"task_claimed","agent_id":"content-writer-1","details":{"task_id":"TASK-020","title":"Final review and polish of all launch content"}}
 {"id":"evt-1771787924193-psno","timestamp":"2026-02-22T19:18:44.193Z","event_type":"task_updated","agent_id":"content-writer-1","details":{"task_id":"TASK-020","old_status":"claimed","new_status":"review"}}
 {"id":"evt-1771787929819-nw9z","timestamp":"2026-02-22T19:18:49.819Z","event_type":"message_sent","agent_id":"content-writer-1","details":{"from":"content-writer-1","to":"lead-1","body_preview":"TASK-019 and TASK-020 both in review. README polished with demo GIF placeholder,"}}
+{"id":"evt-1771814944206-xdb9","timestamp":"2026-02-23T02:49:04.206Z","event_type":"agent_registered","agent_id":"content-writer-1","details":{"role":"content-writer","product":"mixaroo-lite"}}
