@@ -227,3 +227,4 @@
 {"id":"evt-1771821142732-z24a","timestamp":"2026-02-23T04:32:22.732Z","event_type":"message_sent","agent_id":"lead-1","details":{"from":"lead-1","to":"human","body_preview":"All 35/35 tasks DONE. 238 tests passing. Build phase complete. TASK-032 (--json "}}
 {"id":"evt-1771845603137-zwp6","timestamp":"2026-02-23T11:20:03.137Z","event_type":"agent_registered","agent_id":"lead-1","details":{"role":"lead","product":"mixaroo-lite"}}
 {"id":"evt-1771845810151-66ai","timestamp":"2026-02-23T11:23:30.151Z","event_type":"directive_acknowledged","agent_id":"lead-1","details":{"directive_id":"evt-1771845616643-q0rw","action":"context_update","urgency":"interrupt"}}
+{"id":"evt-1771845828709-ikja","timestamp":"2026-02-23T11:23:48.709Z","event_type":"agent_registered","agent_id":"lead-1","details":{"role":"lead","product":"mixaroo-lite"}}
