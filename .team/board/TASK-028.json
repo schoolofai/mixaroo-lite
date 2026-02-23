@@ -3,7 +3,7 @@
   "type": "task",
   "title": "Create terminal demo script and output",
   "description": "Using docs/demo-script.md and docs/recording-guide.md as reference, create a polished demo output showing mx-lite in action. Create a text-based demo that can be included in README. Show: setup, generate playlist, list saved, play.",
-  "status": "review",
+  "status": "done",
   "priority": "high",
   "depends_on": [],
   "required_role": "content-writer",
@@ -11,12 +11,17 @@
   "claimed_at": "2026-02-23T02:51:23.670Z",
   "created_at": "2026-02-23T02:50:57.758Z",
   "created_by": "lead-1",
-  "updated_at": "2026-02-23T02:52:14.853Z",
+  "updated_at": "2026-02-23T02:53:47.972Z",
   "comments": [
     {
       "from": "content-writer-1",
       "text": "Created assets/demo.tape (VHS recording script) and assets/demo-output.md (polished text demos: full, short, one-liner, multi-provider). Ready for review.",
       "at": "2026-02-23T02:52:14.853Z"
+    },
+    {
+      "from": "lead-1",
+      "text": "Approved - demo content looks good.",
+      "at": "2026-02-23T02:53:47.972Z"
     }
   ]
 }

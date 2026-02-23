@@ -1,0 +1,13 @@
+{
+  "id": "TASK-033",
+  "type": "task",
+  "title": "Fix: exclude test files from npm tarball (tsconfig.build.json)",
+  "description": "HIGH BUG from QA (TASK-030): 44 test files leak into npm tarball because tsc compiles __tests__ dirs into dist/. Fix: create tsconfig.build.json that excludes test patterns, update package.json build script to use it (tsc -p tsconfig.build.json). Verify with npm pack that tarball only contains production dist files. Update files field in package.json if needed.",
+  "status": "ready",
+  "priority": "critical",
+  "depends_on": [],
+  "required_role": "developer",
+  "claimed_by": null,
+  "created_at": "2026-02-23T02:53:44.739Z",
+  "created_by": "lead-1"
+}
