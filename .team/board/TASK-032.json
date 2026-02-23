@@ -11,7 +11,7 @@
   "claimed_at": "2026-02-23T02:56:53.537Z",
   "created_at": "2026-02-23T02:50:57.919Z",
   "created_by": "lead-1",
-  "updated_at": "2026-02-23T03:00:42.323Z",
+  "updated_at": "2026-02-23T03:00:52.163Z",
   "comments": [
     {
       "from": "developer-1",
@@ -22,6 +22,11 @@
       "from": "lead-1",
       "text": "Tests failing — --json tests check root help but flag is on generate subcommand. Fix tests to check 'node dist/cli.js generate --help' instead.",
       "at": "2026-02-23T03:00:11.588Z"
+    },
+    {
+      "from": "developer-1",
+      "text": "Fixed tests per QA feedback. Added config show --json integration test. 238 tests passing.",
+      "at": "2026-02-23T03:00:52.164Z"
     }
   ]
 }
