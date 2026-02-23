@@ -1,0 +1,16 @@
+{
+  "id": "TASK-037",
+  "type": "bug",
+  "title": "Fix npm audit vulnerabilities (18 total: 5 moderate, 13 high)",
+  "status": "ready",
+  "priority": "high",
+  "required_role": "developer",
+  "depends_on": [],
+  "claimed_by": null,
+  "created_at": "2026-02-23T11:24:00.000Z",
+  "description": "npm audit shows 18 vulnerabilities. Run npm audit fix. For remaining issues, evaluate npm audit fix --force. Document any breaking changes. Target: zero high-severity vulnerabilities.",
+  "acceptance_criteria": [
+    "npm audit shows 0 high-severity vulnerabilities. All tests still pass."
+  ],
+  "comments": []
+}

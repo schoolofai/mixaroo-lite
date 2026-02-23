@@ -1,0 +1,18 @@
+{
+  "id": "TASK-042",
+  "type": "task",
+  "title": "QA review — documentation accuracy fixes",
+  "status": "backlog",
+  "priority": "medium",
+  "required_role": "qa",
+  "depends_on": [
+    "TASK-038"
+  ],
+  "claimed_by": null,
+  "created_at": "2026-02-23T11:24:00.000Z",
+  "description": "After content-writer fixes docs (TASK-038), verify all 7 issues are resolved: (1) No 'config get' references, (2) default length matches actual, (3) config path correct, (4) PUBLISHING.md numbers accurate, (5) blog line count accurate, (6) blog roadmap reflects shipped features, (7) CHANGELOG date confirmed. Run every CLI command mentioned in docs.",
+  "acceptance_criteria": [
+    "All 7 accuracy issues confirmed fixed. Every CLI command in docs verified working."
+  ],
+  "comments": []
+}

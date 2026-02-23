@@ -1,0 +1,16 @@
+{
+  "id": "TASK-038",
+  "type": "bug",
+  "title": "Fix documentation accuracy — 7 issues from QA audit",
+  "status": "ready",
+  "priority": "high",
+  "required_role": "content-writer",
+  "depends_on": [],
+  "claimed_by": null,
+  "created_at": "2026-02-23T11:24:00.000Z",
+  "description": "QA found 7 inaccuracies: (1) README references nonexistent 'config get' subcommand, (2) default length says 25 but actual is 30, (3) config path says ~/.config/mixaroo-lite/ but actual is mixaroo-lite-nodejs/, (4) PUBLISHING.md file counts/sizes wrong, (5) blog says ~500 lines but source is ~1668, (6) blog roadmap lists save/load as future but it's shipped, (7) CHANGELOG date 2026-02-20 needs confirmation. Verify each by running CLI commands, then fix all docs.",
+  "acceptance_criteria": [
+    "All 7 issues fixed. Every CLI command mentioned in docs verified to actually work. No stale feature claims."
+  ],
+  "comments": []
+}
