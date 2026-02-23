@@ -15,6 +15,7 @@
 - Check .team/memory/lessons.md for learned lessons
 
 ## Pre-seeded Knowledge
-- Launch content in /work/docs/
-- Target: HN, Reddit, Twitter, blog
-- Product: CLI playlist generator, npm + Homebrew
+- Product: mixaroo-lite CLI
+- Audience: developers, HN, Reddit
+- Launch docs in /work/docs/
+- README needs demo GIF

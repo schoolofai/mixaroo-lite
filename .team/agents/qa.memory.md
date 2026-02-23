@@ -16,5 +16,5 @@
 
 ## Pre-seeded Knowledge
 - Test framework: vitest
-- 124 tests across 7 files
-- CI: GitHub Actions, Node 18/20/22
+- 214+ tests at adoption baseline
+- Focus: edge cases, error paths, CLI output validation

@@ -36,7 +36,7 @@
   "gateway": {
     "bind": "lan",
     "auth": {
-      "token": "faffdbd36d6d82778815630dd1f20a1259873c694dd11660",
+      "token": "d6f42816e13122539a18923b31dec6a4d7a6402fe68d8ce1",
       "mode": "token"
     },
     "trustedProxies": [
@@ -47,7 +47,7 @@
   },
   "hooks": {
     "enabled": true,
-    "token": "faffdbd36d6d82778815630dd1f20a1259873c694dd11660-hooks",
+    "token": "d6f42816e13122539a18923b31dec6a4d7a6402fe68d8ce1-hooks",
     "path": "/hooks"
   },
   "messages": {

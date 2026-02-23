@@ -15,7 +15,7 @@
 - Check .team/memory/lessons.md for learned lessons
 
 ## Pre-seeded Knowledge
-- Stack: TypeScript + commander.js + vitest + yt-search
-- Build: tsc, run: mx-lite CLI
-- 124 tests passing across 7 test files
+- Stack: TypeScript + Node.js ESM + Commander.js + vitest
+- CLI binary: mx-lite
 - AI providers: OpenAI, Gemini, Anthropic
+- 214+ tests passing at adoption
