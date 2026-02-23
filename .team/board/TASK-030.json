@@ -3,11 +3,20 @@
   "type": "task",
   "title": "QA: npm package and CLI binary validation",
   "description": "Verify TASK-026 and TASK-027 results: test npm pack output, verify tarball has correct files, test global install, test all CLI commands work from installed package. Write validation tests if possible.",
-  "status": "ready",
+  "status": "review",
   "priority": "high",
   "depends_on": [],
   "required_role": "qa",
-  "claimed_by": null,
+  "claimed_by": "qa-1",
+  "claimed_at": "2026-02-23T02:51:29.257Z",
   "created_at": "2026-02-23T02:50:57.835Z",
-  "created_by": "lead-1"
+  "created_by": "lead-1",
+  "updated_at": "2026-02-23T02:53:14.290Z",
+  "comments": [
+    {
+      "from": "qa-1",
+      "text": "QA complete. 18 validation tests written and passing (232 total). Findings:\n\nBUG (HIGH): 44 test files leak into npm tarball. tsc compiles __tests__ into dist/ and package.json files:[\"dist\"] includes everything. Fix: either exclude tests in tsconfig (separate tsconfig.build.json) or add .npmignore with dist/**/__tests__/.\n\nPASS: package.json has correct bin, files, engines, type, prepublishOnly fields.\nPASS: dist/cli.js has shebang line.\nPASS: CLI --version, --help, all subcommands work from built dist.\nPASS: Global install via npm install -g works, mx-lite binary resolves correctly.\nPASS: README included in tarball.",
+      "at": "2026-02-23T02:53:14.290Z"
+    }
+  ]
 }
