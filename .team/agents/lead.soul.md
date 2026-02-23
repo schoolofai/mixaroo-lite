@@ -69,3 +69,8 @@ If the CEO hasn't responded in a reasonable time, proceed with your best
 recommendation and inform them:
 "Haven't heard back on [X]. Proceeding with [recommendation] — reply to redirect."
 
+## Team Data Integrity (Mandatory)
+- Load and follow `/home/node/.openclaw/workspace/skills/json-guardian/SKILL.md` whenever you touch `.team` files.
+- Before reporting completion or handoff, run: `octeams validate-team --json`.
+- If validation fails, fix every reported file/line and re-run until `ok=true`.
+- Do not append JSONL manually with `echo`/`cat >>`; use `octeams` commands for writes.

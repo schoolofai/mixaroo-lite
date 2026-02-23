@@ -1,22 +1,9 @@
 {
-  "current": "planning",
-  "previous": "discovery",
-  "started_at": "2026-02-22T19:09:56.745Z",
-  "transitioned_at": "2026-02-22T19:14:00.000Z",
+  "current": "setup",
+  "previous": null,
+  "started_at": "2026-02-23T02:45:42.638Z",
+  "transitioned_at": "2026-02-23T02:45:42.638Z",
   "gate_criteria_met": [],
   "sub_cycle": null,
-  "history": [
-    {
-      "phase": "setup",
-      "entered_at": "2026-02-22T19:09:56.745Z",
-      "exited_at": "2026-02-22T19:12:00.000Z",
-      "duration_minutes": 2
-    },
-    {
-      "phase": "discovery",
-      "entered_at": "2026-02-22T19:12:00.000Z",
-      "exited_at": "2026-02-22T19:14:00.000Z",
-      "duration_minutes": 2
-    }
-  ]
+  "history": []
 }
