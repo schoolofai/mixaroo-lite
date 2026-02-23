@@ -1,23 +1,17 @@
 {
-  "agent": {
-    "skipBootstrap": true
-  },
   "agents": {
     "defaults": {
+      "skipBootstrap": true,
       "workspace": "/home/node/.openclaw/workspace",
       "model": "anthropic/claude-opus-4-6",
       "thinkingDefault": "high",
       "heartbeat": {
         "every": "30m",
         "target": "telegram"
-      },
-      "compaction": {
-        "enabled": true
       }
     }
   },
   "tools": {
-    "profile": "read_only",
     "allow": [
       "read",
       "exec",
@@ -38,9 +32,9 @@
     }
   },
   "gateway": {
-    "bind": "lan",
+    "mode": "local",
     "auth": {
-      "token": "98b49c4dd6a0a61df3ea5f2a8b263f6d72456a4d52b31dc7",
+      "token": "15ba98b7d5f6b437c7b9418b2d1126c56538e45436e3afe1",
       "mode": "token"
     },
     "trustedProxies": [
@@ -51,7 +45,7 @@
   },
   "hooks": {
     "enabled": true,
-    "token": "98b49c4dd6a0a61df3ea5f2a8b263f6d72456a4d52b31dc7-hooks",
+    "token": "15ba98b7d5f6b437c7b9418b2d1126c56538e45436e3afe1-hooks",
     "path": "/hooks"
   },
   "messages": {
