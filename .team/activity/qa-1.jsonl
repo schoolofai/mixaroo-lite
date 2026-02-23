@@ -90,3 +90,17 @@
 {"id":"evt-1771815089258-u8im","timestamp":"2026-02-23T02:51:29.258Z","event_type":"task_claimed","agent_id":"qa-1","details":{"task_id":"TASK-030","title":"QA: npm package and CLI binary validation"}}
 {"id":"evt-1771815194291-lrna","timestamp":"2026-02-23T02:53:14.291Z","event_type":"task_updated","agent_id":"qa-1","details":{"task_id":"TASK-030","old_status":"claimed","new_status":"review"}}
 {"id":"evt-1771815200014-87vy","timestamp":"2026-02-23T02:53:20.014Z","event_type":"message_sent","agent_id":"qa-1","details":{"from":"qa-1","to":"lead-1","body_preview":"TASK-030 complete → review. 18 package validation tests added (232 total). Found"}}
+{"id":"evt-1771815344723-aq14","timestamp":"2026-02-23T02:55:44.723Z","event_type":"wake_escalated","agent_id":"qa-1","details":{"task_id":"TASK-026","reason":"missing_handoff","to_status":"done"}}
+{"id":"evt-1771815344743-rjmf","timestamp":"2026-02-23T02:55:44.743Z","event_type":"wake_attempted","agent_id":"qa-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-026","ok":true}}
+{"id":"evt-1771815344744-9k4o","timestamp":"2026-02-23T02:55:44.744Z","event_type":"wake_escalated","agent_id":"qa-1","details":{"task_id":"TASK-027","reason":"missing_handoff","to_status":"done"}}
+{"id":"evt-1771815344745-vm2e","timestamp":"2026-02-23T02:55:44.745Z","event_type":"wake_attempted","agent_id":"qa-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-027","ok":true}}
+{"id":"evt-1771815344747-0hrm","timestamp":"2026-02-23T02:55:44.747Z","event_type":"wake_escalated","agent_id":"qa-1","details":{"task_id":"TASK-028","reason":"missing_handoff","to_status":"done"}}
+{"id":"evt-1771815344748-fb47","timestamp":"2026-02-23T02:55:44.748Z","event_type":"wake_attempted","agent_id":"qa-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-028","ok":true}}
+{"id":"evt-1771815344749-yoox","timestamp":"2026-02-23T02:55:44.749Z","event_type":"wake_escalated","agent_id":"qa-1","details":{"task_id":"TASK-029","reason":"missing_handoff","to_status":"done"}}
+{"id":"evt-1771815344750-o2lr","timestamp":"2026-02-23T02:55:44.750Z","event_type":"wake_attempted","agent_id":"qa-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-029","ok":true}}
+{"id":"evt-1771815344751-d0s3","timestamp":"2026-02-23T02:55:44.751Z","event_type":"wake_escalated","agent_id":"qa-1","details":{"task_id":"TASK-030","reason":"missing_handoff","to_status":"done"}}
+{"id":"evt-1771815344752-ys3s","timestamp":"2026-02-23T02:55:44.752Z","event_type":"wake_attempted","agent_id":"qa-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-030","ok":true}}
+{"id":"evt-1771815344755-7sul","timestamp":"2026-02-23T02:55:44.755Z","event_type":"wake_escalated","agent_id":"qa-1","details":{"task_id":"TASK-031","reason":"missing_handoff","to_status":"ready"}}
+{"id":"evt-1771815344755-hqm5","timestamp":"2026-02-23T02:55:44.755Z","event_type":"wake_attempted","agent_id":"qa-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-031","ok":true}}
+{"id":"evt-1771815344757-5d93","timestamp":"2026-02-23T02:55:44.757Z","event_type":"wake_escalated","agent_id":"qa-1","details":{"task_id":"TASK-033","reason":"missing_handoff","to_status":"ready"}}
+{"id":"evt-1771815344758-5abi","timestamp":"2026-02-23T02:55:44.758Z","event_type":"wake_attempted","agent_id":"qa-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-033","ok":true}}
