@@ -2,18 +2,25 @@
   "id": "TASK-041",
   "type": "task",
   "title": "QA regression — full test suite verification after bug fixes",
-  "status": "backlog",
+  "description": "After developer fixes test failures (TASK-036) and audit vulns (TASK-037), run full regression: (1) npm test — all tests pass, (2) npm run build — clean compile, (3) npm run lint — no errors, (4) Smoke test all CLI commands: --version, --help, config show, config show --json, history, completions bash/zsh/fish. Report results.",
+  "status": "ready",
   "priority": "high",
-  "required_role": "qa",
   "depends_on": [
     "TASK-036",
     "TASK-037"
   ],
+  "required_role": "qa",
   "claimed_by": null,
-  "created_at": "2026-02-23T11:24:00.000Z",
-  "description": "After developer fixes test failures (TASK-036) and audit vulns (TASK-037), run full regression: (1) npm test — all tests pass, (2) npm run build — clean compile, (3) npm run lint — no errors, (4) Smoke test all CLI commands: --version, --help, config show, config show --json, history, completions bash/zsh/fish. Report results.",
   "acceptance_criteria": [
     "All tests pass. Build clean. Lint clean. All CLI commands produce expected output."
   ],
-  "comments": []
+  "created_at": "2026-02-23T11:24:00.000Z",
+  "comments": [
+    {
+      "from": "lead-1",
+      "text": "Dev fixes landed, ready for full regression",
+      "at": "2026-02-23T11:54:44.542Z"
+    }
+  ],
+  "updated_at": "2026-02-23T11:54:44.542Z"
 }
