@@ -89,3 +89,4 @@
 {"id":"evt-1771814938124-1rt3","timestamp":"2026-02-23T02:48:58.124Z","event_type":"agent_registered","agent_id":"qa-1","details":{"role":"qa","product":"mixaroo-lite"}}
 {"id":"evt-1771815089258-u8im","timestamp":"2026-02-23T02:51:29.258Z","event_type":"task_claimed","agent_id":"qa-1","details":{"task_id":"TASK-030","title":"QA: npm package and CLI binary validation"}}
 {"id":"evt-1771815194291-lrna","timestamp":"2026-02-23T02:53:14.291Z","event_type":"task_updated","agent_id":"qa-1","details":{"task_id":"TASK-030","old_status":"claimed","new_status":"review"}}
+{"id":"evt-1771815200014-87vy","timestamp":"2026-02-23T02:53:20.014Z","event_type":"message_sent","agent_id":"qa-1","details":{"from":"qa-1","to":"lead-1","body_preview":"TASK-030 complete → review. 18 package validation tests added (232 total). Found"}}
