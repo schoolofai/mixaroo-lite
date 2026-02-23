@@ -206,3 +206,4 @@
 {"id":"evt-1771815555431-dn96","timestamp":"2026-02-23T02:59:15.431Z","event_type":"wake_escalated","agent_id":"lead-1","details":{"task_id":"TASK-035","from_status":"backlog","to_status":"review","reason":"missing_handoff_self_handled"}}
 {"id":"evt-1771815569214-c07y","timestamp":"2026-02-23T02:59:29.214Z","event_type":"task_updated","agent_id":"lead-1","details":{"task_id":"TASK-035","old_status":"review","new_status":"done"}}
 {"id":"evt-1771815573955-2rry","timestamp":"2026-02-23T02:59:33.955Z","event_type":"message_sent","agent_id":"lead-1","details":{"from":"lead-1","to":"developer-1","body_preview":"TASK-032 (--json output flag) and TASK-034 (content accuracy fixes) are both rea"}}
+{"id":"evt-1771815574232-b7h2","timestamp":"2026-02-23T02:59:34.232Z","event_type":"wake_escalated","agent_id":"lead-1","details":{"task_id":"TASK-035","from_status":"review","to_status":"done","reason":"missing_handoff_self_handled"}}
