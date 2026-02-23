@@ -1,65 +1,57 @@
 # Pre-Flight Checklist — mixaroo-lite
 
-_Generated: 2026-02-22 | Cycle: adopt:mixaroo-lite:2026-02-22T19:10:38.077Z:2d4acd7f_
+**Generated:** 2026-02-23 | **Cycle:** adopt
 
-## Code Quality
+---
 
-- [x] TypeScript compiles cleanly (`tsc --noEmit`)
-- [x] 124 tests passing (`vitest run`)
-- [x] CI pipeline configured (GitHub Actions — Node 18/20/22)
-- [x] ESLint configured
-- [ ] Test coverage report (add `--coverage` flag)
-- [ ] Error handling edge cases (network failures, invalid API keys, empty responses)
+## ✅ Code Quality
 
-## Architecture
-
-- [x] Clean service separation (ai.ts, youtube.ts, config.ts)
+- [x] TypeScript compiles without errors
+- [x] ESLint configured and passing
+- [x] 214+ tests passing (vitest)
+- [x] CI pipeline configured (.github/workflows/ci.yml)
+- [x] Error handling with custom error classes
 - [x] Multi-provider AI support (OpenAI, Gemini, Anthropic)
-- [x] CLI structure with commander.js
-- [x] Config stored in user's system config directory
-- [ ] No hardcoded secrets or credentials in repo
 
-## Distribution
+## ✅ Feature Completeness (v1.0)
 
-- [x] npm package.json configured (name, version, bin, files)
-- [x] Homebrew tap exists (schoolofai/tap)
-- [ ] npm package actually published and installable
-- [ ] Homebrew formula tested on clean macOS
-- [ ] npx execution tested
+- [x] `mx-lite <prompt>` — generate playlist from prompt
+- [x] `mx-lite setup` — interactive provider configuration
+- [x] `mx-lite config` — manage settings
+- [x] `mx-lite list` — view saved playlists
+- [x] `mx-lite play` — replay saved playlists
+- [x] `mx-lite history` — view generation history
+- [x] `mx-lite completions` — shell completions (bash/zsh/fish)
+- [x] YouTube search and playback URL generation
+- [x] Playlist persistence (save/load)
 
-## Documentation
+## 🔲 Launch Readiness
 
-- [x] README with quick start, features, installation
-- [x] Launch content drafted (HN post, blog, tweets, Reddit, demo script)
-- [ ] CONTRIBUTING.md
-- [ ] Demo GIF/terminal recording
-- [ ] Recording guide exists (/docs/recording-guide.md) — needs execution
+- [ ] Demo GIF recorded and added to README
+- [ ] `npm publish --dry-run` verified
+- [ ] npm package page looks correct (description, keywords, links)
+- [x] README has install instructions (npm + brew)
+- [x] LICENSE file present (MIT)
+- [x] CHANGELOG.md exists
 
-## Security
+## 🔲 Launch Content
 
-- [x] API keys stored locally (not in repo)
-- [x] `.gitignore` configured
-- [ ] Dependency audit (`npm audit`)
-- [ ] License file present and correct
+- [x] docs/hackernews-launch.md — Show HN post draft
+- [x] docs/blog-how-i-built.md — Dev.to article draft
+- [x] docs/reddit-posts.md — Reddit post templates
+- [x] docs/twitter-launch-thread.md — Twitter thread draft
+- [x] docs/demo-script.md — Demo script
+- [x] docs/recording-guide.md — Recording instructions
 
-## Launch Content Readiness
+## 🔲 Infrastructure
 
-- [x] `/docs/hackernews-launch.md` — HN post drafted
-- [x] `/docs/blog-how-i-built.md` — Blog post drafted
-- [x] `/docs/reddit-posts.md` — Reddit posts drafted
-- [x] `/docs/twitter-launch-thread.md` — Twitter thread drafted
-- [x] `/docs/demo-script.md` — Demo script drafted
-- [ ] All content reviewed for accuracy
-- [ ] Links and URLs updated to final values
+- [ ] npm account with publish access
+- [ ] GitHub repo is public (or will be at launch)
+- [ ] Homebrew tap repo created (schoolofai/tap)
+- [ ] GitHub Actions secrets configured for npm publish
 
-## Blockers
+## 🔲 Post-Launch
 
-1. **Verify npm publish status** — confirm package is live on npmjs.com
-2. **Demo recording** — terminal GIF needed for README and launch posts
-3. **GitHub repo visibility** — confirm public access
-
-## Nice-to-Have Before Launch
-
-- [ ] Badges in README (npm version, license, CI status) — partially done
-- [ ] Social preview image for GitHub
-- [ ] changelog entries
+- [ ] Monitoring for GitHub issues/stars
+- [ ] npm download tracking script (deliverables/metrics/)
+- [ ] Community response plan (who responds to issues, PRs)
