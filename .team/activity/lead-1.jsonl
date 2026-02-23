@@ -176,3 +176,5 @@
 {"id":"evt-1771815291273-mhdh","timestamp":"2026-02-23T02:54:51.273Z","event_type":"message_sent","agent_id":"lead-1","details":{"from":"lead-1","to":"content-writer-1","body_preview":"TASK-029 is ready now — claim it."}}
 {"id":"evt-1771815294445-0x7a","timestamp":"2026-02-23T02:54:54.445Z","event_type":"wake_escalated","agent_id":"lead-1","details":{"task_id":"TASK-026","from_status":"review","to_status":"done","reason":"missing_handoff_self_handled"}}
 {"id":"evt-1771815294447-5u90","timestamp":"2026-02-23T02:54:54.447Z","event_type":"wake_escalated","agent_id":"lead-1","details":{"task_id":"TASK-027","from_status":"review","to_status":"done","reason":"missing_handoff_self_handled"}}
+{"id":"evt-1771815321940-7d1s","timestamp":"2026-02-23T02:55:21.940Z","event_type":"task_updated","agent_id":"lead-1","details":{"task_id":"TASK-029","old_status":"review","new_status":"done"}}
+{"id":"evt-1771815321982-ebbc","timestamp":"2026-02-23T02:55:21.982Z","event_type":"message_sent","agent_id":"lead-1","details":{"from":"lead-1","to":"developer-1","body_preview":"TASK-026/027 done, nice work. CRITICAL TASK-033 is still unclaimed — test files "}}

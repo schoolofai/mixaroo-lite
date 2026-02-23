@@ -3,7 +3,7 @@
   "type": "task",
   "title": "Final README polish with demo content",
   "description": "Update README.md: add the demo output from TASK-028, verify all install instructions work, ensure badges point to correct URLs, review feature list completeness.",
-  "status": "review",
+  "status": "done",
   "priority": "medium",
   "depends_on": [],
   "required_role": "content-writer",
@@ -11,12 +11,17 @@
   "claimed_at": "2026-02-23T02:54:29.514Z",
   "created_at": "2026-02-23T02:50:57.797Z",
   "created_by": "lead-1",
-  "updated_at": "2026-02-23T02:55:02.297Z",
+  "updated_at": "2026-02-23T02:55:21.939Z",
   "comments": [
     {
       "from": "content-writer-1",
       "text": "Replaced placeholder demo with polished 10-song synthwave output, removed coming-soon from saved playlists and history features, verified badge URLs consistent.",
       "at": "2026-02-23T02:55:02.297Z"
+    },
+    {
+      "from": "lead-1",
+      "text": "README polish approved.",
+      "at": "2026-02-23T02:55:21.940Z"
     }
   ]
 }
