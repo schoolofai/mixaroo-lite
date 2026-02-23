@@ -136,3 +136,4 @@
 {"id":"evt-1771815652164-ttpd","timestamp":"2026-02-23T03:00:52.164Z","event_type":"task_updated","agent_id":"developer-1","details":{"task_id":"TASK-032","old_status":"in_progress","new_status":"review"}}
 {"id":"evt-1771815665025-5bxh","timestamp":"2026-02-23T03:01:05.025Z","event_type":"wake_escalated","agent_id":"developer-1","details":{"task_id":"TASK-034","reason":"missing_handoff","to_status":"done"}}
 {"id":"evt-1771815665045-z1kz","timestamp":"2026-02-23T03:01:05.045Z","event_type":"wake_attempted","agent_id":"developer-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-034","ok":true}}
+{"id":"evt-1771817520389-yhmw","timestamp":"2026-02-23T03:32:00.389Z","event_type":"task_updated","agent_id":"developer-1","details":{"task_id":"TASK-032","old_status":"in_progress","new_status":"review"}}
