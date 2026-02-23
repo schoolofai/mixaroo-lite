@@ -88,3 +88,6 @@
 {"id":"evt-1771815305699-skxf","timestamp":"2026-02-23T02:55:05.699Z","event_type":"wake_attempted","agent_id":"content-writer-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-027","ok":true}}
 {"id":"evt-1771815305700-w7a2","timestamp":"2026-02-23T02:55:05.700Z","event_type":"wake_escalated","agent_id":"content-writer-1","details":{"task_id":"TASK-029","reason":"missing_handoff","to_status":"review"}}
 {"id":"evt-1771815305701-oepq","timestamp":"2026-02-23T02:55:05.701Z","event_type":"wake_attempted","agent_id":"content-writer-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-029","ok":true}}
+{"id":"evt-1771815472102-n5dy","timestamp":"2026-02-23T02:57:52.102Z","event_type":"task_claimed","agent_id":"content-writer-1","details":{"task_id":"TASK-034","title":"Fix 7 content accuracy issues from QA audit (TASK-031)"}}
+{"id":"evt-1771815582542-sw6k","timestamp":"2026-02-23T02:59:42.542Z","event_type":"task_updated","agent_id":"content-writer-1","details":{"task_id":"TASK-034","old_status":"claimed","new_status":"review"}}
+{"id":"evt-1771815603572-kfym","timestamp":"2026-02-23T03:00:03.572Z","event_type":"task_updated","agent_id":"content-writer-1","details":{"task_id":"TASK-034","old_status":"review","new_status":"review"}}
