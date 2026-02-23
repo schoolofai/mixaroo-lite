@@ -1,13 +1,27 @@
 {
   "id": "TASK-035",
   "type": "task",
-  "title": "QA: verify content accuracy fixes (TASK-034)",
-  "description": "Re-verify all 7 issues from TASK-031 are fixed after TASK-034 is complete. Check README, PUBLISHING.md, blog post, CHANGELOG for accuracy.",
-  "status": "backlog",
+  "title": "QA: re-validate npm tarball after TASK-033 fix",
+  "description": "TASK-033 fixed the tsconfig.build.json to exclude tests from dist/. Re-run npm pack and verify: (1) no __tests__ dirs in tarball, (2) file count is reasonable (<30 production files), (3) tarball size is small. Update TASK-030 findings if needed.",
+  "status": "review",
   "priority": "high",
   "depends_on": [],
   "required_role": "qa",
-  "claimed_by": null,
-  "created_at": "2026-02-23T02:58:19.731Z",
-  "created_by": "lead-1"
+  "claimed_by": "qa-1",
+  "claimed_at": "2026-02-23T02:58:16.861Z",
+  "created_at": "2026-02-23T02:57:36.339Z",
+  "created_by": "lead-1",
+  "updated_at": "2026-02-23T02:58:41.225Z",
+  "comments": [
+    {
+      "from": "qa-1",
+      "text": "Re-validation complete. Tarball is clean:\n- 30 files, 17.3 kB packed / 62.1 kB unpacked\n- Zero __tests__ directories or .test. files\n- Zero .map source map files  \n- Only production .js and .d.ts files + README + package.json\n- All 20 package validation tests pass\n- tsconfig.build.json fix (TASK-033) confirmed working",
+      "at": "2026-02-23T02:58:33.013Z"
+    },
+    {
+      "from": "qa-1",
+      "text": "Re-validation complete. 30 files, 17.3 kB, zero test/map files. All 20 validation tests pass.",
+      "at": "2026-02-23T02:58:41.225Z"
+    }
+  ]
 }

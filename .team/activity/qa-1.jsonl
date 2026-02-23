@@ -120,3 +120,7 @@
 {"id":"evt-1771815482627-03kb","timestamp":"2026-02-23T02:58:02.627Z","event_type":"wake_attempted","agent_id":"qa-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-034","ok":true}}
 {"id":"evt-1771815482628-eykv","timestamp":"2026-02-23T02:58:02.628Z","event_type":"wake_escalated","agent_id":"qa-1","details":{"task_id":"TASK-035","reason":"missing_handoff","to_status":"ready"}}
 {"id":"evt-1771815482629-7god","timestamp":"2026-02-23T02:58:02.629Z","event_type":"wake_attempted","agent_id":"qa-1","details":{"target":"lead-1","reason":"missing_handoff","task_id":"TASK-035","ok":true}}
+{"id":"evt-1771815496861-40dd","timestamp":"2026-02-23T02:58:16.861Z","event_type":"task_claimed","agent_id":"qa-1","details":{"task_id":"TASK-035","title":"QA: re-validate npm tarball after TASK-033 fix"}}
+{"id":"evt-1771815513013-8tm8","timestamp":"2026-02-23T02:58:33.013Z","event_type":"task_updated","agent_id":"qa-1","details":{"task_id":"TASK-035","old_status":"claimed","new_status":"review"}}
+{"id":"evt-1771815517791-13ok","timestamp":"2026-02-23T02:58:37.791Z","event_type":"message_sent","agent_id":"qa-1","details":{"from":"qa-1","to":"lead-1","body_preview":"TASK-035 done → review. Tarball confirmed clean: 30 files, 17.3 kB, zero test/ma"}}
+{"id":"evt-1771815521225-l8l8","timestamp":"2026-02-23T02:58:41.225Z","event_type":"task_updated","agent_id":"qa-1","details":{"task_id":"TASK-035","old_status":"review","new_status":"review"}}

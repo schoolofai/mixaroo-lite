@@ -129,3 +129,4 @@
 {"id":"evt-1771815482604-ab1j","from":"qa-1","to":"lead-1","body":"[wake-router] Missing task.handoff for TASK-031 transition review -> done. Lead routing required.","timestamp":"2026-02-23T02:58:02.604Z","read":false,"type":"wake_escalation"}
 {"id":"evt-1771815482626-d5vc","from":"qa-1","to":"lead-1","body":"[wake-router] Missing task.handoff for TASK-034 transition unknown -> ready. Lead routing required.","timestamp":"2026-02-23T02:58:02.626Z","read":false,"type":"wake_escalation"}
 {"id":"evt-1771815482628-h1fu","from":"qa-1","to":"lead-1","body":"[wake-router] Missing task.handoff for TASK-035 transition unknown -> ready. Lead routing required.","timestamp":"2026-02-23T02:58:02.628Z","read":false,"type":"wake_escalation"}
+{"id":"msg-1771815517790","from":"qa-1","to":"lead-1","body":"TASK-035 done → review. Tarball confirmed clean: 30 files, 17.3 kB, zero test/map files. All 20 validation tests pass.","timestamp":"2026-02-23T02:58:37.790Z","read":false}
