@@ -1,8 +1,8 @@
 {
-  "current": "build",
-  "previous": "planning",
-  "started_at": "2026-02-23T02:45:42.638Z",
-  "transitioned_at": "2026-02-23T02:50:30.000Z",
+  "current": "setup",
+  "previous": null,
+  "started_at": "2026-02-23T11:19:32.280Z",
+  "transitioned_at": "2026-02-23T11:19:32.280Z",
   "gate_criteria_met": [],
   "sub_cycle": null,
   "history": []
