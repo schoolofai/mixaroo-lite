@@ -141,3 +141,4 @@
 {"id":"evt-1771792417580-ku1h","timestamp":"2026-02-22T20:33:37.580Z","event_type":"wake_escalated","agent_id":"lead-1","details":{"task_id":"TASK-025","from_status":"ready","to_status":"done","reason":"missing_handoff_self_handled"}}
 {"id":"evt-1771814771011-w6y8","timestamp":"2026-02-23T02:46:11.011Z","event_type":"agent_registered","agent_id":"lead-1","details":{"role":"lead","product":"mixaroo-lite"}}
 {"id":"evt-1771814800314-9nkj","timestamp":"2026-02-23T02:46:40.314Z","event_type":"directive_acknowledged","agent_id":"lead-1","details":{"directive_id":"evt-1771814782866-e74e","action":"context_update","urgency":"interrupt"}}
+{"id":"evt-1771814906038-ym81","timestamp":"2026-02-23T02:48:26.038Z","event_type":"message_sent","agent_id":"lead-1","details":{"from":"lead-1","to":"human","body_preview":"type=proposal_ready\ncycle_id=adopt:mixaroo-lite:2026-02-23T02:46:22.765Z:bdf1d22"}}
